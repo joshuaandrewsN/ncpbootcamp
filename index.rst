@@ -25,7 +25,7 @@
   :name: _optional_labs
   :hidden:
 
-  examplelab3/examplelab3
+  OptionalQuestions/OptionalQuestions
 
 .. toctree::
   :maxdepth: 2
