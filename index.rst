@@ -2,16 +2,26 @@
 
 .. toctree::
   :maxdepth: 2
-  :caption: Labs
+  :caption: Sessions
   :name: _labs
   :hidden:
 
-  examplelab1/examplelab1
-  examplelab2/examplelab2
+  NutanixConcepts/NutanixConcepts
+  ManagingaNutanixCluster/ManagingaNutanixCluster
+  SecuringaNutanixCluster/SecuringaNutanixCluster
+  Networking/Networking
+  VMCreationandManagement/VMCreationandManagement
+  HealthMonitoringandAlerts/HealthMonitoringandAlerts
+  DistributedStorageFabric/DistributedStorageFabric
+  AcropolisStorageServices/AcropolisStorageServices
+  DataResiliancy/DataResiliancy
+  DataProtection/DataProtection
+  PrismCentral/PrismCentral
+  ClusterMaintenenceandLifecycleOperations/ClusterMaintenenceandLifecycleOperations
 
 .. toctree::
   :maxdepth: 2
-  :caption: Optional Labs
+  :caption: Optional Questions
   :name: _optional_labs
   :hidden:
 
@@ -32,33 +42,36 @@
 Getting Started
 ---------------
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed velit odio, ultrices sed elementum vitae, dictum eget turpis. Etiam ultrices orci quis tempus tempus. Nulla non nibh imperdiet, suscipit risus quis, eleifend nisl. Morbi at posuere nibh, quis bibendum dui. Morbi dictum sem a ipsum bibendum condimentum. Suspendisse id ante gravida, efficitur leo a, consequat enim. Suspendisse tempor lorem vel purus scelerisque, vel facilisis lorem consequat. Pellentesque augue orci, iaculis vel mollis sit amet, scelerisque a tellus. Aliquam commodo in lectus feugiat porta.
+Welcome to the Nutanix NCP Bootcamp.  This short workshop is intended to provide a highlight of the NCP exam including breifly dicussing the objectives covered by the exam. 
+At the end of the workshop you will know how to sign up to the exam, be armed with the testing details, have a solid overview of the topics on the exam and be familiar with the question format.
 
-What's New
-++++++++++
-
-- Workshop updated for the following software versions:
-    - AOS & PC 5.11
-
-- Optional Lab Updates:
-
-- Added :ref:`example_lab_3`
 
 Agenda
 ++++++
 
 - Introductions
-- Nutanix Technology Overview
-- Nutanix Configuration
-- Deploying and Managing Workloads
-- Security Compliance
-- Monitoring and Managing the Environment
+- Nutanix Certified Professional Overview
+- Nutanix Concepts
+- Managing a Nutanix Cluster
+- Securing a Nutanix Cluster
+- Networking
+- VM Creation and Management
+- Health Monitoring and Alerts
+- Distributed Storage Fabric
+- Acropolis Storage Services
+- Data Resiliancy
+- Data Protection
+- Prism Central
+- Cluster Maintenence and Lifecycle Operations
 
 Introductions
 +++++++++++++
 
 - Name
 - Familiarity with Nutanix
+
+
+
 
 Initial Setup
 +++++++++++++
