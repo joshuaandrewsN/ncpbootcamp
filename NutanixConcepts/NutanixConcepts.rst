@@ -2,7 +2,7 @@
 .. _example_lab_1:
 
 -------------
-Example Lab 1
+Nutanix Concepts
 -------------
 
 Overview
