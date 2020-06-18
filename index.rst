@@ -21,20 +21,13 @@
 
 .. toctree::
   :maxdepth: 2
-  :caption: Optional Questions
+  :caption: Optional
   :name: _optional_labs
   :hidden:
 
-  OptionalQuestions/OptionalQuestions
+  ExtraQuestions/ExtraQuestions
+  OptionalLabs/OptionalLabs
 
-.. toctree::
-  :maxdepth: 2
-  :caption: Appendix
-  :name: _appendix
-  :hidden:
-
-  appendix/glossary
-  appendix/otherstuff
 
 .. _getting_started:
 

@@ -5,10 +5,14 @@
 Nutanix Concepts
 -------------
 
-Overview
+What is (Server) Virtualization
 ++++++++
 
-Here is where we provide a high level description of what the user will be doing during this module. We want to frame why this content is relevant to an SE/Services Consultant and what we expect them to understand after completing the lab.
+.. figure:: images/WhatIs.png
+
+- **Host** computer on which hypervisor runs
+- **Hypervisor** creates/manages guest VMs and presents VMs with virtual O.S.
+- **Guest virtual machine (VM)**  emulation of a physical computer, based on a computer architecture
 
 Using Text and Figures
 ++++++++++++++++++++++

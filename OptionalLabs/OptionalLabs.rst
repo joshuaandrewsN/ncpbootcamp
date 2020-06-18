@@ -2,7 +2,7 @@
 .. _example_lab_3:
 
 -------------
-Optional Questions
+Optional Labs
 -------------
 
 Overview
