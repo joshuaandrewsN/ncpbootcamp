@@ -4,7 +4,7 @@
 -------------
 Nutanix Concepts
 -------------
-
+-----------------------------------------------------
 What is (Server) Virtualization
 ++++++++
 
@@ -14,8 +14,16 @@ What is (Server) Virtualization
 - **Hypervisor** creates/manages guest VMs and presents VMs with virtual O.S.
 - **Guest virtual machine (VM)**  emulation of a physical computer, based on a computer architecture
 
-Using Text and Figures
+Nutanix HCI : CPU, MEMORY, STORAGE, NETWORK
 ++++++++++++++++++++++
+
+.. figure:: images/NutanixHCI.png
+
+HCL: Hardware Compatibility Matrix (Support Portal) 
+IPMI: Intelligent Platform Management Interface
+
+
+
 
 Label sections appropriately, see existing labs if further guidance is required. Section titles should begin with present tense verbs to queue what is being done in each section. Use consistent markup for titles, subtitles, sub-subtitles, etc. The markup in the example can serve as a guide but other characters can be used within a given workshop, as long as they are consistent. Other than lab titles (that need to follow a certain linear progression) avoid numbering steps.
 
