@@ -92,9 +92,19 @@ The exam normally requires at least 24 hours advanced scheduling and is remote-p
 Exam Blueprint Guide
 ..........
 
-The Exam Blueprint Guide, available in the NCP learning plan at NutanixUniversity or in the Certifications page at nutanix.com, lists all of the pertinent information about the exam - primarily the list of objectives the exam covers. 
+The Exam Blueprint Guide, available in the NCP learning plan at NutanixUniversity or in the Certifications page at nutanix.com, lists all of the pertinent information about the exam.
 
 .. figure:: images/ebg.png
+
+The Exam Blueprint Guide lists the security policies in place and the intended audience:
+
+.. figure:: images/ebgaud.png
+
+A key resource on the EBG is the list of objectives the exam covers including references. You should be familiar with the technologies and features described as well as the references listed.
+
+ .. figure:: images/ebgsections.png
+
+
 
 Hosted POC clusters follow a standard naming convention:
 
