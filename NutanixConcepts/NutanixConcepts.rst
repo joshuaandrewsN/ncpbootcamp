@@ -141,14 +141,14 @@ License by capacity, appliance, or specific use cases/workloads
 
 AOS (Acropolis)
 
-  - Starter
-  - Pro
-  - Ultimate
+ - Starter
+ - Pro
+ - Ultimate
 
 Prism Central
 
-  - Standard ("Starter")
-  - Pro (a.k.a. Prism Pro)
+ - Standard ("Starter")
+ - Pro (a.k.a. Prism Pro)
 
 
 -----------------------------------------------------
