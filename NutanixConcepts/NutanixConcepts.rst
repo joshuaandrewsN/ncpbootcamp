@@ -4,7 +4,9 @@
 -------------
 Nutanix Concepts
 -------------
+
 Session 1
+
 -----------------------------------------------------
 
 What is (Server) Virtualization
@@ -17,8 +19,10 @@ What is (Server) Virtualization
 - **Guest virtual machine (VM)**  emulation of a physical computer, based on a computer architecture
 
 -----------------------------------------------------
-Nutanix HCI : CPU, MEMORY, STORAGE, NETWORK
+
+Nutanix HCI 
 ++++++++++++++++++++++
+CPU, Memory, Storage, Network
 
 .. figure:: images/NutanixHCI.png
 
@@ -26,6 +30,7 @@ HCL: Hardware Compatibility Matrix (Support Portal)
 IPMI: Intelligent Platform Management Interface
 
 -----------------------------------------------------
+
 Hardware Platforms
 ++++++++++++++++++++++
 
@@ -34,6 +39,7 @@ Eligible hardware vendor platforms and configurations as per HCL
 .. figure:: images/HardwarePlatforms.png
 
 -----------------------------------------------------
+
 Cluster Construct
 ++++++++++++++++++++++
 
@@ -47,6 +53,7 @@ A cluster consists of a number of nodes, located in blocks
 .. figure:: images/ClusterConstruct.png
 
 -----------------------------------------------------
+
 Nutanix Hyperconverged
 ++++++++++++++++++++++
 
@@ -55,6 +62,7 @@ Freedom of choice across hypervisors
 .. figure:: images/NutanixHyperconverged.png
 
 -----------------------------------------------------
+
 NTNX Hyper-converged Infrastructure (HCI)
 ++++++++++++++++++++++
 
