@@ -1,7 +1,7 @@
-.. title:: Nutanix NCP Bootcamp - Nutanix Concepts
+.. title:: NCP Bootcamp - Nutanix Concepts
 
 .. toctree::
-  :maxdepth: 2
+  :maxdepth: 1
   :caption: Questions
   :name: _NC_Questions
   :hidden:
