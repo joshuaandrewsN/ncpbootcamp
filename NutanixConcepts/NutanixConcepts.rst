@@ -94,7 +94,6 @@ Using intelligent data placement algorithms
 .. figure:: images/DSFProvidesTieringandDataLocality.png
 
 
-
 -----------------------------------------------------
 
 Redundancy Factor (RF)
@@ -111,8 +110,6 @@ Why no data is lost upon node failure:
 - Memory only used for Read I/O’s 
 
 
-
-
 -----------------------------------------------------
 
 Intra-cluster CVM-to-CVM Communication
@@ -121,6 +118,103 @@ Intra-cluster CVM-to-CVM Communication
 Enables data replication (RF2/RF3), AOS Services monitoring, self-healing
 
 .. figure:: images/Intra-clusterCVM-to-CVMCommunication.png
+
+
+-----------------------------------------------------
+
+Prism Overview
+++++++++++++++++++++++
+
+Prism (Element) vs. Prism Central
+
+.. figure:: images/PrismOverview.png
+
+
+-----------------------------------------------------
+
+Licensing
+++++++++++++++++++++++
+
+License by capacity, appliance, or specific use cases/workloads
+
+.. figure:: images/Licensing.png
+
+AOS (Acropolis)
+- Starter
+- Pro
+- Ultimate
+
+Prism Central
+- Standard ("Starter")
+- Pro (a.k.a. Prism Pro)
+
+
+-----------------------------------------------------
+
+Enterprise Cloud Components
+++++++++++++++++++++++
+
+License by capacity, appliance, or specific use cases/workloads
+
+.. figure:: images/EnterpriseCloudComponents.png
+
+AOS (Acropolis)
+- Starter
+- Pro
+- Ultimate
+
+Prism Central
+- Standard ("Starter")
+- Pro (a.k.a. Prism Pro)
+
+
+-----------------------------------------------------
+
+Nutanix Product Portfolio
+++++++++++++++++++++++
+
+A journey from Core to Essentials to Enterprise
+
+.. figure:: images/NutanixProductPortfolio.png
+
+AOS (Acropolis)
+- Starter
+- Pro
+- Ultimate
+
+Prism Central
+- Standard ("Starter")
+- Pro (a.k.a. Prism Pro)
+
+
+-----------------------------------------------------
+
+What’s in a Name?
+++++++++++++++++++++++
+
+
+.. figure:: images/WhatsinaName.png
+
+
+
+-----------------------------------------------------
+
+References
+++++++++++++++++++++++
+
+Simple Explanation of How Nutanix Works Video
+- https://www.youtube.com/watch?v=wfFuohZwi5Q
+
+Nutanix Bible
+- https://nutanixbible.com 
+
+my.nutanix.com Support Portal
+
+.. figure:: images/SupportPortal.png
+
+
+
+
 
 
 
