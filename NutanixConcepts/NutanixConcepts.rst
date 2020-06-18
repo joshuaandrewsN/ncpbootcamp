@@ -42,6 +42,23 @@ A cluster consists of a number of nodes, located in blocks
 
 .. figure:: images/ClusterConstruct.png
 
+Nutanix Hyperconverged
+++++++++++++++++++++++
+
+Freedom of choice across hypervisors
+
+.. figure:: images/NutanixHyperconverged.png
+
+
+NTNX Hyper-converged Infrastructure (HCI)
+++++++++++++++++++++++
+
+Single pre-configured guest VM (CVM) runs AOS on every node
+
+.. figure:: images/NTNXHyper-convergedInfrastructure.png
+
+
+
 
 Label sections appropriately, see existing labs if further guidance is required. Section titles should begin with present tense verbs to queue what is being done in each section. Use consistent markup for titles, subtitles, sub-subtitles, etc. The markup in the example can serve as a guide but other characters can be used within a given workshop, as long as they are consistent. Other than lab titles (that need to follow a certain linear progression) avoid numbering steps.
 
