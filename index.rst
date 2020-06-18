@@ -4,9 +4,9 @@
   :maxdepth: 0
   :caption: Sessions
   :name: _sessions
+  :includehidden:
   :hidden:
   :titlesonly:
-
 
   NutanixConcepts/NutanixConcepts
   ManagingaNutanixCluster/ManagingaNutanixCluster
