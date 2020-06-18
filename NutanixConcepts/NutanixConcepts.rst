@@ -3,7 +3,7 @@
 .. toctree::
   :maxdepth: 2
   :caption: Questions
-  :name: _NC Questions
+  :name: _NC_Questions
   :hidden:
 
   Q1/Q1
