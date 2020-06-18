@@ -5,6 +5,8 @@
   :caption: Sessions
   :name: _sessions
   :hidden:
+  :titlesonly:
+
 
   NutanixConcepts/NutanixConcepts
   ManagingaNutanixCluster/ManagingaNutanixCluster

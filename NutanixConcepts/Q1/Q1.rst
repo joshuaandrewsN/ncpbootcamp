@@ -2,7 +2,7 @@
 .. _NC_question_1:
 
 -------------
-NConcepts Practice Exam Question 1
+Practice Exam Question 1
 -------------
 
 
