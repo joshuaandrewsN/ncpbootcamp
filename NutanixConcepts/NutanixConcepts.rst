@@ -47,6 +47,7 @@ A cluster consists of a number of nodes, located in blocks
 
 - **Block** Physical chassis with 1 to 4 nodes
 - **Node** Single physical server within block
+
   - **Node Ports** IPMI, USB, VGA, (Q)SFP
 - **Cluster** Logical bundling of physical nodes
 
