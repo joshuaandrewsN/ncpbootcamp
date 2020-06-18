@@ -1,4 +1,4 @@
-.. title:: Nutanix NCP Bootcamp
+.. title:: Nutanix NCP Bootcamp - Nutanix Concepts
 
 .. toctree::
   :maxdepth: 2
