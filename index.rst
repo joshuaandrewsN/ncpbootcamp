@@ -83,22 +83,36 @@ Practice questions
 - Get into the exam mindset
 
 
-Exam Details
-+++++++++++++++++++
-
-The NCP exam consists of 75 questions covering twelve sections with a timelimit of 120 minutes.
-The exam normally requires at least 24 hours advanced scheduling and is remote-proctored.
-
 Exam Blueprint Guide
-..........
++++++++++++++++++++
 
 The Exam Blueprint Guide, available in the NCP learning plan at NutanixUniversity or in the Certifications page at nutanix.com, lists all of the pertinent information about the exam.
 
+The EBG covers topics such as the retake policy and the scoring method.  
+
+Key details 
+..........
+
+- 75 questions covering twelve sections
+- 120 minute timelimit
+
+The exam normally requires at least 24 hours advanced scheduling and is remote-proctored.
+
+
 .. figure:: images/ebg.png
 
-The Exam Blueprint Guide lists the security policies in place and the intended audience:
+
+Audience
+..........
+
+The Exam Blueprint Guide also describes the intended audience:
 
 .. figure:: images/ebgaud.png
+
+
+Objectives
+..........
+
 
 A key resource on the EBG is the list of objectives the exam covers including references. You should be familiar with the technologies and features described as well as the references listed.
 
