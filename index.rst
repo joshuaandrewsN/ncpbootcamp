@@ -4,7 +4,7 @@
   :maxdepth: 2
   :caption: Sessions
   :name: _labs
-  :hidden:
+  :includehidden:
 
   NutanixConcepts/NutanixConcepts
   ManagingaNutanixCluster/ManagingaNutanixCluster
