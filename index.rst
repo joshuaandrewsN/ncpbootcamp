@@ -1,7 +1,7 @@
 .. title:: Nutanix NCP Bootcamp
 
 .. toctree::
-  :maxdepth: 1
+  :maxdepth: 0
   :caption: Sessions
   :name: _sessions
   :hidden:
