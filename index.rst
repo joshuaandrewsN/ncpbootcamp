@@ -1,9 +1,9 @@
 .. title:: Nutanix NCP Bootcamp
 
 .. toctree::
-  :maxdepth: 2
+  :maxdepth: 1
   :caption: Sessions
-  :name: _labs
+  :name: _sessions
   :hidden:
 
   NutanixConcepts/NutanixConcepts
