@@ -5,7 +5,6 @@
 Nutanix Concepts
 -------------
 
------------------------------------------------------
 What is (Server) Virtualization
 ++++++++
 
