@@ -116,7 +116,7 @@ Objectives
 
 A key resource on the EBG is the list of objectives the exam covers including references. You should be familiar with the technologies and features described as well as the references listed.
 
- .. figure:: images/ebgsections.png
+.. figure:: images/ebgsections.png
 
 
 
