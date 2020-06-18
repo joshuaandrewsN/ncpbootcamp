@@ -4,6 +4,7 @@
 -------------
 Nutanix Concepts
 -------------
+Session 1
 
 What is (Server) Virtualization
 ++++++++
@@ -22,7 +23,24 @@ Nutanix HCI : CPU, MEMORY, STORAGE, NETWORK
 HCL: Hardware Compatibility Matrix (Support Portal) 
 IPMI: Intelligent Platform Management Interface
 
+Hardware Platforms
+++++++++++++++++++++++
 
+Eligible hardware vendor platforms and configurations as per HCL
+
+.. figure:: images/HardwarePlatforms.png
+
+Cluster Construct
+++++++++++++++++++++++
+
+A cluster consists of a number of nodes, located in blocks
+
+- **Block** Physical chassis with 1 to 4 nodes
+- **Node** Single physical server within block
+  - **Node Ports** IPMI, USB, VGA, (Q)SFP
+- **Cluster** Logical bundling of physical nodes
+
+.. figure:: images/ClusterConstruct.png
 
 
 Label sections appropriately, see existing labs if further guidance is required. Section titles should begin with present tense verbs to queue what is being done in each section. Use consistent markup for titles, subtitles, sub-subtitles, etc. The markup in the example can serve as a guide but other characters can be used within a given workshop, as long as they are consistent. Other than lab titles (that need to follow a certain linear progression) avoid numbering steps.
