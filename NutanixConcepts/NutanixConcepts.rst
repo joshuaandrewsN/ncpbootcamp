@@ -70,6 +70,73 @@ Single pre-configured guest VM (CVM) runs AOS on every node
 
 .. figure:: images/NTNXHyper-convergedInfrastructure.png
 
+-----------------------------------------------------
+
+Nutanix AOS Services
+++++++++++++++++++++++
+
+AOS Services run on every CVM in the cluster
+
+.. figure:: images/NutanixAOSServices.png
+
+
+All hosts within the cluster have visibility into shared Nutanix datastores through the Controller VMs. 
+Guest VM data is written locally and replicated on other nodes for high availability.
+
+
+-----------------------------------------------------
+
+DSF Provides Tiering and Data Locality
+++++++++++++++++++++++
+
+Using intelligent data placement algorithms
+
+.. figure:: images/DSFProvidesTieringandDataLocality.png
+
+
+
+-----------------------------------------------------
+
+Redundancy Factor (RF)
+++++++++++++++++++++++
+
+Either RF2 or RF3
+
+.. figure:: images/RedundancyFactor.png
+
+
+Why no data is lost upon node failure:
+- Write I/O’s directly written to SSD
+- Write I/O’s replicated to other nodes (depends on RF)
+- Memory only used for Read I/O’s 
+
+
+
+
+-----------------------------------------------------
+
+Intra-cluster CVM-to-CVM Communication
+++++++++++++++++++++++
+
+Enables data replication (RF2/RF3), AOS Services monitoring, self-healing
+
+.. figure:: images/Intra-clusterCVM-to-CVMCommunication.png
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
