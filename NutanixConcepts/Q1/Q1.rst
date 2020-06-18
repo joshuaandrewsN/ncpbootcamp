@@ -2,11 +2,9 @@
 .. _NC_question_1:
 
 -------------
-Nutanix Concepts Practice Exam
+NConcepts Practice Exam Question 1
 -------------
 
-Question 1
-++++++++
 
 
 .. figure:: images/q1.png
