@@ -73,19 +73,28 @@ Introductions
 
 
 
-Initial Setup
+Objectives
 +++++++++++++
 
-- Take note of the *Passwords* being used.
-- Log into your virtual desktops (connection info below)
+ECA refresh 
+Practice questions
+- Test knowledge
+- Question layout and standards
+- Get into the exam mindset
 
-Environment Details
+
+Exam Details
 +++++++++++++++++++
 
-Nutanix Workshops are intended to be run in the Nutanix Hosted POC environment. Your cluster will be provisioned with all necessary images, networks, and VMs required to complete the exercises.
+The NCP exam consists of 75 questions covering twelve sections with a timelimit of 120 minutes.
+The exam normally requires at least 24 hours advanced scheduling and is remote-proctored.
 
-Networking
+Exam Blueprint Guide
 ..........
+
+The Exam Blueprint Guide, available in the NCP learning plan at NutanixUniversity or in the Certifications page at nutanix.com, lists all of the pertinent information about the exam - primarily the list of objectives the exam covers. 
+
+.. figure:: images/ebg.png
 
 Hosted POC clusters follow a standard naming convention:
 
