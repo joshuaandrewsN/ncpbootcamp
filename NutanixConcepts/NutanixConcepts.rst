@@ -205,4 +205,4 @@ my.nutanix.com Support Portal
 Questions
 ++++++++++++++++++++++
 
-This is a link to the Questions : :doc:`/Questions`
+This is a link to the Questions : :doc:`NutanixConcepts/Questions`
