@@ -1,51 +1,98 @@
 .. Adding labels to the beginning of your lab is helpful for linking to the lab from other pages
-.. _example_lab_1:
+.. _Securing_a_Nutanix_Cluster_1:
 
--------------
+--------------------------
 Securing a Nutanix Cluster
--------------
+--------------------------
 
-Overview
-++++++++
-
-Here is where we provide a high level description of what the user will be doing during this module. We want to frame why this content is relevant to an SE/Services Consultant and what we expect them to understand after completing the lab.
-
-Using Text and Figures
-++++++++++++++++++++++
-
-Label sections appropriately, see existing labs if further guidance is required. Section titles should begin with present tense verbs to queue what is being done in each section. Use consistent markup for titles, subtitles, sub-subtitles, etc. The markup in the example can serve as a guide but other characters can be used within a given workshop, as long as they are consistent. Other than lab titles (that need to follow a certain linear progression) avoid numbering steps.
-
-Below are examples of standards we should strive to maintain in writing lab guides. *Italics* is used to indicate when information of values external to the lab guide are referenced. **Bold** is used to reference words and phrases in the UI. **Bold** should also be used to highlight the key name in lists containing key/value pairs as shown below. The **>** character is used to show a reasonable progression of clicks, such as traversing a drop down menu. When appropriate, try to consolidate short, simple tasks. ``Literals`` should be used for file paths.
-
-Actions should end with a period, or optionally with a colon as in the case of displaying a list of fields that need to be populated. Keep the language consistent: open, click/select, fill out, log in, and execute.
-
-Use the **figure** directive to include images in your lab guide or appendix. Image files should be included within the Git repository, within an **images** subdirectory within each lab subdirectory.
+Session 3
 
 -----------------------------------------------------
 
-Open \https://<*NUTANIX-CLUSTER-IP*>:9440 in your browser to access Prism. Log in as a user with administrative priveleges.
+STIG : Security Technical Implementation Guide
+++++++++++++++++++++++++++++++++++++++++++++++++
 
-.. figure:: images/1.png
+.. figure:: images/stig.png
 
-Click **Network Config > User VM Interfaces > + Create Network**.
+STIG Implementation - https://public.cyber.mil/stigs/
 
-.. figure:: images/2.png
+To make the STIGs usable by all organizations, the STIGs are provided in machine-readable XCCDF.xml format in addition to the human-readable PDF format.  This enables organizations to use tools that can read STIGs and automatically validate the security baseline of a deployment, reducing the accreditation time required to stay within compliance from months to days.
 
-Select **Enable IP Address Management** and fill out the following fields:
 
-  - **Name** - VM VLAN
-  - **VLAN ID** - *Refer to your Environment Details Worksheet*
-  - **Network IP Address/Prefix Length** - *Refer to your Environment Details Worksheet*
-  - **Gateway IP Address** - *Refer to your Environment Details Worksheet*
-  - **Domain Name Servers** - *Refer to your Environment Details Worksheet*
+- Defines secure IT environment
+- Security Configuration Management Automation (SCMA) monitors over 800 security entities
 
-.. figure:: images/3.png
+  - storage
+  - virtualization
+  - management
 
-Click **Submit > Save**.
+- XCCDF Support
 
-Takeaways
-+++++++++
 
-- Here is where we summarize any key takeaways from the module
-- Such as how a Nutanix feature used in the lab delivers value
-- Or highlighting a differentiator
+-----------------------------------------------------
+
+Encryption
+++++++++++++++++++++++++++++++++
+
+**Data-at-Rest Encryption: Self-encrypting Drives**
+
+.. figure:: images/Encryption.png
+
+- Self-encrypting Drives (SED) or software-enabled
+
+- Requires external key management
+
+- SEDs use FIPS 140-2 validated cryptographic mods
+
+- A non-protected cluster can contain both SED and standard drives (DARE cannot be enabled)
+
+- Each node maintains a set of certificates and keys in order to establish a secure connection with the key management server
+
+
+-----------------------------------------------------
+
+Encryption Part 2
+++++++++++++++++++++++++++++++++
+
+**Data-at-Rest Encryption: Software-based (no SEDs)**
+
+.. figure:: images/Encryption2.png
+
+- Uses AOS; no way to access the data directly from the drive
+
+- DEK applied to data written to disk
+
+- Data is encrypted at all times
+
+- For empty or new clusters
+
+
+
+
+-----------------------------------------------------
+
+Client Authentication & Authorization
+++++++++++++++++++++++++++++++++++++++
+
+**Data-at-Rest Encryption: Software-based (no SEDs)**
+
+.. figure:: images/clientauth.png
+
+- Logons can require a combination of a client certificate and username and password
+
+- Use local accounts or Active Directory/OpenLDAP
+
+- SSL certificate-based authentication for console access: replace the default self-signed certificate with a CA signed certificate 
+
+- Assign roles to users (Prism): User Admin, Cluster Admin, and Viewer
+
+
+
+
+
+-----------------------------------------------------
+
+Questions
+++++++++++++++++++++++
+
+This is a link to the Questions : :doc:`Questions`

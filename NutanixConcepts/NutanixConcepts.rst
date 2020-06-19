@@ -2,16 +2,16 @@
   
 .. _nutanix_concepts:
 
--------------
+-----------------
 Nutanix Concepts
--------------
+-----------------
 
 Session 1
 
 -----------------------------------------------------
 
 What is (Server) Virtualization
-++++++++
+++++++++++++++++++++++++++++++++
 
 .. figure:: images/WhatIs.png
 
@@ -66,7 +66,7 @@ Freedom of choice across hypervisors
 -----------------------------------------------------
 
 NTNX Hyper-converged Infrastructure (HCI)
-++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++
 
 Single pre-configured guest VM (CVM) runs AOS on every node
 
@@ -89,7 +89,7 @@ Guest VM data is written locally and replicated on other nodes for high availabi
 -----------------------------------------------------
 
 DSF Provides Tiering and Data Locality
-++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++
 
 Using intelligent data placement algorithms
 
@@ -115,7 +115,7 @@ Why no data is lost upon node failure:
 -----------------------------------------------------
 
 Intra-cluster CVM-to-CVM Communication
-++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++
 
 Enables data replication (RF2/RF3), AOS Services monitoring, self-healing
 
@@ -156,7 +156,7 @@ Prism Central
 -----------------------------------------------------
 
 Enterprise Cloud Components
-++++++++++++++++++++++
+++++++++++++++++++++++++++++++
 
 License by capacity, appliance, or specific use cases/workloads
 
@@ -167,7 +167,7 @@ License by capacity, appliance, or specific use cases/workloads
 -----------------------------------------------------
 
 Nutanix Product Portfolio
-++++++++++++++++++++++
+++++++++++++++++++++++++++++++
 
 A journey from Core to Essentials to Enterprise
 
