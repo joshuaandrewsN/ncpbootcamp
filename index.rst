@@ -36,7 +36,7 @@
 Getting Started
 ---------------
 
-Welcome to the Nutanix NCP Bootcamp.  The NCP 5.15 certification validates your skills and abilities in deploying, administering, and troubleshooting AOS 5.15.
+Welcome to the Nutanix NCP Bootcamp Karina.  The NCP 5.15 certification validates your skills and abilities in deploying, administering, and troubleshooting AOS 5.15.
 
 This short workshop is intended to provide a highlight of the NCP exam including breifly dicussing the objectives covered by the exam. This is intended to supplment the Enterprise Cloud Administration training course, hopefully you have already attended that course or reviewed the modules at Nutanix University.
 At the end of the workshop you will know how to sign up to the exam, be armed with the testing details, have a solid overview of the topics on the exam and be familiar with the question format.
