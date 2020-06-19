@@ -4,7 +4,7 @@
   :maxdepth: 1
   :caption: Questions
   :name: _NC_Questions
-  :hidden:
+  
 
   Q1/Q1
   A1/A1
@@ -32,3 +32,5 @@
 -------------
 Nutanix Concepts Questions
 -------------
+
+
