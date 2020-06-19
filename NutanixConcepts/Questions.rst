@@ -48,7 +48,7 @@ Nutanix Concepts Questions
   A9/A9
   
   
-  Q1/Q10
+  Q10/Q10
   A10/A10
   
 
