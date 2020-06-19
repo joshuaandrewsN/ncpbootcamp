@@ -4,6 +4,7 @@
   :maxdepth: 2
   :caption: Sessions
   :name: _sessions
+  :includehidden:
   :hidden:
   
   NutanixConcepts/NutanixConcepts
