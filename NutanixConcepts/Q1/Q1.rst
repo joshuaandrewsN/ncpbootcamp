@@ -9,6 +9,6 @@ Question 1
 
 .. figure:: images/q1.png
 
-:doc:`Answer</A1>`
+:doc:`A1`
 
-:doc:`Back to the question list </Questions>`
+:doc:`Questions`
