@@ -37,21 +37,24 @@ Graphical interface (UI) and Command Line (CLI)
 
 - eCLI (Support)
 
-
+------------------
 **There are several methods to manage a Nutanix implementation**
+------------------
+
 
 - Graphical UI – Prism Element and Prism Central
- - Preferred method for management
- - Manage entire environment (when using Prism Central)
+
+  - Preferred method for management
+  - Manage entire environment (when using Prism Central)
 
 - Command Line Interfaces
- - nCLI – Get status and configure entities within a cluster
- - ACLI – Manage the Acropolis portion of the Nutanix environment
+
+  - nCLI – Get status and configure entities within a cluster
+  - ACLI – Manage the Acropolis portion of the Nutanix environment
 
 - Nutanix PowerShell Cmdlets – For use with Windows PowerShell
 
 - REST API – Exposes all GUI components for orchestration and automation
-
 
 
 -----------------------------------------------------
