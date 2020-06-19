@@ -78,13 +78,17 @@ Prism is the Nutanix UI used for administrative purposes and is broken down into
 
 Prism listens on ports 80 and 9440. If HTTP traffic comes in on port 80 it is redirected to HTTPS on port 9440.
 
-Interfaces:
+Interfaces
+""""""""""
+
  - HTML5 (PE/PC)
  - API (e.g. REST, Powershell, Java, Python)
  - CLI (aCLI, nCLI)
 
-**Configuration management:**
- - VM management:
+Configuration management:
+"""""""""""""""""""""""""
+
+- VM management:
   - VM Operations: Create, delete, update, power, pause/resume VMs, access via remote console
   - Resource Scheduling: Determine initial placement of VMs based on CPU and memory availability
   - Migration: Live migrate VMs across nodes
@@ -94,16 +98,16 @@ Interfaces:
   - Analytics: Monitor and report key metrics for both VMs and the infrastructure, including hypervisor and physical nodes
   - Remote Console: Remote access all types of virtual machines and operating systems to operate at the console level.
 
- - Host Management:
+- Host Management:
   - Host Profiles: Standardize configuration of hosts within a cluster based on user-provided information
   - Virtual Networking: Setup and configure VLAN-backed virtual networks spanning the cluster. Use built-in IP management
   - Upgrades: Non-Disruptive rolling Hypervisor upgrade in a Nutanix cluster
   - Maintenance Mode: Put hosts into maintenance mode for upgrades and host removals
   - Scaling: Easily add and remove nodes in minutes
 
- - Storage policy - compression, deduplication, erasure coding
- - Data protection – snapshots, backup, disaster recovery, replication
- - Monitoring – analytics, compliance, alarms, health status
+- Storage policy - compression, deduplication, erasure coding
+- Data protection – snapshots, backup, disaster recovery, replication
+- Monitoring – analytics, compliance, alarms, health status
 
 
 
