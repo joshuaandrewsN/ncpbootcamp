@@ -349,4 +349,4 @@ Nutanix ROBO Deployment and Operations
 Questions
 ++++++++++++++++++++++
 
-This is a link to the Questions : :doc:`_MANC_Questions`
+This is a link to the Questions : :doc:`Questions`
