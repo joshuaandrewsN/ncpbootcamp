@@ -258,9 +258,9 @@ Typical syntax is  <Verb>-NTNX<Noun>
 
 Examples:
 
-``move-NTNXVirtualMachine``
+- ``move-NTNXVirtualMachine``
 
-``get-NTNXAlert``
+- ``get-NTNXAlert``
 
 
 System administration tasks using PowerShell
@@ -291,8 +291,14 @@ HTTP requests to retrieve/edit entities in JSON format
 
 
 Allows an external system to interrogate a cluster using a script that makes REST API calls
+
+
 Uses HTTP requests (Get, Post, Put, and Delete) to retrieve info or make changes to the cluster
+
+
 Responses are coded in JSON format
+
+
 Prism Element includes a REST API Explorer
 
 
@@ -325,25 +331,37 @@ References
 
 Prism Element (Web Console) Guide
 
+https://portal.nutanix.com/page/documents/details/?targetId=Web-Console-Guide-Prism-v5_15:Web-Console-Guide-Prism-v5_15 
+
 .. figure:: images/webconsoleguide.png
 
 Prism Central Guide
+
+https://portal.nutanix.com/page/documents/details/?targetId=Prism-Central-Guide-Prism-v5_15:Prism-Central-Guide-Prism-v5_15
 
 .. figure:: images/prismcentralguide.png
 
 Command-Line Interface nCLI and aCLI
 
+https://portal.nutanix.com/page/documents/details/?targetId=Command-Ref-AOS-v5_15:Command-Ref-AOS-v5_15
+
 .. figure:: images/cliref.png
 
 Nutanix REST API Reference 
+
+https://portal.nutanix.com/page/documents/details/?targetId=API-Ref-AOS-v5_15:man-rest-api-v1-u.html
 
 .. figure:: images/NutanixRESTAPIReference.png
 
 Nutanix PowerShell Cmdlets
 
+https://portal.nutanix.com/page/documents/details/?targetId=API-Ref-AOS-v510:ps-ps-cmdlets-c.html 
+
 .. figure:: images/NutanixPowerShellCmdlets.png
 
 Nutanix ROBO Deployment and Operations
+
+https://portal.nutanix.com/page/documents/solutions/details/?targetId=BP-2083-ROBO-Deployment:BP-2083-ROBO-Deployment 
 
 .. figure:: images/robo.png
 
