@@ -109,6 +109,7 @@ Configuration management:
   - Maintenance Mode: Put hosts into maintenance mode for upgrades and host removals
   - Scaling: Easily add and remove nodes in minutes
 
+
 - Storage policy - compression, deduplication, erasure coding
 - Data protection – snapshots, backup, disaster recovery, replication
 - Monitoring – analytics, compliance, alarms, health status
