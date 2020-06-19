@@ -1,16 +1,16 @@
 .. Adding labels to the beginning of your lab is helpful for linking to the lab from other pages
 .. _Managing_a_Nutanix_Cluster_1:
 
--------------
+--------------------------
 Managing a Nutanix Cluster
--------------
+--------------------------
 
 Session 2
 
 -----------------------------------------------------
 
 Cluster Management
-++++++++
+++++++++++++++++++++++++
 
 Graphical interface (UI) and Command Line (CLI)
 
@@ -81,9 +81,9 @@ Prism listens on ports 80 and 9440. If HTTP traffic comes in on port 80 it is re
 Interfaces
 """"""""""
 
- - HTML5 (PE/PC)
- - API (e.g. REST, Powershell, Java, Python)
- - CLI (aCLI, nCLI)
+- HTML5 (PE/PC)
+- API (e.g. REST, Powershell, Java, Python)
+- CLI (aCLI, nCLI)
 
 Configuration management:
 """""""""""""""""""""""""
@@ -124,7 +124,7 @@ Configuration management:
 
 
 Prism Element
-++++++++
+++++++++++++++++++++++++
 
 Less than 10 secs to determine if there’s need for action
 
@@ -136,10 +136,11 @@ The Home dashboard displays cluster-level performance and usage statistics on th
 Prism is an end-to-end management solution for a virtualized datacenter, streamlining common hypervisor and VM tasks.
 
 Focus is on common operational tasks in four areas:
-Infrastructure management
-Operational insight
-Capacity planning
-Performance monitoring
+
+- Infrastructure management
+- Operational insight
+- Capacity planning
+- Performance monitoring
 
 
 
@@ -149,19 +150,22 @@ Performance monitoring
 
 
 Prism Element: Data Resiliency
-++++++++
+++++++++++++++++++++++++++++++++++++++++
 
 RF -> FT
 
 .. figure:: images/PrismElementDataResiliency.png
 
+RF2=FT1 and RF3=FT2
+
+FT0 (zero) means cluster still running, but no additional failures can be tolerated
 
 
 -----------------------------------------------------
 
 
 Command Line Interfaces
-++++++++
+++++++++++++++++++++++++
 
 References found on Portal
 
@@ -190,6 +194,93 @@ Remote system login (Downloaded nCLI): ncli -s management_ip_addr -u 'username' 
 General help: ncli> help
 Entity help (e.g. containers): ncli> container help
 Action help (e.g. creating a VM): ncli> vm create help
+
+
+
+
+-----------------------------------------------------
+
+
+nCLI Command Syntax
+++++++++++++++++++++++++
+
+Behaves like any Linux (no man pages)
+
+.. figure:: images/nCLICommandSyntax.png
+
+
+``ncli> entity action parameter1=value …``
+``container create name=<name> res-capacity=<#_in_GB>``
+
+
+
+-----------------------------------------------------
+
+
+aCLI Command Syntax
+++++++++++++++++++++++++
+
+acli: help <entity> ; ncli: <entity> help
+
+.. figure:: images/aCLICommandSyntax.png
+
+
+
+
+
+-----------------------------------------------------
+
+
+allssh vs. hostssh
+++++++++++++++++++++++++
+
+Always run commands from CVM
+
+.. figure:: images/allsshvshostssh.png
+
+
+
+
+-----------------------------------------------------
+
+
+PowerShell
+++++++++++++++++++++++++
+
+Always run commands from CVM
+
+.. figure:: images/powershell.png
+
+
+Windows PowerShell is an intuitive and interactive scripting language built on the .NET framework
+Nutanix PowerShell Cmdlets utilize a getter/setter methodology:
+Typical syntax is  <Verb>-NTNX<Noun>
+Examples:
+``move-NTNXVirtualMachine``
+``get-NTNXAlert``
+
+
+System administration tasks using PowerShell
+
+- Same API, different interface
+
+- Minimum requirements:
+  - PowerShell v2
+  - .NET framework 4
+
+- Downloaded Prism installer based on AOS version
+- Extra set of PowerShell cmdlets 
+
+``Get-NutanixCluster -Server cvm_ip_addr``
+
+
+
+
+
+
+
+
+
 
 
 
