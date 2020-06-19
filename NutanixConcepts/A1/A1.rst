@@ -10,3 +10,6 @@ Practice Exam Answer 1
 
 .. figure:: images/a1.png
 
+:doc:`Back to the Question 1</Q1>`
+
+:doc:`Back to the question list </Questions>`

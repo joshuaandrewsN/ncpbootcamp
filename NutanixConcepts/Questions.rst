@@ -1,5 +1,12 @@
 .. title:: NCP Bootcamp - Nutanix Concepts Questions
 
+.. _nutanix_concepts_questions:
+
+-------------
+Nutanix Concepts Questions
+-------------
+
+
 .. toctree::
   :maxdepth: 1
   :caption: Questions
@@ -27,10 +34,4 @@
   Q1/Q10
   A10/A10
   
-.. _nutanix_concepts_questions:
-
--------------
-Nutanix Concepts Questions
--------------
-
 
