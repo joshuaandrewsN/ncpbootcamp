@@ -1,5 +1,5 @@
 .. Adding labels to the beginning of your lab is helpful for linking to the lab from other pages
-.. _NC_question_1:
+.. _MANC_question_1:
 
 -------------
 Question 1

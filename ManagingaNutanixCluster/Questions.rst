@@ -1,15 +1,15 @@
-.. title:: NCP Bootcamp - Nutanix Concepts Questions
+.. title:: NCP Bootcamp - Managing a Nutanix Cluster Questions
 
-.. _nutanix_concepts_questions:
+.. _nutanix_Managing_a_Nutanix_Cluster_questions:
 
 -------------
-Nutanix Concepts Questions
+Managing a Nutanix Cluster Questions
 -------------
 
 
 .. toctree::
   :maxdepth: 1
-  :name: _NC_Questions
+  :name: _MANC_Questions
   
 
   Q1/Q1

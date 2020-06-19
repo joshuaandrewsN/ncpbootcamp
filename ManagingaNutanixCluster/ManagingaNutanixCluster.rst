@@ -276,14 +276,77 @@ System administration tasks using PowerShell
 
 
 
+-----------------------------------------------------
+
+
+REST API Explorer
+++++++++++++++++++++++++
+
+HTTP requests to retrieve/edit entities in JSON format  
+
+.. figure:: images/RESTAPIExplorer.png
+
+
+Allows an external system to interrogate a cluster using a script that makes REST API calls
+Uses HTTP requests (Get, Post, Put, and Delete) to retrieve info or make changes to the cluster
+Responses are coded in JSON format
+Prism Element includes a REST API Explorer
 
 
 
+-----------------------------------------------------
+
+REST API Explorer: Sample
++++++++++++++++++++++++++
+
+.. figure:: images/RESTAPIExplorerSample.png
+
+Allows an external system to interrogate a cluster using a script that makes REST API calls.
+Uses HTTP requests (Get, Post, Put, and Delete) to retrieve info or make changes to the cluster.
+Responses are coded in JSON format.
+
+Prism Element includes a REST API Explorer
+- Displays a list of cluster objects that can be managed by the API
+- Sample API calls can be made to see output
 
 
+Sample API script/call creates a Network (POST operation) on default distributed switch br0.
+- Specify content in the body in JSON format
+- Clicking the “Try It Out” button really means “execute” and cannot be undone for POST and DELETE operations.
 
 
+-----------------------------------------------------
 
+References
++++++++++++++++++++++++++
 
+Prism Element (Web Console) Guide
 
+.. figure:: images/webconsoleguide.png
 
+Prism Central Guide
+
+.. figure:: images/prismcentralguide.png
+
+Command-Line Interface nCLI and aCLI
+
+.. figure:: images/cliref.png
+
+Nutanix REST API Reference 
+
+.. figure:: images/NutanixRESTAPIReference.png
+
+Nutanix PowerShell Cmdlets
+
+.. figure:: images/NutanixPowerShellCmdlets.png
+
+Nutanix ROBO Deployment and Operations
+
+.. figure:: images/robo.png
+
+-----------------------------------------------------
+
+Questions
+++++++++++++++++++++++
+
+This is a link to the Questions : :doc:`Questions`
