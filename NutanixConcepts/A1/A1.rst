@@ -10,16 +10,10 @@ Answer 1
 
 .. figure:: images/a1.png
 
-Return to the :doc:`Question 1<Q1>`
+.. toctree::
+  :maxdepth: 1
+  :name: _NC_Questions
+  
 
-Return to the :doc:`question list <Questions>`
-
-
------------------------------------------------------
-
-Questions
-++++++++++++++++++++++
-
-This is a link to the Questions : :doc:`Questions`
-
-
+  Q1/Q1
+  Questions
