@@ -18,14 +18,23 @@ Graphical interface (UI) and Command Line (CLI)
 
 
 **Prism (HTML5 GUI)**
+
 - Prism (Element)
+
 - Prism Central (Pro)
+
 **Nutanix PowerShell**
+
 **REST API Explorer**
+
 **CLI** (SSH, e.g. PuTTY)
+
 - Bash (Linux shell)
+
 - nCLI  (Nutanix CLI)
+
 - aCLI (Acropolis CLI)
+
 - eCLI (Support)
 
 
