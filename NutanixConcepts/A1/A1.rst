@@ -1,6 +1,13 @@
 .. Adding labels to the beginning of your lab is helpful for linking to the lab from other pages
 .. _NC_answer_1:
 
+.. toctree::
+  :maxdepth: 1
+  :name: _NC_A1
+  
+  Q1/Q1
+  Questions
+
 -------------
 Answer 1
 -------------
@@ -10,10 +17,4 @@ Answer 1
 
 .. figure:: images/a1.png
 
-.. toctree::
-  :maxdepth: 1
-  :name: _NC_Questions
-  
 
-  Q1/Q1
-  Questions
