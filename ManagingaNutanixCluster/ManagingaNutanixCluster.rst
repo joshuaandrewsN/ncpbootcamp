@@ -40,3 +40,76 @@ Graphical interface (UI) and Command Line (CLI)
 
 -----------------------------------------------------
 
+
+Prism Architecture
+++++++++
+
+Prism Element, Prism Central
+
+.. figure:: images/PrismArchitecture.png
+
+
+
+
+-----------------------------------------------------
+
+
+Prism Element
+++++++++
+
+Less than 10 secs to determine if there’s need for action
+
+.. figure:: images/PrismElement.png
+
+
+-----------------------------------------------------
+
+
+Prism Element: Data Resiliency
+++++++++
+
+RF -> FT
+
+.. figure:: images/PrismElementDataResiliency.png
+
+
+
+-----------------------------------------------------
+
+
+Command Line Interfaces
+++++++++
+
+References found on Portal
+
+.. figure:: images/CommandLineInterfaces.png
+
+
+Run system administration commands against a Nutanix cluster from:
+
+- A local machine
+
+- Any CVM in the cluster
+
+Two CLIs:
+
+- nCLI – Get status and configure entities within a cluster
+
+- aCLI – Manage hosts, networks, snapshots and VMs the Acropolis portion of the Nutanix environment
+
+
+Acropolis 5.5 Command Reference Guide
+
+- Contains nCLI, aCLI and CVM commands
+
+Remote system login (Downloaded nCLI): ncli -s management_ip_addr -u 'username' -p 'user_password'
+
+General help: ncli> help
+Entity help (e.g. containers): ncli> container help
+Action help (e.g. creating a VM): ncli> vm create help
+
+
+
+
+
+
