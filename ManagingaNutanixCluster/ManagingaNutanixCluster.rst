@@ -255,8 +255,11 @@ Always run commands from CVM
 Windows PowerShell is an intuitive and interactive scripting language built on the .NET framework
 Nutanix PowerShell Cmdlets utilize a getter/setter methodology:
 Typical syntax is  <Verb>-NTNX<Noun>
+
 Examples:
+
 ``move-NTNXVirtualMachine``
+
 ``get-NTNXAlert``
 
 
