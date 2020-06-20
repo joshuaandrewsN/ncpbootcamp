@@ -1,9 +1,9 @@
-.. title:: NCP Bootcamp - Nutanix Concepts Questions
+.. title:: NCP Bootcamp - Securing a Nutanix Clusters Questions
 
-.. _nutanix_concepts_questions:
+.. _Securing_a_Nutanix_Cluster_questions:
 
 --------------------------
-Nutanix Concepts Questions
+Securing a Nutanix Cluster Questions
 --------------------------
 
 
