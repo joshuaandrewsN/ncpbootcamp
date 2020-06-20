@@ -1,51 +1,76 @@
+.. title:: NCP Bootcamp - Nutanix Networking
+
 .. Adding labels to the beginning of your lab is helpful for linking to the lab from other pages
-.. _example_lab_1:
+.. _nutanix_networking_1:
 
 -------------
-Networking
+Nutanix Networking
 -------------
-
-Overview
-++++++++
-
-Here is where we provide a high level description of what the user will be doing during this module. We want to frame why this content is relevant to an SE/Services Consultant and what we expect them to understand after completing the lab.
-
-Using Text and Figures
-++++++++++++++++++++++
-
-Label sections appropriately, see existing labs if further guidance is required. Section titles should begin with present tense verbs to queue what is being done in each section. Use consistent markup for titles, subtitles, sub-subtitles, etc. The markup in the example can serve as a guide but other characters can be used within a given workshop, as long as they are consistent. Other than lab titles (that need to follow a certain linear progression) avoid numbering steps.
-
-Below are examples of standards we should strive to maintain in writing lab guides. *Italics* is used to indicate when information of values external to the lab guide are referenced. **Bold** is used to reference words and phrases in the UI. **Bold** should also be used to highlight the key name in lists containing key/value pairs as shown below. The **>** character is used to show a reasonable progression of clicks, such as traversing a drop down menu. When appropriate, try to consolidate short, simple tasks. ``Literals`` should be used for file paths.
-
-Actions should end with a period, or optionally with a colon as in the case of displaying a list of fields that need to be populated. Keep the language consistent: open, click/select, fill out, log in, and execute.
-
-Use the **figure** directive to include images in your lab guide or appendix. Image files should be included within the Git repository, within an **images** subdirectory within each lab subdirectory.
+ 
+Session 4
 
 -----------------------------------------------------
 
-Open \https://<*NUTANIX-CLUSTER-IP*>:9440 in your browser to access Prism. Log in as a user with administrative priveleges.
+Network Configuration
+++++++++++++++++++++++++++++++++
 
-.. figure:: images/1.png
+.. figure:: images/networkconfiguration.png
 
-Click **Network Config > User VM Interfaces > + Create Network**.
+Eth2: Network segmentation is designed to separate management traffic from backplane (storage and CVM) traffic 
 
-.. figure:: images/2.png
+Separates storage traffic from routable management traffic for security purposes
 
-Select **Enable IP Address Management** and fill out the following fields:
+Separate virtual networks are created for each traffic type
 
-  - **Name** - VM VLAN
-  - **VLAN ID** - *Refer to your Environment Details Worksheet*
-  - **Network IP Address/Prefix Length** - *Refer to your Environment Details Worksheet*
-  - **Gateway IP Address** - *Refer to your Environment Details Worksheet*
-  - **Domain Name Servers** - *Refer to your Environment Details Worksheet*
 
-.. figure:: images/3.png
+-----------------------------------------------------
 
-Click **Submit > Save**.
 
-Takeaways
-+++++++++
 
-- Here is where we summarize any key takeaways from the module
-- Such as how a Nutanix feature used in the lab delivers value
-- Or highlighting a differentiator
+VM Network: Enabling IPAM
+++++++++++++++++++++++++++++++++
+
+.. figure:: images/EnablingIPAM.png
+
+
+Enabling IPAM on a User VM Network.
+
+During the VM Network creation process, if you decide to enable IPAM, you will be prompted to provide an IP Pool start and end address
+
+Provide the required values and click Submit
+
+
+
+-----------------------------------------------------
+
+
+
+Prism Network Dashboard
+++++++++++++++++++++++++++++++++
+
+.. figure:: images/PrismNetworkDashboard.png
+
+
+**Providing Network Connectivity to VMs**
+
+
+- Two different ways to provide VM connectivity: managed and unmanaged networks
+  - With *unmanaged networks*, VMs get direct connection to their VLAN of choice
+  - With *managed networks*, AHV (Acropolis master) can perform IP address management (IPAM) for VMs, handing out IP addresses via configurable DHCP pools
+  
+**While a physical server connects to a physical network, a VM connects to a virtual network.**
+
+- In the case of AHV, it supports unmanaged and managed virtual networks.
+  - An unmanaged network is simply a VLAN.
+- A managed network is a VLAN plus IPAM.
+  - IPAM stands for IP address management.
+   - It is the cluster capability to function like a DHCP server to assign an IP address to a VM that sits on the managed network.
+- You can create a virtual network from the Prism web console, nCLI, or the Nutanix REST API.
+- Tech Topx Video walks through AHV networking concepts, including both CLI and Prism examples:  https://youtube/pxQGCXNoD9U
+
+*IPAM*
+- CVM administrative L3 process to track device IP addresses
+- Creates associations between interface’s MAC address and IP addresses
+- Requires predefined pool of IP addresses for IPAM DHCP server
+
+
