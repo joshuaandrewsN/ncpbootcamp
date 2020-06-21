@@ -1,15 +1,15 @@
-.. title:: NCP Bootcamp - Nutanix Concepts Questions
+.. title:: NCP Bootcamp - Nutanix Networking Questions
 
-.. _nutanix_concepts_questions:
+.. _nutanix_networking_questions:
 
 --------------------------
-Nutanix Concepts Questions
+Nutanix Networking Questions
 --------------------------
 
 
 .. toctree::
   :maxdepth: 1
-  :name: _NC_Questions
+  :name: _NN_Questions
   
 
   Q1/Q1
