@@ -1,15 +1,15 @@
-.. title:: NCP Bootcamp - Nutanix Concepts Questions
+.. title:: NCP Bootcamp - Health Monitoring and Alerts Questions
 
-.. _nutanix_concepts_questions:
+.. _Health_Monitoring_and_Alerts_questions:
 
 --------------------------
-Nutanix Concepts Questions
+Nutanix Health Monitoring and Alerts
 --------------------------
 
 
 .. toctree::
   :maxdepth: 1
-  :name: _NC_Questions
+  :name: _HMA_Questions
   
 
   Q1/Q1
@@ -39,16 +39,5 @@ Nutanix Concepts Questions
   Q7/Q7
   A7/A7
   
-  
-  Q8/Q8
-  A8/A8
-  
-  
-  Q9/Q9
-  A9/A9
-  
-  
-  Q10/Q10
-  A10/A10
   
 

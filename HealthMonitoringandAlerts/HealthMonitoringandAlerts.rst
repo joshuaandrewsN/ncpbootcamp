@@ -31,9 +31,9 @@ Feature **enabled** by default
   - Nutanix Processes and Controller VM Information
   - Hypervisor Details such as Type and Version
   
--When Pulse is enabled, it sends a message once every 24 hours to a Nutanix support server by default.  Pulse also collects the most important data-like system-level statistics and configuration information more frequently to automatically detect issues and help make troubleshooting easier.  With this information, Nutanix support can apply advanced analytics to optimize your implementation and to address potential problems.
+- When Pulse is enabled, it sends a message once every 24 hours to a Nutanix support server by default.  Pulse also collects the most important data-like system-level statistics and configuration information more frequently to automatically detect issues and help make troubleshooting easier.  With this information, Nutanix support can apply advanced analytics to optimize your implementation and to address potential problems.
 
--Pulse is enabled by default.  You can enable (or disable) Pulse at any time.  
+- Pulse is enabled by default.  You can enable (or disable) Pulse at any time.  
 
 - Pulse sends messages through ports 80/8443/443 or through your mail server.
 

@@ -13,5 +13,5 @@ Answer 7
 
 Back to the Question: :ref:`HMA_question_7`
 
-Next Question: :ref:`HMA_question_8`
+
 
