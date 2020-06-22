@@ -9,4 +9,7 @@ Answer 9
 
 .. figure:: images/a9.png
 
+Back to the Question: :ref:`MANC_question_9`
+
+Next Question: :ref:`MANC_question_10`
 

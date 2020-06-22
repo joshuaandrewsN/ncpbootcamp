@@ -10,3 +10,9 @@ Answer 1
 .. figure:: images/a1.png
 
 
+Back to the Question: :ref:`MANC_question_1`
+
+Next Question: :ref:`MANC_question_2`
+
+
+

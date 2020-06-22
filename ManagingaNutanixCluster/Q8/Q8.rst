@@ -8,3 +8,7 @@ Question 8
 
 
 .. figure:: images/q8.png
+
+
+
+Answer: :ref:`MANC_answer_8`

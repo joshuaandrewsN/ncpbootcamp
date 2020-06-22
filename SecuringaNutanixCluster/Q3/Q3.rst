@@ -8,3 +8,5 @@ Question 3
 
 
 .. figure:: images/q3.png
+
+Answer: :ref:`SEC_answer_3`

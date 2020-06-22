@@ -10,3 +10,7 @@ Answer 3
 .. figure:: images/a3.png
 
 
+Back to the Question: :ref:`MANC_question_3`
+
+Next Question: :ref:`MANC_question_4`
+

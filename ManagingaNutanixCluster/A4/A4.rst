@@ -10,3 +10,8 @@ Answer 4
 .. figure:: images/a4.png
 
 
+Back to the Question: :ref:`MANC_question_4`
+
+Next Question: :ref:`MANC_question_5`
+
+

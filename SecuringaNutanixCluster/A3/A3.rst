@@ -1,5 +1,5 @@
 .. Adding labels to the beginning of your lab is helpful for linking to the lab from other pages
-.. _NC_answer_3:
+.. _SEC_answer_3:
 
 -------------
 Answer 3
@@ -9,4 +9,8 @@ Answer 3
 
 .. figure:: images/a3.png
 
+
+Back to the Question: :ref:`SEC_question_3`
+
+Next Question: :ref:`SEC_question_4`
 

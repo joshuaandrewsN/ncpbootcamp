@@ -9,4 +9,8 @@ Answer 5
 
 .. figure:: images/a5.png
 
+Back to the Question: :ref:`MANC_question_5`
+
+Next Question: :ref:`MANC_question_6`
+
 
