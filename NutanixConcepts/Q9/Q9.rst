@@ -8,3 +8,10 @@ Question 9
 
 
 .. figure:: images/q9.png
+
+
+
+
+Answer: :ref:`NC_answer_9`
+
+

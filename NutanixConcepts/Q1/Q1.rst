@@ -8,3 +8,8 @@ Question 1
 
 
 .. figure:: images/q1.png
+
+
+
+Answer: :ref:`NC_answer_1`
+

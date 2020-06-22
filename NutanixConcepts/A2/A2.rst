@@ -10,3 +10,8 @@ Answer 2
 .. figure:: images/a2.png
 
 
+
+Back to the Question: :ref:`NC_question_2`
+
+Next Question: :ref:`NC_question_3`
+

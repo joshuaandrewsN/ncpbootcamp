@@ -48,7 +48,7 @@ When creating AHV-based VMs
 .. figure:: images/DiskandBusType.png
 
 
-**Default disk types: **
+**Default disk types:**
 
 - TYPE = DISK 	: SCSI
 - TYPE = CDROM	: IDE

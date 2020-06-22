@@ -10,3 +10,9 @@ Answer 9
 .. figure:: images/a9.png
 
 
+
+Back to the Question: :ref:`NC_question_9`
+
+Next Question: :ref:`NC_question_10`
+
+
