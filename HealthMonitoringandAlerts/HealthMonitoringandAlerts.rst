@@ -1,51 +1,133 @@
 .. Adding labels to the beginning of your lab is helpful for linking to the lab from other pages
-.. _example_lab_1:
 
--------------
+.. title:: NCP Bootcamp - Health Monitoring and Alerts
+
+.. _Health_Monitoring_and_Alerts_1:
+
+
+---------------------------------------
 Health Monitoring and Alerts
--------------
+---------------------------------------
 
-Overview
-++++++++
-
-Here is where we provide a high level description of what the user will be doing during this module. We want to frame why this content is relevant to an SE/Services Consultant and what we expect them to understand after completing the lab.
-
-Using Text and Figures
-++++++++++++++++++++++
-
-Label sections appropriately, see existing labs if further guidance is required. Section titles should begin with present tense verbs to queue what is being done in each section. Use consistent markup for titles, subtitles, sub-subtitles, etc. The markup in the example can serve as a guide but other characters can be used within a given workshop, as long as they are consistent. Other than lab titles (that need to follow a certain linear progression) avoid numbering steps.
-
-Below are examples of standards we should strive to maintain in writing lab guides. *Italics* is used to indicate when information of values external to the lab guide are referenced. **Bold** is used to reference words and phrases in the UI. **Bold** should also be used to highlight the key name in lists containing key/value pairs as shown below. The **>** character is used to show a reasonable progression of clicks, such as traversing a drop down menu. When appropriate, try to consolidate short, simple tasks. ``Literals`` should be used for file paths.
-
-Actions should end with a period, or optionally with a colon as in the case of displaying a list of fields that need to be populated. Keep the language consistent: open, click/select, fill out, log in, and execute.
-
-Use the **figure** directive to include images in your lab guide or appendix. Image files should be included within the Git repository, within an **images** subdirectory within each lab subdirectory.
+Session 6
 
 -----------------------------------------------------
 
-Open \https://<*NUTANIX-CLUSTER-IP*>:9440 in your browser to access Prism. Log in as a user with administrative priveleges.
+Pulse
+++++++++++++++++++++++++++++++++
 
-.. figure:: images/1.png
+Feature **enabled** by default
 
-Click **Network Config > User VM Interfaces > + Create Network**.
+.. figure:: images/pulse.png
 
-.. figure:: images/2.png
 
-Select **Enable IP Address Management** and fill out the following fields:
 
-  - **Name** - VM VLAN
-  - **VLAN ID** - *Refer to your Environment Details Worksheet*
-  - **Network IP Address/Prefix Length** - *Refer to your Environment Details Worksheet*
-  - **Gateway IP Address** - *Refer to your Environment Details Worksheet*
-  - **Domain Name Servers** - *Refer to your Environment Details Worksheet*
+- Pulse provides diagnostic system data to Nutanix support teams to deliver proactive, context-aware support for Nutanix solutions. The Nutanix cluster automatically and unobtrusively collects this information with no effect on system performance.  Pulse shares only basic system-level information necessary for monitoring the health and status of a Nutanix cluster.
 
-.. figure:: images/3.png
+- Information includes:
 
-Click **Submit > Save**.
+  - System Alerts
+  - Current Nutanix Software Version
+  - Nutanix Processes and Controller VM Information
+  - Hypervisor Details such as Type and Version
+  
+-When Pulse is enabled, it sends a message once every 24 hours to a Nutanix support server by default.  Pulse also collects the most important data-like system-level statistics and configuration information more frequently to automatically detect issues and help make troubleshooting easier.  With this information, Nutanix support can apply advanced analytics to optimize your implementation and to address potential problems.
 
-Takeaways
-+++++++++
+-Pulse is enabled by default.  You can enable (or disable) Pulse at any time.  
 
-- Here is where we summarize any key takeaways from the module
-- Such as how a Nutanix feature used in the lab delivers value
-- Or highlighting a differentiator
+- Pulse sends messages through ports 80/8443/443 or through your mail server.
+
+
+
+-----------------------------------------------------
+
+Health Checks
+++++++++++++++++++++++++++++++++
+
+GUI / CLI use same command set
+
+.. figure:: images/healthchecks.png
+
+
+
+-----------------------------------------------------
+
+Customizable Thresholds
+++++++++++++++++++++++++++++++++
+
+Health dashboard > Actions > Manage Checks
+
+.. figure:: images/Thresholds.png
+
+
+
+-----------------------------------------------------
+
+Analysis Dashboard
+++++++++++++++++++++++++++++++++
+
+Create Metric and Entity charts
+
+.. figure:: images/Analysis.png
+
+**Analysis Dashboard**
+
+- The Analysis dashboard allows you to create charts that can monitor dynamically a variety of performance measures.
+
+  - To view the Analysis dashboard:
+  
+    - Select Analysis from the drop-down list on the far left of the main menu.
+	
+- The Analysis dashboard includes 3 sections:
+
+  - Chart Definitions
+
+    - The pane on the left lists the charts that can be run.
+
+    - There are 2 types of charts:
+
+      - A metric chart monitors a single metric for one or more entities.
+      - An entity chart monitors one or more metrics for a single entity. 
+
+    - Chart Monitors
+	
+      - When a chart definition is checked, the monitor displays in the middle pane.
+
+        - The Range Picker field at the top sets the time interval for the monitors.
+
+      - An Alerts & Events monitor always displays first.
+
+    - Alerts and Events
+
+      - Any alerts and events that occur during the interval specified by the time line in the middle pane display in the pane on the right.
+
+
+
+
+
+
+-----------------------------------------------------
+
+References
+++++++++++++++++++++++
+
+
+`Health Monitoring <https://portal.nutanix.com/page/documents/details/?targetId=Prism-Central-Guide-Prism-v5_17:mul-alerts-management-pc-c.html>`_
+
+.. figure:: images/healthmonitoring.png
+
+
+
+`Alert and Event Monitoring <https://portal.nutanix.com/page/documents/details/?targetId=Web-Console-Guide-Prism-v5_17:wc-health-management-wc-c.html>`_
+
+.. figure:: images/EventMonitoring.png
+
+
+
+
+-----------------------------------------------------
+
+Questions
+++++++++++++++++++++++
+
+This is a link to the Questions : :doc:`Questions`
