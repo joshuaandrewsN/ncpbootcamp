@@ -112,8 +112,9 @@ vSwitch Implementation (AHV)
 - While a physical network sits on a physical switch, a virtual network sits on a virtual switch.
 
   - Two virtual switches are created by default:
-  
-   - A Linux bridge (virbr0) and
+
+   - A Linux bridge (virbr0)
+
    - An open vSwitch bridge (br0).
    
 - The Linux bridge is a private virtual switch.
