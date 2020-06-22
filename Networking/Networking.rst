@@ -113,21 +113,21 @@ vSwitch Implementation (AHV)
 
   - Two virtual switches are created by default:
 
-   - A Linux bridge (virbr0)
+    - A Linux bridge (virbr0)
 
-   - An open vSwitch bridge (br0).
+    - An open vSwitch bridge (br0).
    
 - The Linux bridge is a private virtual switch.
 
   - It has no physical adapter and is dedicated to the communication between the CVM and the internal interface on the AHV bridge called virbr0.
 
-   - This virbr0 is preconfigured with a private IP address 192.168.5.1.
+    - This virbr0 is preconfigured with a private IP address 192.168.5.1.
 
 - The open vSwitch br0 is a public virtual switch.
 
   - It has one or more physical adapters attached to the network switches.
 
-   - CVMs talk to one another across this open vSwitch.
+    - CVMs talk to one another across this open vSwitch.
 
   - Also, VMs talk to one another and also with the physical network through this open vSwitch.
 
