@@ -88,6 +88,7 @@ Network Visualization
 
 
 **Network Visualization in Prism – Specific Host**
+
 *Host NTNX-block_ID-B Details*
 
 - Note: Some newer Intel Gigabit NICs have a hardware limitation that means the maximum MTU they can support is 8996 (instead of 9000).
@@ -150,12 +151,19 @@ Networking Best Practices (AHV)
 
 
 **Network Best Practices (AHV)**
+
 - Add the CVM and the Acropolis hypervisor to the same VLAN.
+
   - Do not add any other device, including guest VMs, to the VLAN to which the CVM and hypervisor host are assigned.
+  
 - Aggregate the 10GbE interfaces on the physical host to an OVS bond on the default OVS bridge br0 and trunk these interfaces on the physical switch.
+
   - Do not include 1GbE interfaces; keep those detached or configure them on additional bridge.
+  
 - Add all the nodes that belong to a given cluster to the same Layer 2 network segment.
+
 - Do not remove the CVM from either the OVS bridge br0 or the native Linux bridge virbr0.
+
   - Native Linux bridge virbr0: Connects CVM with AHV and internal storage.
   - OVS bridge br0: Connects (C)VMs with AHV and 1GbE/10GbE interfaces (to public network through external physical switch).
 
