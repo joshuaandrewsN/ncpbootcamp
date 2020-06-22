@@ -61,13 +61,16 @@ Prism Network Dashboard
 - In the case of AHV, it supports unmanaged and managed virtual networks.
   - An unmanaged network is simply a VLAN.
 - A managed network is a VLAN plus IPAM.
+
   - IPAM stands for IP address management.
+  
     - It is the cluster capability to function like a DHCP server to assign an IP address to a VM that sits on the managed network.
    
 - You can create a virtual network from the Prism web console, nCLI, or the Nutanix REST API.
 - Tech Topx Video walks through AHV networking concepts, including both CLI and Prism examples:  https://youtube/pxQGCXNoD9U
 
 *IPAM*
+
 - CVM administrative L3 process to track device IP addresses
 - Creates associations between interface’s MAC address and IP addresses
 - Requires predefined pool of IP addresses for IPAM DHCP server
