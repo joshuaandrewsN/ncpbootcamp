@@ -49,6 +49,7 @@ When creating AHV-based VMs
 
 
 **Default disk types: **
+
 - TYPE = DISK 	: SCSI
 - TYPE = CDROM	: IDE
 
@@ -72,8 +73,8 @@ When creating AHV-based VMs
   c. Bus Type:  SCSI (default)
   d. ADSF Path field: Enter a forward slash (“/”) followed by the container name the VM was migrated to (select from list).
 
-    - Enter a forward slash again, this time followed by the VM name (select from list).
-    - Once again, enter a slash and select the -flat.vmdk file for the VM (single option).
+  - Enter a forward slash again, this time followed by the VM name (select from list).
+  - Once again, enter a slash and select the -flat.vmdk file for the VM (single option).
 
   e. Size (GIB): Enter the size of the disk (freeform).
 
