@@ -12,5 +12,5 @@ Answer 7
 
 Back to the Question: :ref:`VMCM_question_7`
 
-Next Question: :ref:`VMCM_question_8`
+
 
