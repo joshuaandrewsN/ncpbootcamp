@@ -1,51 +1,150 @@
 .. Adding labels to the beginning of your lab is helpful for linking to the lab from other pages
-.. _example_lab_1:
+.. _VM_Creation_and_Management_1:
 
--------------
+
+. title:: NCP Bootcamp - VM Creation and Management
+
+--------------------------
 VM Creation and Management
--------------
-
-Overview
-++++++++
-
-Here is where we provide a high level description of what the user will be doing during this module. We want to frame why this content is relevant to an SE/Services Consultant and what we expect them to understand after completing the lab.
-
-Using Text and Figures
-++++++++++++++++++++++
-
-Label sections appropriately, see existing labs if further guidance is required. Section titles should begin with present tense verbs to queue what is being done in each section. Use consistent markup for titles, subtitles, sub-subtitles, etc. The markup in the example can serve as a guide but other characters can be used within a given workshop, as long as they are consistent. Other than lab titles (that need to follow a certain linear progression) avoid numbering steps.
-
-Below are examples of standards we should strive to maintain in writing lab guides. *Italics* is used to indicate when information of values external to the lab guide are referenced. **Bold** is used to reference words and phrases in the UI. **Bold** should also be used to highlight the key name in lists containing key/value pairs as shown below. The **>** character is used to show a reasonable progression of clicks, such as traversing a drop down menu. When appropriate, try to consolidate short, simple tasks. ``Literals`` should be used for file paths.
-
-Actions should end with a period, or optionally with a colon as in the case of displaying a list of fields that need to be populated. Keep the language consistent: open, click/select, fill out, log in, and execute.
-
-Use the **figure** directive to include images in your lab guide or appendix. Image files should be included within the Git repository, within an **images** subdirectory within each lab subdirectory.
+--------------------------
+ 
+Session 5
 
 -----------------------------------------------------
 
-Open \https://<*NUTANIX-CLUSTER-IP*>:9440 in your browser to access Prism. Log in as a user with administrative priveleges.
+Uploading an Image
+++++++++++++++++++++++++++++++++
 
-.. figure:: images/1.png
+.. figure:: images/UploadinganImage.png
 
-Click **Network Config > User VM Interfaces > + Create Network**.
 
-.. figure:: images/2.png
 
-Select **Enable IP Address Management** and fill out the following fields:
+-----------------------------------------------------
 
-  - **Name** - VM VLAN
-  - **VLAN ID** - *Refer to your Environment Details Worksheet*
-  - **Network IP Address/Prefix Length** - *Refer to your Environment Details Worksheet*
-  - **Gateway IP Address** - *Refer to your Environment Details Worksheet*
-  - **Domain Name Servers** - *Refer to your Environment Details Worksheet*
 
-.. figure:: images/3.png
+Virtual IO Drivers
+++++++++++++++++++++++++++++++++
 
-Click **Submit > Save**.
+.. figure:: images/VirtualIODrivers.png
 
-Takeaways
-+++++++++
+- Enables Windows 64-bit VMs to recognize AHV virtual hardware
+- Contains Network, Storage and Ballooning driver (for perf data collection)
+- If not added as ISO (CDROM), Windows VM may not boot
+- Most modern Linux distributions already include drivers
 
-- Here is where we summarize any key takeaways from the module
-- Such as how a Nutanix feature used in the lab delivers value
-- Or highlighting a differentiator
+- Nutanix Support Portal: 
+
+  - Downloads > Tools and Firmware
+
+
+-----------------------------------------------------
+
+
+Disk and Bus Type
+++++++++++++++++++++++++++++++++
+
+When creating AHV-based VMs
+
+.. figure:: images/DiskandBusType.png
+
+
+**Default disk types: **
+- TYPE = DISK 	: SCSI
+- TYPE = CDROM	: IDE
+
+**Use SATA and PCI for older O.S. that don’t support SCSI and/or IDE**
+
+- SCSI : Max. # of disks attached to a VM is 256
+- PCI : Max. # of disks attached to a VM is 6
+- IDE : Max. # of disks attached to a VM is 4
+
+
+**Create New VM in AHV from –flat.vmdk**
+
+1. Click the +Create VM button on the Prism Storage dashboard.
+2. Enter the same AHV VM details (vCPUs, cores per CPU, Memory, disk size) used to create, or collected from, the ESXi VM that was migrated.
+3. Within the VM Create window, click Add new disk.
+
+  - The Add Disk dialog box displays.
+
+    a. TYPE: DISK
+    b. Operation: Clone From ADFS File (which means pull from Container, not Image Services)
+    c. Bus Type:  SCSI (default)
+    d. ADSF Path field: Enter a forward slash (“/”) followed by the container name the VM was migrated to (select from list).
+
+      - Enter a forward slash again, this time followed by the VM name (select from list).
+      - Once again, enter a slash and select the -flat.vmdk file for the VM (single option).
+
+    e. Size (GIB): Enter the size of the disk (freeform).
+
+4. Click Add.
+5. Scroll down within the VM Create window and click the Add New NIC button to provide the VM with a network. After selecting a network, click Add.
+6. Optionally, to verify that the VM has migrated successfully, click the VM dashboard Table tab, select the VM, click Power On, and click Launch Console.
+
+
+-----------------------------------------------------
+
+
+Nutanix Guest Tools (NGT) Bundle
+++++++++++++++++++++++++++++++++
+
+Enable advanced functionalities on VM
+
+.. figure:: images/EnableadvancedfunctionalitiesonVM.png
+
+
+**Nutanix Guest Tools Overview**
+
+Nutanix guest tools (NGT) is a software bundle that you can install in a guest virtual machine (Microsoft Windows or Linux) to enable advanced functionality. It consists of the following components:
+
+- Nutanix Guest Agent (NGA) service. Communicates with the Nutanix Controller VM.
+- Self Service Restore (SSR) aka File Level Restore (FLR) CLI. Performs self-service file-level recovery from the VM snapshots. Optional when installing NGT
+- Nutanix VM Mobility Drivers. Provides drivers for VM migration between ESXi, hyperv or cloud and AHV, in-place hypervisor conversion, and cross-hypervisor disaster recovery (CH-DR) features.
+- Application-consistent snapshot for Linux VMs. Supports application-consistent snapshots for Linux VMs by running specific scripts on VM quiesce.
+- VSS requestor and hardware provider for Windows VMs. Enables application-consistent snapshots of AHV or ESXi Windows VMs.
+
+To install NGT:
+
+  1. Select a VM, then click the Enable Nutanix Guest Tools check box.
+  2. Select Mount Nutanix Guest Tools to mount the NGT ISO.
+  3. Click the Self Service Restore (SSR) check box to add SSR capabilities to a Windows VM. (SSR allows a user to mount an earlier snapshot of the vm as a drive and access its files)
+  4. Click the Enable Nutanix Guest Tools check box. The VSS and application-consistent snapshot feature is enabled by default.
+  5. Click Submit.
+
+
+
+
+-----------------------------------------------------
+
+
+References
+++++++++++++++++++++++
+
+
+
+`Virtual Machine Management (AHV Guide) <https://portal.nutanix.com/page/documents/details/?targetId=AHV-Admin-Guide-v5_15:ahv-vm-management-intro-c.html>`_
+
+.. figure:: images/VirtualMachineManagement.png
+
+`Virtual Machine Management (Prism Guide) <https://portal.nutanix.com/page/documents/details/?targetId=Web-Console-Guide-Prism-v5_15:Web-Console-Guide-Prism-v5_15-Guide-Prism-v510>`_
+
+.. figure:: images/PrismGuide.png
+
+`Data Protection for AHV-Based VMs <https://www.nutanix.com/go/vm-data-protection-ahv >`_
+
+.. figure:: images/vm-data-protection-ahv.png
+
+`AHV Best Practices Guide <https://www.nutanix.com/go/ahv-best-practices-guide>`_
+
+.. figure:: images/AHVBestPracticesGuide.png
+
+
+-----------------------------------------------------
+
+Questions
+++++++++++++++++++++++
+
+This is a link to the Questions : :doc:`Questions`
+
+
+
