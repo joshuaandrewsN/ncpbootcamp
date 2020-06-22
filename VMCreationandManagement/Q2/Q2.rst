@@ -8,3 +8,6 @@ Question 2
 
 
 .. figure:: images/q2.png
+
+
+Answer: :ref:`VMCM_answer_2`

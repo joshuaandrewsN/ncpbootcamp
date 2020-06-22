@@ -10,3 +10,7 @@ Answer 4
 .. figure:: images/a4.png
 
 
+Back to the Question: :ref:`VMCM_question_4`
+
+Next Question: :ref:`VMCM_question_5`
+

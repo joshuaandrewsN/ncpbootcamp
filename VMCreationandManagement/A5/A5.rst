@@ -10,3 +10,8 @@ Answer 5
 .. figure:: images/a5.png
 
 
+Back to the Question: :ref:`VMCM_question_5`
+
+Next Question: :ref:`VMCM_question_6`
+
+

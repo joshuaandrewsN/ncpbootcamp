@@ -9,4 +9,8 @@ Answer 6
 
 .. figure:: images/a6.png
 
+Back to the Question: :ref:`VMCM_question_6`
+
+Next Question: :ref:`VMCM_question_7`
+
 
