@@ -111,21 +111,26 @@ vSwitch Implementation (AHV)
 - While a physical network sits on a physical switch, a virtual network sits on a virtual switch.
 
   - Two virtual switches are created by default:
+  
    - A Linux bridge (virbr0) and
    - An open vSwitch bridge (br0).
    
 - The Linux bridge is a private virtual switch.
 
   - It has no physical adapter and is dedicated to the communication between the CVM and the internal interface on the AHV bridge called virbr0.
+  
    - This virbr0 is preconfigured with a private IP address 192.168.5.1.
 
 - The open vSwitch br0 is a public virtual switch.
 
   - It has one or more physical adapters attached to the network switches.
+  
    - CVMs talk to one another across this open vSwitch.
+   
   - Also, VMs talk to one another and also with the physical network through this open vSwitch.
 
 - Since br0 has similar configuration on all AHV hosts, these br0 collectively appear like a single distributed virtual switch.
+
   - Also when a virtual network is created from the Prism web console or ACLI, it is created on all AHV hosts.
 
 Each AHV server maintains an OVS instance, and all OVS instances combine to form a single logical switch.
