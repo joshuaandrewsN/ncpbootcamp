@@ -178,19 +178,22 @@ Load Balancing Modes
 
 .. figure:: images/LoadBalancingModes.png
 
-Active-Passive
+**Active-Passive**
+
 - Provides only fault tolerance
 - No special hardware required (physical switches available for redundancy)
 - CVM and guest VM follow same activity path
 - Only one NIC actively used for traffic
 - No traffic load balancing
 
-Load Balancing Modes: Balance-SLB
+**Load Balancing Modes: Balance-SLB**
+
 - In this mode, all links are active. Given two 10GbE ports on the open vSwitch, the open vSwitch has 20 Gbps of network bandwidth.
 - This mode provides load balancing based on the VM MAC address.
 - Due to this pinning behavior, a VM’s virtual interface is limited to 10 Gbps of network bandwidth.
 
-Load Balancing Modes: Balance-TCP
+**Load Balancing Modes: Balance-TCP**
+
 - Balance-TCP (Transmission Control Protocol – TCP 80/443)
 - Preferred load balancing mode for aggregate throughput
 - All links are active
