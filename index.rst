@@ -9,16 +9,16 @@
   
   1. Nutanix Concepts <NutanixConcepts/NutanixConcepts>
   2. Managing a Nutanix Cluster <ManagingaNutanixCluster/ManagingaNutanixCluster>
-  SecuringaNutanixCluster/SecuringaNutanixCluster
-  Networking/Networking
-  VMCreationandManagement/VMCreationandManagement
-  HealthMonitoringandAlerts/HealthMonitoringandAlerts
-  DistributedStorageFabric/DistributedStorageFabric
-  AcropolisStorageServices/AcropolisStorageServices
-  DataResiliancy/DataResiliancy
-  DataProtection/DataProtection
-  PrismCentral/PrismCentral
-  ClusterMaintenenceandLifecycleOperations/ClusterMaintenenceandLifecycleOperations
+  3. Securing a Nutanix Cluster <SecuringaNutanixCluster/SecuringaNutanixCluster>
+  4. Networking <Networking/Networking>
+  5. VM Creation and Management <VMCreationandManagement/VMCreationandManagement>
+  6. Health Monitoring and Alerts <HealthMonitoringandAlerts/HealthMonitoringandAlerts>
+  7. Distributed Storage Fabric <DistributedStorageFabric/DistributedStorageFabric>
+  8. Acropolis Storage Services <AcropolisStorageServices/AcropolisStorageServices>
+  9. Data Resiliancy <DataResiliancy/DataResiliancy>
+  10. Data Protection <DataProtection/DataProtection>
+  11. Prism Central <PrismCentral/PrismCentral>
+  12. Cluster Maintenence and Lifecycle Operations <ClusterMaintenenceandLifecycleOperations/ClusterMaintenenceandLifecycleOperations>
 
 .. toctree::
   :maxdepth: 2
