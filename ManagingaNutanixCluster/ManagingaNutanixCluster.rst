@@ -38,8 +38,8 @@ Graphical interface (UI) and Command Line (CLI)
 - eCLI (Support)
 
 
-There are several methods to manage a Nutanix implementation
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+**There are several methods to manage a Nutanix implementation**
+
 
 
 - Graphical UI – Prism Element and Prism Central

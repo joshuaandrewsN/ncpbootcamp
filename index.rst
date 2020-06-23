@@ -7,8 +7,8 @@
   :includehidden:
   :hidden:
   
-  NutanixConcepts/NutanixConcepts
-  ManagingaNutanixCluster/ManagingaNutanixCluster
+  1. Nutanix Concepts <NutanixConcepts/NutanixConcepts>
+  2. Managing a Nutanix Cluster <ManagingaNutanixCluster/ManagingaNutanixCluster>
   SecuringaNutanixCluster/SecuringaNutanixCluster
   Networking/Networking
   VMCreationandManagement/VMCreationandManagement
