@@ -1,15 +1,15 @@
 .. title:: NCP Bootcamp - Managing a Nutanix Cluster Questions
 
-.. _nutanix_Managing_a_Nutanix_Cluster_questions:
+.. _nutanix_Distributed_Storage_Fabric_questions:
 
 -------------
-Managing a Nutanix Cluster Questions
+Distributed Storage Fabric Questions
 -------------
 
 
 .. toctree::
   :maxdepth: 1
-  :name: _MANC_Questions
+  :name: _DFC_Questions
   
 
   Q1/Q1

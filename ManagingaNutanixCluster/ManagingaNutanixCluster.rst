@@ -70,9 +70,12 @@ Prism Element, Prism Central
 Prism is the Nutanix UI used for administrative purposes and is broken down into two main components:
 
 - Prism Central (PC)
+
   - 1:many cluster manager that provides a single, centralized management interface for managing multiple Nutanix clusters.  
   - Optional software appliance (VM).
+  
 - Prism Element (PE)
+
   - Localized cluster manager built-in to the CVM and used for local cluster management and operations.  
   - 1:1 cluster manager
 

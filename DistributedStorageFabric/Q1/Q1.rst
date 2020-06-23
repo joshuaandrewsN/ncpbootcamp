@@ -1,5 +1,5 @@
 .. Adding labels to the beginning of your lab is helpful for linking to the lab from other pages
-.. _MANC_question_1:
+.. _DFC_question_1:
 
 -------------
 Question 1
@@ -11,5 +11,5 @@ Question 1
 
 
 
-Answer: :ref:`MANC_answer_1`
+Answer: :ref:`DFC_answer_1`
 
