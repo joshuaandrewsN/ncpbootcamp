@@ -10,8 +10,8 @@ Answer 8
 .. figure:: images/a8.png
 
 
-Back to the Question: :ref:`DFC_question_8`
+Back to the Question: :ref:`DSF_question_8`
 
-Next Question: :ref:`DFC_question_9`
+Next Question: :ref:`DSF_question_9`
 
 

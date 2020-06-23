@@ -42,9 +42,11 @@ DSF Cluster-wide Tier Balancing
 
 
 Distributed Storage Fabric (DSF) combines local storage resources with intelligent software to provide "centralized storage“-like capabilities.
+
 A common question is what happens when a local node’s SSD becomes full?  As mentioned in the Disk Balancing section, a key concept is trying to keep uniform utilization of devices within disk tiers.  In the case where a local node’s SSD utilization is high, disk balancing will kick in to move the coldest data on the local SSDs to the other SSDs throughout the cluster.  This will free up space on the local SSD to allow the local node to write to SSD locally instead of going over the network.  A key point to mention is that all CVMs and SSDs are used for this remote I/O to eliminate any potential bottlenecks and remediate some of the hit by performing I/O over the network.
 
 The other case is when the overall tier utilization breaches a specific threshold *curator_tier_usage_ilm_threshold_percent (Default=75)* where DSF ILM will kick in and as part of a Curator job will down-migrate data from the SSD tier to the HDD tier.  This will bring utilization within the threshold mentioned above or free up space by the following amount [curator_tier_free_up_percent_by_ilm (Default=15)], whichever is greater. The data for down-migration is chosen using last access time. In the case where the SSD tier utilization is 95%, 20% of the data in the SSD tier will be moved to the HDD tier (95% –> 75%). 
+
 However, if the utilization was 80%, only 15% of the data would be moved to the HDD tier using the minimum tier free up amount.
 
 
@@ -238,26 +240,36 @@ Viewing Overall Capacity Optimization
 References
 +++++++++++++++++++++++++
 
+-----------------------------------------------------
+
 .. figure:: images/StorageManagement.png
 
 `Storage Management <https://portal.nutanix.com/page/documents/details/?targetId=Web-Console-Guide-Prism-v5_15:wc-storage-management-wc-c.html>`_
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+-----------------------------------------------------
+
 
 .. figure:: images/Software-Defined.png
 
 `Software-Defined Storage for Dummies <https://www.nutanix.com/go/software-defined-storage-for-dummies>`_
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
+-----------------------------------------------------
+
 .. figure:: images/snapshots.png
 
 `Snapshots and Clones <https://www.youtube.com/watch?v=uK5wWR44UYE&feature=youtu.be>`_
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+-----------------------------------------------------
 
 .. figure:: images/Deduplication.png
 
 `Deduplication <https://www.youtube.com/watch?v=C-rp13cDpNw&feature=youtu.be>`_
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
+-----------------------------------------------------
 
 .. figure:: images/DataEfficiency.png
 

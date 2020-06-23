@@ -1,5 +1,5 @@
 .. Adding labels to the beginning of your lab is helpful for linking to the lab from other pages
-.. _DFC_answer_6:
+.. _DSF_answer_6:
 
 -------------
 Answer 6
@@ -10,7 +10,7 @@ Answer 6
 .. figure:: images/a6.png
 
 
-Back to the Question: :ref:`DFC_question_6`
+Back to the Question: :ref:`DSF_question_6`
 
-Next Question: :ref:`DFC_question_7`
+Next Question: :ref:`DSF_question_7`
 
