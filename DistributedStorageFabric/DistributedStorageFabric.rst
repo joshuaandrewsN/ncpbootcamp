@@ -178,23 +178,57 @@ Erasure Coding (EC-X)
 **EC-X Strip: 2-4 Data blocks; 1 (RF2) - 2 (RF3) Parity blocks**
 
 
-.. figure:: images/Compression.png
+.. figure:: images/erasureencoding.png
 
 
 **EC-X Process**
 
 Erasure Coding is performed post-process and leverages the Curator MapReduce framework for task distribution. Since this is a post-process framework, the traditional write I/O path is unaffected.  In this scenario, we have RF3 data whose primary copies are local and replicas are distributed to other nodes throughout the cluster.
+
 Erasure Coding is a method of data protection that breaks data into blocks, then expands and encodes the block with redundant data.
+
 This optimizes (i.e. reduces) data storage while still providing the ability to tolerate multiple failures.  Similar in concept to RAID parity calculation
- Encodes a strip of data blocks on different nodes and calculates parity based on the configured replication factor (RF)
 
-Erasure Coding
-A cluster must have at least four nodes in order for erasure coding to be enabled
-Do not use erasure coding on datasets with many overwrites. Optimal for snapshots, file server archives, backups and other “cold” data
-Read performance may be degraded during failure scenarios
-Erasure coding is a backend job; achieving savings might take time
+Encodes a strip of data blocks on different nodes and calculates parity based on the configured replication factor (RF)
+
+**Erasure Coding**
+
+- A cluster must have at least four nodes in order for erasure coding to be enabled
+- Do not use erasure coding on datasets with many overwrites. Optimal for snapshots, file server archives, backups and other “cold” data
+- Read performance may be degraded during failure scenarios
+- Erasure coding is a backend job; achieving savings might take time
 
 
+
+
+-----------------------------------------------------
+
+Deduplication and Compression Best Practices
+++++++++++++++++++++++++++++++++++++++++++++
+
+
+
+
+.. figure:: images/DCBP.png
+
+**Deduplication and Compression Best Practices**
+
+- VCAI = (Horizon) View Composer API for Array Integration.
+
+  - Turning on deduplication for VAAI (vStorage APIs for Array Integration) clone or linked clone environments is not recommended.
+
+
+
+
+-----------------------------------------------------
+
+Viewing Overall Capacity Optimization
+++++++++++++++++++++++++++++++++++++++++++++
+
+**Prism Storage Dashboard**
+
+
+.. figure:: images/CapacityOptimization.png
 
 
 
@@ -204,29 +238,33 @@ Erasure coding is a backend job; achieving savings might take time
 References
 +++++++++++++++++++++++++
 
-`Prism Element (Web Console) - Guide <https://portal.nutanix.com/page/documents/details/?targetId=Web-Console-Guide-Prism-v5_15:Web-Console-Guide-Prism-v5_15>`_
+.. figure:: images/StorageManagement.png
 
-.. figure:: images/webconsoleguide.png
+`Storage Management <https://portal.nutanix.com/page/documents/details/?targetId=Web-Console-Guide-Prism-v5_15:wc-storage-management-wc-c.html>`_
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-`Prism Central Guide <https://portal.nutanix.com/page/documents/details/?targetId=Prism-Central-Guide-Prism-v5_15:Prism-Central-Guide-Prism-v5_15>`_
+.. figure:: images/Software-Defined.png
 
-.. figure:: images/prismcentralguide.png
+`Software-Defined Storage for Dummies <https://www.nutanix.com/go/software-defined-storage-for-dummies>`_
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-`Command-Line Interface nCLI and aCLI <https://portal.nutanix.com/page/documents/details/?targetId=Command-Ref-AOS-v5_15:Command-Ref-AOS-v5_15>`_
+.. figure:: images/snapshots.png
 
-.. figure:: images/cliref.png
+`Snapshots and Clones <https://www.youtube.com/watch?v=uK5wWR44UYE&feature=youtu.be>`_
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-`Nutanix REST API Reference <https://portal.nutanix.com/page/documents/details/?targetId=API-Ref-AOS-v5_15:man-rest-api-v1-u.html>`_
+.. figure:: images/Deduplication.png
 
-.. figure:: images/NutanixRESTAPIReference.png
+`Deduplication <https://www.youtube.com/watch?v=C-rp13cDpNw&feature=youtu.be>`_
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-`Nutanix PowerShell Cmdlets <https://portal.nutanix.com/page/documents/details/?targetId=API-Ref-AOS-v510:ps-ps-cmdlets-c.html>`_
 
-.. figure:: images/NutanixPowerShellCmdlets.png
+.. figure:: images/DataEfficiency.png
 
-`Nutanix ROBO Deployment and Operations <https://portal.nutanix.com/page/documents/solutions/details/?targetId=BP-2083-ROBO-Deployment:BP-2083-ROBO-Deployment>`_
+`Data Efficiency <https://www.nutanix.com/go/nutanix-data-efficiency>`_
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-.. figure:: images/robo.png
+
 
 -----------------------------------------------------
 
