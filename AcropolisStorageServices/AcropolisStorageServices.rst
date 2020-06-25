@@ -1,16 +1,16 @@
 .. Adding labels to the beginning of your lab is helpful for linking to the lab from other pages
 .. _Acropolis_Storage_Services_1:
 
-----------------------------------------------------
-Acropolis Storage Services Hi Mom
-----------------------------------------------------
+--------------------------
+Acropolis Storage Services
+--------------------------
 
 Session 8
 
 -----------------------------------------------------
 
 Nutanix Volumes
-&&&&&&&&&&&&&&&
+--------------------------
 
 
 Nutanix Volumes Intro
