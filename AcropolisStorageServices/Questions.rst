@@ -1,15 +1,15 @@
-.. title:: NCP Bootcamp - Managing a Nutanix Cluster Questions
+.. title:: NCP Bootcamp - Acropolis Storage Services Questions
 
-.. _nutanix_Distributed_Storage_Fabric_questions:
+.. _Acropolis_Storage_Services_questions:
 
--------------
-Distributed Storage Fabric Questions
--------------
+--------------------------
+Acropolis Storage Services
+--------------------------
 
 
 .. toctree::
   :maxdepth: 1
-  :name: _DSF_Questions
+  :name: _ASS_Questions
   
 
   Q1/Q1

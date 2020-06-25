@@ -12,4 +12,4 @@ Answer 7
 
 Back to the Question: :ref:`ASS_question_7`
 
-Next Question: :ref:`ASS_question_8`
+

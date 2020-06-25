@@ -218,26 +218,51 @@ References
 ++++++++++++++++++++++
 
 
-
-`Network Management <https://portal.nutanix.com/page/documents/details/?targetId=Web-Console-Guide-Prism-v5_15:wc-network-management-wc-c.html>`_
+-----------------------------------------------------
 
 .. figure:: images/NetworkManagement.png
 
-`Host Network Management <https://portal.nutanix.com/page/documents/details/?targetId=AHV-Admin-Guide-v5_15:ahv-acr-nw-mgmt-c.html>`_
+`Network Management <https://portal.nutanix.com/page/documents/details/?targetId=Web-Console-Guide-Prism-v5_15:wc-network-management-wc-c.html>`_
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+-----------------------------------------------------
 
 .. figure:: images/HostNetworkManagement.png
 
-`AHV Networking Best Practices Guide <https://www.nutanix.com/go/ahv-networking>`_
+
+
+`Host Network Management <https://portal.nutanix.com/page/documents/details/?targetId=AHV-Admin-Guide-v5_15:ahv-acr-nw-mgmt-c.html>`_
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+-----------------------------------------------------
 
 .. figure:: images/AHVNetworkingBPG.png
 
-`AHV Best Practices Guide <https://www.nutanix.com/go/ahv-best-practices-guide>`_
+
+
+`AHV Networking Best Practices Guide <https://www.nutanix.com/go/ahv-networking>`_
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+-----------------------------------------------------
 
 .. figure:: images/AHVBestPracticesGuide.png
 
-**nu.school Tech TopX Networking Series**
+
+`AHV Best Practices Guide <https://www.nutanix.com/go/ahv-best-practices-guide>`_
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+-----------------------------------------------------
+
+
 
 .. figure:: images/TechTopX.png
+
+**nu.school Tech TopX Networking Series**
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
 
 
 -----------------------------------------------------

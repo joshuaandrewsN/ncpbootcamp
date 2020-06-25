@@ -135,28 +135,36 @@ Failover Scenarios
 **Failover Scenarios (ABS)**
 
 - In the event that fails, a new iSCSI master will become elected and assigned the Data Services IP. 
+
   - Stargate health is monitored using Zookeeper for Block Services, using the exact same mechanism as DSF.
   - The initiator retries the iSCSI login to the Data Services IP, which will then redirect to another healthy Stargate.
 
 - For failback, the default interval is 120 seconds. 
+
   - This means once the affined Stargate is healthy for 2 or more minutes, the system will quiesce and close the session, forcing another login back to the affined Stargate.
 
 **Guest VM Data Management**
 
 - Hosts read and write data in shared Nutanix datastores as if they were connected to a SAN.
+
   - From the perspective of a hypervisor host, the only difference is the improved performance that results from data not traveling across a network.
+
 - VM data is stored locally, and replicated on other nodes for protection against hardware failure.
 
 - When a guest VM submits a write request through the hypervisor, that request is sent to the Controller VM on the host.
+
   - To provide a rapid response to the guest VM, this data is first stored on the metadata drive, within a subset of storage called the oplog.
 
 - This cache is rapidly distributed across the 10 GbE network to other metadata drives in the cluster.
+
   - Oplog data is periodically transferred to persistent storage within the cluster.
 
 - Data is written locally for performance and replicated on multiple nodes for high availability.
 
 - When the guest VM sends a read request through the hypervisor, the Controller VM reads from the local copy first, if present.
+
   - If the host does not contain a local copy, then the Controller VM reads across the network from a host that does contain a copy.
+
 - As remote data is accessed, the remote data is migrated to storage devices on the current host, so that future read requests can be local.
 
 -----------------------------------------------------
@@ -291,7 +299,7 @@ References
 -----------------------------------------------------
 
 Questions
-++++++++++++++++++++++
+--------------------------
 
 This is a link to the Questions : :doc:`Questions`
 
