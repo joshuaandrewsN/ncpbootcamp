@@ -27,16 +27,18 @@ VM High Availability
 **There are two main types of resource reservations for HA:**
 
 - Reserve Hosts
+
   - Reserve X number of hosts where X is the number of host failures to tolerate (such as 1, 2, and so forth).
+
     - This is the default when all hosts with the same amount of RAM.
 
 - Reserve Segments
 
-	- Reserve Y resources across N hosts in the cluster.
+  - Reserve Y resources across N hosts in the cluster.
 
-		- This will be a function of the cluster FT level, the size of the running VMs, and the number of nodes in the cluster.
+    - This will be a function of the cluster FT level, the size of the running VMs, and the number of nodes in the cluster.
 
-			- This is the default when some hosts have different amounts of RAM.
+      - This is the default when some hosts have different amounts of RAM.
 
 - From AOS 5.0 or later releases, you can implement the VM High Availability only by using the Segment-based Reservation method.
 
