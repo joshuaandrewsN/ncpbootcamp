@@ -166,45 +166,124 @@ Nutanix Files
 --------------------------
 
 
+Nutanix Files Intro
+++++++++++++++++++++++++++++++++++
+
+**Formerly known as Acropolis File Services (AFS)**
+
+.. figure:: images/NutanixFilesIntro.png
+
+**Nutanix Files (Files)**
+
+Enables you to share files across user workstations or VMs in a centralized and protected location to eliminate the requirement for a third-party file server.
+
+Files uses a scale-out architecture that provides file services to clients through the Server Message Block (SMB) or Network File System (NFS) protocol. Files consists of three or more file server VMs (FSVMs) combined into a logical file server instance sometimes referred to as an Files cluster. Files supports creating multiple file server instances within a single Nutanix cluster.
+
+**Files manages a collection of file shares (SMB) or exports (NFS) distributed across multiple FSVMs. There are two types of shares or exports:**
+
+1. Distributed. A distributed share ("home") or export ("sharded") means the data is spread across all the FSVMs to improve performance and resiliency. A distributed share or export can be used for any application. It is distributed at the top-level directories and does not have files at the root of the share or export. 
+2. Non-distributed. A non-distributed share ("general purpose") or export ("non-sharded") means all the data is contained in a single FSVM. A non-distributed share or export is used for any purpose that does not require a distributed structure. 
+
+**NFSv4**
+
+The NFSv4 protocol is supported from 3..x on-wards, but not supported on 2.x branches. 
+To know more about Client Support (NFSv4), Nutanix recommend to refer *Release Notes page Supported Configurations* section. 
+Nutanix supports SMB and NFS protocol-based share and export configurations.
+
+NFSv3 is a simple stateless protocol where the server does not keep state of individual files being accessed by clients.
+
+
+
+-----------------------------------------------------
+
+File Services Constructs Construct
+++++++++++++++++++++++++++++++++++
+
+
+.. figure:: images/FileServicesConstructsConstruct.png
+
+
+**DFS referrals**
+
+A DFS referral is an ordered list of servers that a client computer receives from a domain controller or namespace server when the user accesses a namespace root or DFS folder with targets. For example, the dfs targets are server \\NTNX_HR1\info and server \\NTNX_HR2\info. These are the real folder locations linked to DFS namespaces.
+
+When creating a namespace \\ntnx.com\HR\info, a client who accesses \\ntnx.com\HR\info in fact accesses folders \\NTNX_HR1\info and \\NTNX_HR2\info. 
+
+More info here: https://docs.microsoft.com/en-us/windows-server/storage/dfs-namespaces/enable-or-disable-referrals-and-client-failback
+
+
+-----------------------------------------------------
+
+Authentication & Tools Management
+++++++++++++++++++++++++++++++++++
+
+
+.. figure:: images/AuthenticationTools Management.png
+
+
+**Microsoft Management Console (MMC)**
+
+Component of Windows 2000 and its successors that provides system administrators and advanced users an interface for configuring and monitoring the system.
+
+The Microsoft management Console snapin is available on the Nutanix Support Portal under downloads > Tools & Firmware.
+
+
+
+-----------------------------------------------------
+
+
+Files Configuration
+++++++++++++++++++++++++++++++++++
+
+
+.. figure:: images/FilesConfiguration.png
+
+
+**Authentication & Authorization**
+
+- The File Services feature is fully integrated into Microsoft Active Directory (AD) and DNS.
+  - This allows all of the secure and established authentication and authorization capabilities of AD to be leveraged.
+- All share permissions, user and group management is done using the traditional Windows MMC for file management.
+- As part of the installation process the following AD / DNS objects will be created:
+  - AD Computer Account for File Server
+  - AD Service Principal Name (SPN) for File Server and each FSVM
+  - DNS entry for File Server pointing to all FSVM(s)
+  - DNS entry for each FSVM
+
+
+
 -----------------------------------------------------
 
 References
-+++++++++++++++++++++++++
+--------------------------
 
 -----------------------------------------------------
 
-.. figure:: images/StorageManagement.png
+.. figure:: images/NutanixFiles.png
 
-`Storage Management <https://portal.nutanix.com/page/documents/details/?targetId=Web-Console-Guide-Prism-v5_15:wc-storage-management-wc-c.html>`_
+`Nutanix Files <https://portal.nutanix.com/page/documents/details/?targetId=Acropolis-File-Services-v30:Acropolis-File-Services-v30>`_
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 -----------------------------------------------------
 
 
-.. figure:: images/Software-Defined.png
+.. figure:: images/NutanixVolumes.png
 
-`Software-Defined Storage for Dummies <https://www.nutanix.com/go/software-defined-storage-for-dummies>`_
+`Nutanix Volumes <https://portal.nutanix.com/page/documents/solutions/details/?targetId=BP-2049-Nutanix-Volumes:BP-2049-Nutanix-Volumes>`_
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 -----------------------------------------------------
 
-.. figure:: images/snapshots.png
+.. figure:: images/NutanixFilesPerformance.png
 
-`Snapshots and Clones <https://www.youtube.com/watch?v=uK5wWR44UYE&feature=youtu.be>`_
+`Nutanix Files Performance <https://portal.nutanix.com/page/documents/solutions/details/?targetId=TN-2117-Nutanix-Files-Performance:TN-2117-Nutanix-Files-Performance>`_
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 -----------------------------------------------------
 
-.. figure:: images/Deduplication.png
+.. figure:: images/Nutanix Files Tech Note.png
 
-`Deduplication <https://www.youtube.com/watch?v=C-rp13cDpNw&feature=youtu.be>`_
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
------------------------------------------------------
-
-.. figure:: images/DataEfficiency.png
-
-`Data Efficiency <https://www.nutanix.com/go/nutanix-data-efficiency>`_
+`Nutanix Files Tech Note <https://www.nutanix.com/go/simplifying-file-storage-with-nutanix-files>`_
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
