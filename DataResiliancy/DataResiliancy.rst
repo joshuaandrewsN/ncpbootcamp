@@ -349,13 +349,6 @@ References
 
 -----------------------------------------------------
 
-.. figure:: images/NutanixRESTAPIReference.png
-
-`Nutanix REST API Reference <https://portal.nutanix.com/page/documents/details/?targetId=API-Ref-AOS-v5_15:man-rest-api-v1-u.html>`_
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
------------------------------------------------------
-
 .. figure:: images/DefinitiveGuidetoDataProtectionandDisasterRecovery.png
 
 `Definitive Guide to Data Protection and Disaster Recovery <https://www.nutanix.com/go/the-definitive-guide-to-data-protection-and-disaster-recovery-on-enterprise-clouds>`_
