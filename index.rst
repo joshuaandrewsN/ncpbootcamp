@@ -7,6 +7,7 @@
   :includehidden:
   :hidden:
   
+  Getting Started <index>
   1. Nutanix Concepts <NutanixConcepts/NutanixConcepts>
   2. Managing a Nutanix Cluster <ManagingaNutanixCluster/ManagingaNutanixCluster>
   3. Securing a Nutanix Cluster <SecuringaNutanixCluster/SecuringaNutanixCluster>
@@ -19,6 +20,7 @@
   10. Data Protection <DataProtection/DataProtection>
   11. Prism Central <PrismCentral/PrismCentral>
   12. Cluster Maintenence and Lifecycle Operations <ClusterMaintenenceandLifecycleOperations/ClusterMaintenenceandLifecycleOperations>
+  Conclusion <conclusion>
 
 .. toctree::
   :maxdepth: 2
