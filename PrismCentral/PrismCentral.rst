@@ -114,7 +114,7 @@ A Prism Central administrator can also perform any of theses tasks, but they are
 -----------------------------------------------------
 
 References
-+++++++++++++++++++++++++
+------------
 
 -----------------------------------------------------
 
@@ -137,35 +137,13 @@ References
 `Prism Pro Tech Note <https://www.nutanix.com/go/managing-enterprise-infrastructure-with-prism>`_
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
------------------------------------------------------
-
-.. figure:: images/DefinitiveGuidetoDataProtectionandDisasterRecovery.png
-
-`Definitive Guide to Data Protection and Disaster Recovery <https://www.nutanix.com/go/the-definitive-guide-to-data-protection-and-disaster-recovery-on-enterprise-clouds>`_
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-
------------------------------------------------------
-
-.. figure:: images/RedundancyFactorvsReplicationFactor.png
-
-`Redundancy Factor vs. Replication Factor <https://www.youtube.com/watch?v=tVPhl52thDY>`_
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-
------------------------------------------------------
-
-.. figure:: images/DataProtectionforAHV.png
-
-`Data Protection for AHV-Based VMs <https://www.nutanix.com/go/vm-data-protection-ahv>`_
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
 
 -----------------------------------------------------
 
 Questions
-++++++++++++++++++++++
+------------
 
 This is a link to the Questions : :doc:`Questions`
 
