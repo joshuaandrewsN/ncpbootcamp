@@ -1,51 +1,254 @@
 .. Adding labels to the beginning of your lab is helpful for linking to the lab from other pages
-.. _example_lab_1:
+.. _Cluster_Maintenence_and_Lifecycle_Operations_1:
 
--------------
+----------------------------------------------------
 Cluster Maintenence and Lifecycle Operations
--------------
+----------------------------------------------------
 
-Overview
-++++++++
 
-Here is where we provide a high level description of what the user will be doing during this module. We want to frame why this content is relevant to an SE/Services Consultant and what we expect them to understand after completing the lab.
-
-Using Text and Figures
-++++++++++++++++++++++
-
-Label sections appropriately, see existing labs if further guidance is required. Section titles should begin with present tense verbs to queue what is being done in each section. Use consistent markup for titles, subtitles, sub-subtitles, etc. The markup in the example can serve as a guide but other characters can be used within a given workshop, as long as they are consistent. Other than lab titles (that need to follow a certain linear progression) avoid numbering steps.
-
-Below are examples of standards we should strive to maintain in writing lab guides. *Italics* is used to indicate when information of values external to the lab guide are referenced. **Bold** is used to reference words and phrases in the UI. **Bold** should also be used to highlight the key name in lists containing key/value pairs as shown below. The **>** character is used to show a reasonable progression of clicks, such as traversing a drop down menu. When appropriate, try to consolidate short, simple tasks. ``Literals`` should be used for file paths.
-
-Actions should end with a period, or optionally with a colon as in the case of displaying a list of fields that need to be populated. Keep the language consistent: open, click/select, fill out, log in, and execute.
-
-Use the **figure** directive to include images in your lab guide or appendix. Image files should be included within the Git repository, within an **images** subdirectory within each lab subdirectory.
+Session 12
 
 -----------------------------------------------------
 
-Open \https://<*NUTANIX-CLUSTER-IP*>:9440 in your browser to access Prism. Log in as a user with administrative priveleges.
+Node & CVM Start/Stop
+--------------------------
 
-.. figure:: images/1.png
 
-Click **Network Config > User VM Interfaces > + Create Network**.
+Stopping/Starting a Cluster
+++++++++++++++++++++++++++++++++
 
-.. figure:: images/2.png
+**Data Unavailability, no Data Loss as cluster is not destroyed**
 
-Select **Enable IP Address Management** and fill out the following fields:
+.. figure:: images/Starting.png
 
-  - **Name** - VM VLAN
-  - **VLAN ID** - *Refer to your Environment Details Worksheet*
-  - **Network IP Address/Prefix Length** - *Refer to your Environment Details Worksheet*
-  - **Gateway IP Address** - *Refer to your Environment Details Worksheet*
-  - **Domain Name Servers** - *Refer to your Environment Details Worksheet*
 
-.. figure:: images/3.png
+**Stopping a Cluster**
 
-Click **Submit > Save**.
+- Before you begin:
 
-Takeaways
-+++++++++
+  - Shut down all guest virtual machines, including vCenter if it is running on the cluster.
+  - Do not shut down Nutanix Controller VMs.
 
-- Here is where we summarize any key takeaways from the module
-- Such as how a Nutanix feature used in the lab delivers value
-- Or highlighting a differentiator
+- **Note:** If you are running Acropolis File Services (AFS), stop AFS before stopping your AOS cluster.
+- **Note:** This procedure stops all services provided by guest virtual machines and the Nutanix cluster.
+
+-----------------------------------------------------
+
+Shut Down CVM/Host on Single AHV Node
++++++++++++++++++++++++++++++++++++++
+
+
+.. figure:: images/ShutCVM.png
+
+**Shutting Down a Node in a Cluster**
+
+- To perform any type of maintenance on a node, it should be either in **maintenance mode** or be **shut down**.
+
+  - Remember, you may only have **1 node** in this condition in an **RF2** environment.
+
+- These slides show the process for AHV.
+
+  - Consult the appropriate admin manual for other hypervisors.
+
+-----------------------------------------------------
+
+Starting a CVM on a Single Node (AHV)
++++++++++++++++++++++++++++++++++++++
+
+
+.. figure:: images/StartCVM.png
+
+Virsh commands are not recommended except in specific circumstances such as if a cvm does not automatically start when the hypervisor is restarted. 
+
+If you are not a seasoned Nutanix admin, virsh commands should only be used at the instruction of Nutanix Support or engineering.
+
+-----------------------------------------------------
+
+AOS Upgrade
+--------------------------
+
+
+AOS Upgrade Path
+++++++++++++++++++++++++++++++++
+
+
+.. figure:: images/AOSUpgradePath.png
+
+-----------------------------------------------------
+
+AOS Release Notes
++++++++++++++++++++++++++++++++++++++
+
+.. figure:: images/AOSReleaseNotes.png
+
+Short Term Support (STS): 3 months of maintenance followed by an additional 3 months of support.
+
+Long Term Support (LTS): 12 months of maintenance (after the Release Date) followed by an additional 6 months of support.
+
+-----------------------------------------------------
+
+Upgrade Paths
++++++++++++++++++++++++++++++++++++++
+
+.. figure:: images/UpgradePaths.png
+
+-----------------------------------------------------
+
+Nutanix Cluster Check (NCC)
++++++++++++++++++++++++++++++++++++++
+
+**CVM$ ncc health_checks run_all**
+
+.. figure:: images/ClusterCheck.png
+
+
+**Nutanix Cluster Check (NCC)**
+
+- NCC can be run provided that the individual nodes are up, regardless of cluster state.
+
+  - The scripts run standard commands against the cluster or the nodes, depending on the type of information being retrieved.
+
+- **Note:** Some plugins run nCLI commands and might require the user to input the nCLI password. The password is logged on as plain text. If you change the password of the admin user from the default, you must specify the password every time you start an nCLI session from a remote system. A password is not required if you are starting an nCLI session from a Controller VM where you are already logged on. Comprehensive documentation of NCC is available in the Nutanix Command Reference.
+
+**The NCC output log is also stored on the:**
+
+- Foundation VM: */home/nutanix/foundation/log/ncc/’cluster_name’ /logs/ncc-output.log*
+- The Cluster itself: */home/nutanix/data/logs/ncc-output.log*
+
+
+
+-----------------------------------------------------
+
+Software Upgrades
++++++++++++++++++++++++++++++++++++++
+
+
+
+.. figure:: images/SoftwareUpgrades.png
+
+
+Software and Firmware Upgrades
+
+- An administrator can view the available upgrade options, start an upgrade, and monitor upgrade progress through the web console.
+
+  - Upgrade Software, available from the main menu, shows the current status of your software and firmware versions.
+
+- The slide above displays all the entities that can be upgraded directly from the console.
+
+
+
+-----------------------------------------------------
+
+Checking the Status of Cluster Services
+++++++++++++++++++++++++++++++++++++++++
+
+**Not all services and their PIDs are shown**
+
+.. figure:: images/Status.png
+
+PID – Process ID, unique within the cluster.  Although the same services will be shown for each CVM, they have their own unique PIDs.
+
+
+-----------------------------------------------------
+
+Cluster Events: Log File Analysis
+++++++++++++++++++++++++++++++++++++++++
+
+**Not all services and their PIDs are shown**
+
+.. figure:: images/events.png
+
+
+Depending on the issue (broken hardware, broken service, performance issue, etc.) you may have to look at different locations.
+
+If there is no obvious error in the Prism UI, you may need to look in the ~nutanix/data/logs folder on any CVM (via SSH).
+
+There you will find the logs of all the Nutanix services: Stargate, Curator, Cassandra, Genesis, ZooKeeper, etc.
+
+In this folder, you will find raw logs *<service_name>.out*, .INFO, .WARNING, .ERROR (i.e. errors only), and .FATAL. 
+
+For example the file *~nutanix/data/logs/stargate.out* is the current log file for all Stargate logs and *~nutanix/data/logs/stargate.FATAL* is the current log file only for FATAL logs concerning Stargate.
+
+
+-----------------------------------------------------
+
+Cluster Expansion
+++++++++++++++++++++++++++++++++++++++++
+
+**IPv6 for node discovery**
+
+.. figure:: images/Expansion.png
+
+**Cluster Expansion**
+
+- The ability to dynamically scale the Acropolis cluster is core to its functionality.
+
+  - To scale an Acropolis cluster, rack / stack / cable the nodes and power them on.
+
+- Once the nodes are powered up they will be discoverable by the current cluster using mDNS.
+
+  - Multiple nodes can be discovered and added to the cluster concurrently.
+
+
+
+
+-----------------------------------------------------
+
+References
++++++++++++++++++++++++++
+
+-----------------------------------------------------
+
+.. figure:: images/DataProtection.png
+
+`Data Protection <https://portal.nutanix.com/page/documents/solutions/details/?targetId=BP-2005_Data_Protection:BP-2005_Data_Protection>`_
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+-----------------------------------------------------
+
+.. figure:: images/Failing.png
+
+`Failing From one Site to Another <https://portal.nutanix.com/page/documents/details/?targetId=Advanced-Admin-AOS-v5_15:sto-site-failover-t.html>`_
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+-----------------------------------------------------
+
+.. figure:: images/DataProtectionandDisasterRecovery.png
+
+`Data Protection and Disaster Recovery <https://www.nutanix.com/go/enterprise-cloud-data-protection-on-nutanix>`_
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+-----------------------------------------------------
+
+.. figure:: images/DefinitiveGuidetoDataProtectionandDisasterRecovery.png
+
+`Definitive Guide to Data Protection and Disaster Recovery <https://www.nutanix.com/go/the-definitive-guide-to-data-protection-and-disaster-recovery-on-enterprise-clouds>`_
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+-----------------------------------------------------
+
+.. figure:: images/RedundancyFactorvsReplicationFactor.png
+
+`Redundancy Factor vs. Replication Factor <https://www.youtube.com/watch?v=tVPhl52thDY>`_
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+-----------------------------------------------------
+
+.. figure:: images/DataProtectionforAHV.png
+
+`Data Protection for AHV-Based VMs <https://www.nutanix.com/go/vm-data-protection-ahv>`_
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+-----------------------------------------------------
+
+Questions
+++++++++++++++++++++++
+
+This is a link to the Questions : :doc:`Questions`
+
+
+

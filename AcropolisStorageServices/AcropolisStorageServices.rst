@@ -16,7 +16,7 @@ Nutanix Volumes
 Nutanix Volumes Intro
 +++++++++++++++++++++++++
 
-Formerly known as Acropolis Block Services (ABS)
+**Formerly known as Acropolis Block Services (ABS)**
 
 
 .. figure:: images/NutanixVolumesIntro.png
