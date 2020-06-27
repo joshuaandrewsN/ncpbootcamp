@@ -144,7 +144,7 @@ Checking the Status of Cluster Services
 
 **Not all services and their PIDs are shown**
 
-.. figure:: images/Status.png
+.. figure:: images/status.png
 
 PID – Process ID, unique within the cluster.  Although the same services will be shown for each CVM, they have their own unique PIDs.
 
@@ -191,6 +191,42 @@ Cluster Expansion
 
 
 
+-----------------------------------------------------
+
+Removing a node – Process Details
+++++++++++++++++++++++++++++++++++++++++
+
+**Prism > Hardware > select node > “Remove Host”**
+
+.. figure:: images/Removing.png
+
+**Repurpose Equipment**
+
+The Nutanix Operating System makes it easy to repurpose equipment as needed. You can switch a node from one hypervisor to another or take nodes offline in one datacenter where you’ve got excess capacity and move them to another where they are needed, eliminating expensive over-provisioning.
+
+**Licensing*
+
+- Nutanix Nodes are delivered with a default Starter license that does not expire
+- Reclaim Pro/Ultimate licenses removing a node or destroying a cluster
+- Ensure consistent licensing for all nodes in a cluster (Nodes with different licensing default to minimum feature set)
+
+**Starter free license never expires (no need to register on portal)**
+
+**Pro and Ultimate paid licenses have an expiration date**
+
+- 60-day free trial
+- Prism alerts you 60 days before expiration
+- Be sure to reclaim licenses before destroying a cluster
+- When moving nodes from one cluster to another, first reclaim the licenses and move the node(s) before re-applying the licenses.
+
+**When upgrading license(s)***
+
+1. Generate a cluster summary file in the Prism web console
+2. Upload the cluster summary file to the Nutanix Support Portal
+3. Generate and apply the downloaded license file to the cluster
+
+***Applies to transitions between Ultimate and Pro**
+
 
 -----------------------------------------------------
 
@@ -199,46 +235,54 @@ References
 
 -----------------------------------------------------
 
-.. figure:: images/DataProtection.png
+.. figure:: images/TroubleshootingTools.png
 
-`Data Protection <https://portal.nutanix.com/page/documents/solutions/details/?targetId=BP-2005_Data_Protection:BP-2005_Data_Protection>`_
+`Troubleshooting Tools <https://portal.nutanix.com/page/documents/details/?targetId=Advanced-Admin-AOS-v5_15:Troubleshooting%20Tools>`_
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 -----------------------------------------------------
 
-.. figure:: images/Failing.png
+.. figure:: images/SupportServices.png
 
-`Failing From one Site to Another <https://portal.nutanix.com/page/documents/details/?targetId=Advanced-Admin-AOS-v5_15:sto-site-failover-t.html>`_
+`Support Services <https://portal.nutanix.com/page/documents/details/?targetId=Web-Console-Guide-Prism-v5_15:wc-support-management-wc-c.html>`_
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 -----------------------------------------------------
 
-.. figure:: images/DataProtectionandDisasterRecovery.png
+.. figure:: images/UpgradingNutanixClusterCheck.png
 
-`Data Protection and Disaster Recovery <https://www.nutanix.com/go/enterprise-cloud-data-protection-on-nutanix>`_
+`Upgrading Nutanix Cluster Check <https://portal.nutanix.com/page/documents/details/?targetId=Acropolis-Upgrade-Guide-v5_15:ncc-ncc-install-pc-t.html>`_
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 -----------------------------------------------------
 
-.. figure:: images/DefinitiveGuidetoDataProtectionandDisasterRecovery.png
+.. figure:: images/NutanixClusterCheckGuide.png
 
-`Definitive Guide to Data Protection and Disaster Recovery <https://www.nutanix.com/go/the-definitive-guide-to-data-protection-and-disaster-recovery-on-enterprise-clouds>`_
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-
------------------------------------------------------
-
-.. figure:: images/RedundancyFactorvsReplicationFactor.png
-
-`Redundancy Factor vs. Replication Factor <https://www.youtube.com/watch?v=tVPhl52thDY>`_
+`Nutanix Cluster Check Guide <https://portal.nutanix.com/page/documents/details/?targetId=NCC-Guide-NCC-v39:NCC-Guide-NCC-v39>`_
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
 -----------------------------------------------------
 
-.. figure:: images/DataProtectionforAHV.png
+.. figure:: images/AOSAdvanced.png
 
-`Data Protection for AHV-Based VMs <https://www.nutanix.com/go/vm-data-protection-ahv>`_
+`AOS Advanced Administration Guide <https://portal.nutanix.com/page/documents/details/?targetId=Advanced-Admin-AOS-v5_15:app-cluster-management-ops-c.html>`_
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+-----------------------------------------------------
+
+.. figure:: images/PrismWebConsoleGuide.png
+
+`Prism Web Console Guide <https://portal.nutanix.com/page/documents/details/?targetId=Web-Console-Guide-Prism-v5_15:wc-cluster-management-wc-c.html>`_
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+-----------------------------------------------------
+
+.. figure:: images/MaintainInfrastructure.png
+
+`Maintain Infrastructure with Zero Downtime <https://www.youtube.com/watch?v=6B9d3JXXAHg&feature=youtu.be>`_
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
