@@ -16,7 +16,7 @@ Management Interfaces: PC
 
 **Install also for single cluster deployments**
 
-.. figure:: images/Inter-clusterDataReplication.png
+.. figure:: images/ManagementInterfacesPC.png
 
 
 
@@ -99,11 +99,12 @@ Prism Pro Features
 1. Prism Central administrator. The Prism Central administrator enables Prism Self Service and creates one or more self-service administrators. Prism Central administrators also create VMs, images, and network configurations that may be consumed by self-service users.
 2. Self-service administrator. The self-service administrator performs the following tasks:
 
-  - Creates a project for each team that needs self-service and adds Active Directory users and groups to the projects.
-  - Configures roles for project members.
-  - Publishes VM templates and images to the catalog.
-  - Monitors resource usage by various projects and its VMs and members, and then adjusts resource quotas as necessary.
-    A Prism Central administrator can also perform any of theses tasks, but they are normally delegated to a self-service administrator. 
+- Creates a project for each team that needs self-service and adds Active Directory users and groups to the projects.
+- Configures roles for project members.
+- Publishes VM templates and images to the catalog.
+- Monitors resource usage by various projects and its VMs and members, and then adjusts resource quotas as necessary.
+
+A Prism Central administrator can also perform any of theses tasks, but they are normally delegated to a self-service administrator. 
 
 3. Project user. These are the users assigned to a project by a self-service administrator. They can perform any action that the self-service administrator grants them. The permissions are determined by the roles assigned to the users and groups in the project. When project users log in, they see a custom self-service GUI interface that shows only what the role permissions allow. Project users create and manage only what they need.
 
