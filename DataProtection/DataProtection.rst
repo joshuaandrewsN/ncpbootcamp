@@ -201,7 +201,6 @@ Asynchronous Replication: Activate
 - Marks the failover site PD as active
 
 
-
 -----------------------------------------------------
 
 Consistency Groups
@@ -212,17 +211,145 @@ Consistency Groups
 
 **Protection Domain (PD): Concepts**
 
-Replication is the process of asynchronously copying snapshots from one cluster to one or more Remote sites.
-Async DR: PD is defined group of entities (VMs, files, and Volume Groups) that are always backed up locally, and optionally replicated to one or more Remote Sites.
-Local and remote container have different names.
-Configure one or more Remote Sites (i.e. different clusters).
-Sync/Metro PD: Active local Storage Container linked to a Standby Container at Remote Site.
-Local and remote container have the same name.
-Consistency Group: Optional subset of entities in a Protection Domain, created with PD.
-Scheduler: A schedule is a PD property that specifies snapshot intervals and snapshot retention.
-Retention can be set different for local and remote snapshots
-Snapshot: Read-only copy of the state and data of a VM, file, or Volume Group at a specific point in time.
+- Replication is the process of asynchronously copying snapshots from one cluster to one or more Remote sites.
+- **Async DR**: PD is defined group of entities (VMs, files, and Volume Groups) that are always backed up locally, and optionally replicated to one or more Remote Sites.
 
+  - Local and remote container have different names.
+  - Configure one or more Remote Sites (i.e. different clusters).
+
+- **Sync/Metro PD**: Active local Storage Container linked to a Standby Container at Remote Site.
+
+  - Local and remote container have the same name.
+
+- **Consistency Group**: Optional subset of entities in a Protection Domain, created with PD.
+- **Scheduler**: A schedule is a PD property that specifies snapshot intervals and snapshot retention.
+
+  - Retention can be set different for local and remote snapshots
+
+- **Snapshot**: Read-only copy of the state and data of a VM, file, or Volume Group at a specific point in time.
+
+
+-----------------------------------------------------
+
+Replication Schedule
+++++++++++++++++++++++++++++++++++
+
+**Retention policies for local and remote sites**
+
+.. figure:: images/ReplicationSchedule.png
+
+**DR Setup Steps – Schedule & Retention**
+
+- For backup / archival only purposes, it is possible to configure a Storage-only Nutanix cluster as a Remote Site which will act as a Backup Target.
+
+  - This will allow data to be replicated to / from the Storage-only cluster.
+
+
+
+-----------------------------------------------------
+
+Remote Site
+++++++++++++++++++++++++++++++++++
+
+**Mapping of networks and Storage Containers**
+
+.. figure:: images/RemoteSite.png
+
+
+
+-----------------------------------------------------
+
+Protection Domain Considerations
+++++++++++++++++++++++++++++++++++
+
+.. figure:: images/ProtectionDomainConsiderations.png
+
+
+
+
+
+-----------------------------------------------------
+
+Remote & Branch Office (ROBO) Solution
+++++++++++++++++++++++++++++++++++++++
+
+.. figure:: images/ROBO.png
+
+
+Nutanix offers the ability to use an NX-1155 appliance as a single-node backup target for an existing Nutanix cluster. Because this target has different resources than the original cluster, you primarily use it to provide backup for a small set of VMs. This utility gives SMB and ROBO customers a fully integrated backup option. 
+
+**The following are best practices for using a single-node backup target:**
+
+- All protection domains combined should be under 30 VMs.
+- To speed up restores, limit the number of VMs in each protection domain.
+- Limit backup retention to a three-month policy. We recommend seven daily, four weekly, and three monthly backups. 
+- Map an NX-1155 to only one physical cluster. 
+- Set the snapshot schedule to six hours or more. 
+- Turn off deduplication.
+
+**One- and two-node Clusters **
+
+Nutanix one- and two-node clusters follow the same best practices as the single-node backup target because of limited resources on the NX-1175S nodes. The only difference for one- and two-node clusters is that all protection domains should have only five VMs per node
+
+**One-Node Clusters**
+
+One-node clusters are a perfect fit if you have low availability requirements and need strong overall management for multiple sites. One-node clusters provide resiliency against the loss of a hard drive while still offering great remote management. Nutanix supports one-node clusters with ESXi and AHV only.  Nutanix also offers the NX-1155 specifically as a backup target for remote sites using native Nutanix snapshots for replication.
+
+**Two-Node Clusters**
+
+Two-node clusters offer reliability for smaller sites that must be cost effective and run with tight margins. These clusters use a witness only in failure scenarios to coordinate rebuilding data and automatic upgrades. You can deploy the witness offsite up to 500 ms away for ROBO and 200ms when using Metro Availability. Multiple clusters can use the same witness for two-node and metro clusters. Nutanix supports two-node clusters with ESXi and AHV only.
+
+**Three-Node Clusters**
+
+Although a three-node system may cost more money up front, it is the gold standard for remote and branch offices. Three-node clusters provide excellent data protection by always committing two copies of your data, which means that your data is safe even during failures. Three-node clusters also rebuild your data within 60 seconds of a node going down. The Acropolis Distributed Storage Fabric (DSF) not only rebuilds the data on the downed node, it does so without any user intervention.
+
+A self-healing Nutanix three-node cluster also obviates needless trips to remote sites. We recommend designing these systems with enough capacity to handle an entire node going down, which allows the loss of multiple hard drives, one at a time. Because there is no reliance on RAID, the cluster can lose and heal drives, one after the next, until available space runs out.
+
+
+
+
+-----------------------------------------------------
+
+NearSync
+++++++++++++++++++++++++++++++++++
+
+**Recovery Point Objective: 1 minute**
+
+.. figure:: images/NearSync.png
+
+
+For every Light-weight Snapshot (LWS), the feature uses markers into the OpLog instead of creating a new vdisk for every snapshot like in Async DR. 
+
+These changes are known as lightweight snapshots and they are replicated to the remote cluster on a regular basis.
+
+For all NearSync entities, every Write - whether sequential or random - goes through OpLog; no bypassing OpLog for larger block sizes or sequential writes as with regular async replication.
+
+On a regular basis (hydration point), these changes (LWS) will be consolidated into a regular snapshot on the remote cluster.
+
+LWS resides in the OPLOG which is carved out of the SSDs. Hydration removes LWS from the OPLOG and thus frees up SSD resources: operations log-based LWS never land on HDDs.
+
+To configure NearSync, in the *Repeat every ## minutes* enter a desired number between 1 and 15 (both included) as the scheduled time interval.
+
+
+
+
+-----------------------------------------------------
+
+Cloud Connect
+++++++++++++++++++++++++++++++++++
+
+**Remote Site either physical cluster or Cloud**
+
+.. figure:: images/CloudConnect.png
+
+
+The Nutanix Cloud Connect feature enables you to configure Amazon Web Services (AWS) as a Remote Site for virtual machine backups.  The AWS Remote Site is a single-node cluster which creates an m1.xlarge EC2 instance. A bucket is created in AWS S3 that can store up to 30 TB of data
+
+**The Nutanix Cloud Connect feature also enables you to configure Azure Virtual Machines (currently D3).**
+
+- AWS = Amazon Web Services
+- DR = Disaster Recovery
+- Cloud Connect is meant for backup/archive, not for running VMs.
 
 
 
@@ -233,16 +360,16 @@ References
 
 -----------------------------------------------------
 
-.. figure:: images/FailureandScenarios.png
+.. figure:: images/DataProtection.png
 
-`Failure and Scenarios <https://portal.nutanix.com/page/documents/details/?targetId=Web-Console-Guide-Prism-v5_15:arc-failure-modes-c.html>`_
+`Data Protection <https://portal.nutanix.com/page/documents/solutions/details/?targetId=BP-2005_Data_Protection:BP-2005_Data_Protection>`_
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 -----------------------------------------------------
 
-.. figure:: images/VMHighAvailabilityinAcropolis.png
+.. figure:: images/Failing.png
 
-`VM High Availability in Acropolis <https://portal.nutanix.com/page/documents/details/?targetId=Web-Console-Guide-Prism-v5_15:wc-high-availability-acropolis-c.html>`_
+`Failing From one Site to Another <https://portal.nutanix.com/page/documents/details/?targetId=Advanced-Admin-AOS-v5_15:sto-site-failover-t.html>`_
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 -----------------------------------------------------
@@ -270,17 +397,9 @@ References
 
 -----------------------------------------------------
 
-.. figure:: images/InfrastructureResiliency.png
+.. figure:: images/DataProtectionforAHV.png
 
-`Infrastructure Resiliency <https://www.nutanix.com/go/nutanix-converged-infrastructure-system-reliability>`_
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-
------------------------------------------------------
-
-.. figure:: images/DataProtectionandDisasterRecoveryBook.png
-
-`Data Protection and Disaster Recovery <https://www.nutanix.com/go/data-protection-and-disaster-recovery-on-nutanix>`_
+`Data Protection for AHV-Based VMs <https://www.nutanix.com/go/vm-data-protection-ahv>`_
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
