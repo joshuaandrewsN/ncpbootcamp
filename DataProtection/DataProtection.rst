@@ -109,9 +109,8 @@ Synchronous Replication
 
 - With the AOS 5.1 release a Metro Witness can be configured which can automate the failover.
 
-    - The witness can be downloaded via the Portal and is configured via Prism.
-
-    - Note that once a Metro Witness has been configured, it can fail (hence no need to have two witnesses) with the synchronous operation continuing without disruption.
+  - The witness can be downloaded via the Portal and is configured via Prism.
+  - Note that once a Metro Witness has been configured, it can fail (hence no need to have two witnesses) with the synchronous operation continuing without disruption.
 
 - In the event where there is a link failure between the two sites, each cluster will operate independently.  Once the link comes back up, the sites will be re-synchronized (deltas-only) and synchronous replication will start occurring.
 
