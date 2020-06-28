@@ -53,4 +53,4 @@
 
   ExtraQuestions/ExtraQuestions
 
-.. include:: gettingstarted.rst
+.. include:: `getting_started`
