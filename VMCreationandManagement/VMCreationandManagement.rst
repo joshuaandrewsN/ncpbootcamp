@@ -113,15 +113,11 @@ To install NGT:
 5. Click Submit.
 
 
-
-
 -----------------------------------------------------
 
 
 References
 ++++++++++++++++++++++
-
-
 
 
 .. figure:: images/VirtualMachineManagement.png
@@ -131,14 +127,12 @@ References
 
 -----------------------------------------------------
 
-
 .. figure:: images/PrismGuide.png
 
 `Virtual Machine Management (Prism Guide) <https://portal.nutanix.com/page/documents/details/?targetId=Web-Console-Guide-Prism-v5_15:Web-Console-Guide-Prism-v5_15-Guide-Prism-v510>`_
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 -----------------------------------------------------
-
 
 .. figure:: images/vm-data-protection-ahv.png
 
@@ -147,13 +141,10 @@ References
 
 -----------------------------------------------------
 
-
 .. figure:: images/AHVBestPracticesGuide.png
 
 `AHV Best Practices Guide <https://www.nutanix.com/go/ahv-best-practices-guide>`_
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-
 
 -----------------------------------------------------
 

@@ -3,9 +3,9 @@
 .. Adding labels to the beginning of your lab is helpful for linking to the lab from other pages
 .. _nutanix_networking_1:
 
--------------
+--------------------------
 Nutanix Networking
--------------
+--------------------------
  
 Session 4
 
