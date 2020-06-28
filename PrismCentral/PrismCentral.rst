@@ -116,7 +116,6 @@ A Prism Central administrator can also perform any of theses tasks, but they are
 References
 ------------
 
------------------------------------------------------
 
 .. figure:: images/PrismCentral.png
 

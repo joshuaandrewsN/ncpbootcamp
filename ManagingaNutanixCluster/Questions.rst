@@ -2,9 +2,9 @@
 
 .. _nutanix_Managing_a_Nutanix_Cluster_questions:
 
--------------
+---------------------------------------
 Managing a Nutanix Cluster Questions
--------------
+---------------------------------------
 
 
 .. toctree::

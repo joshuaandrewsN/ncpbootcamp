@@ -1,9 +1,9 @@
 .. title:: NCP Bootcamp - VM Creation and Management Questions
 .. _VM_Creation_and_Management_questions:
 
---------------------------
+-------------------------------------
 VM Creation and Management Questions
---------------------------
+-------------------------------------
 
 
 .. toctree::
@@ -39,15 +39,3 @@ VM Creation and Management Questions
   A7/A7
   
   
-  Q8/Q8
-  A8/A8
-  
-  
-  Q9/Q9
-  A9/A9
-  
-  
-  Q10/Q10
-  A10/A10
-  
-

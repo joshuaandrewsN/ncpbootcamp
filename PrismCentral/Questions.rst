@@ -2,9 +2,9 @@
 
 .. _Prism_Central_questions:
 
--------------
+--------------------------
 Data Protection Questions
--------------
+--------------------------
 
 
 .. toctree::
@@ -40,15 +40,3 @@ Data Protection Questions
   A7/A7
   
   
-  Q8/Q8
-  A8/A8
-  
-  
-  Q9/Q9
-  A9/A9
-  
-  
-  Q10/Q10
-  A10/A10
-  
-

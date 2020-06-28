@@ -218,8 +218,6 @@ References
 ++++++++++++++++++++++
 
 
------------------------------------------------------
-
 .. figure:: images/NetworkManagement.png
 
 `Network Management <https://portal.nutanix.com/page/documents/details/?targetId=Web-Console-Guide-Prism-v5_15:wc-network-management-wc-c.html>`_

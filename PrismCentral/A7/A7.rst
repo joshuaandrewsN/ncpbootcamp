@@ -11,5 +11,3 @@ Answer 7
 
 
 Back to the Question: :ref:`PC_question_7`
-
-Next Question: :ref:`PC_question_8`

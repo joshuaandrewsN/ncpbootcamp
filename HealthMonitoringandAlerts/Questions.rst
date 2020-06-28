@@ -2,9 +2,9 @@
 
 .. _Health_Monitoring_and_Alerts_questions:
 
---------------------------
+------------------------------------------
 Nutanix Health Monitoring and Alerts
---------------------------
+------------------------------------------
 
 
 .. toctree::

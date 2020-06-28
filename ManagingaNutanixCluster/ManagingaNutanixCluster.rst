@@ -332,8 +332,6 @@ Sample API script/call creates a Network (POST operation) on default distributed
 References
 +++++++++++++++++++++++++
 
------------------------------------------------------
-
 .. figure:: images/webconsoleguide.png
 
 `Prism Element (Web Console) - Guide <https://portal.nutanix.com/page/documents/details/?targetId=Web-Console-Guide-Prism-v5_15:Web-Console-Guide-Prism-v5_15>`_
