@@ -117,36 +117,27 @@ To install NGT:
 
 
 References
-++++++++++++++++++++++
+++++++++++
 
 
 .. figure:: images/VirtualMachineManagement.png
-
 `Virtual Machine Management (AHV Guide) <https://portal.nutanix.com/page/documents/details/?targetId=AHV-Admin-Guide-v5_15:ahv-vm-management-intro-c.html>`_
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
 -----------------------------------------------------
-
 .. figure:: images/PrismGuide.png
-
 `Virtual Machine Management (Prism Guide) <https://portal.nutanix.com/page/documents/details/?targetId=Web-Console-Guide-Prism-v5_15:Web-Console-Guide-Prism-v5_15-Guide-Prism-v510>`_
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
 -----------------------------------------------------
-
 .. figure:: images/vm-data-protection-ahv.png
 
 `Data Protection for AHV-Based VMs <https://www.nutanix.com/go/vm-data-protection-ahv >`_
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
 -----------------------------------------------------
-
 .. figure:: images/AHVBestPracticesGuide.png
-
 `AHV Best Practices Guide <https://www.nutanix.com/go/ahv-best-practices-guide>`_
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
 -----------------------------------------------------
+
 
 Questions
 ++++++++++++++++++++++
