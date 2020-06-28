@@ -50,5 +50,20 @@ Nutanix Extra Questions
 
   Q13/Q13
   A13/A13
+
+  Q14/Q14
+  A14/A14
+
+  Q15/Q15
+  A15/A15
+
+  Q16/Q16
+  A16/A16
+
+  Q17/Q17
+  A17/A17
+
+  Q18/Q18
+  A18/A18
   
 
