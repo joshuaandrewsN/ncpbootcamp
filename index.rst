@@ -1,7 +1,7 @@
 .. title:: Nutanix NCP Bootcamp
 
 .. toctree::
-  :maxdepth: 2
+  :maxdepth: 1
   :caption: Intro
   :name: _Intro
   :includehidden:
@@ -35,7 +35,7 @@
 
 
 .. toctree::
-  :maxdepth: 2
+  :maxdepth: 1
   :caption: Closing
   :name: _Close
   :includehidden:
@@ -45,9 +45,10 @@
   Conclusion <conclusion>
 
 .. toctree::
-  :maxdepth: 2
+  :maxdepth: 1
   :caption: Optional
   :name: _optional_labs
+  :includehidden:
   :hidden:
 
   ExtraQuestions/ExtraQuestions
