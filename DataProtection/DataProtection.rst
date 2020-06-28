@@ -169,7 +169,7 @@ Asynchronous Replication: Migrate
 
 .. figure:: images/ASynchronousReplicationMigrate.png
 
-**Migrate is used when the source Protection Domain is still available. **
+**Migrate is used when the source Protection Domain is still available.**
 
 - Creates and replicates a snapshot of the PD
 - Powers off VMs on the local site
@@ -286,7 +286,7 @@ Nutanix offers the ability to use an NX-1155 appliance as a single-node backup t
 - Set the snapshot schedule to six hours or more. 
 - Turn off deduplication.
 
-**One- and two-node Clusters **
+**One- and two-node Clusters**
 
 Nutanix one- and two-node clusters follow the same best practices as the single-node backup target because of limited resources on the NX-1175S nodes. The only difference for one- and two-node clusters is that all protection domains should have only five VMs per node
 
@@ -357,33 +357,33 @@ The Nutanix Cloud Connect feature enables you to configure Amazon Web Services (
 References
 +++++++++++++++++++++++++
 
------------------------------------------------------
+
 
 .. figure:: images/DataProtection.png
 
 `Data Protection <https://portal.nutanix.com/page/documents/solutions/details/?targetId=BP-2005_Data_Protection:BP-2005_Data_Protection>`_
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 -----------------------------------------------------
 
 .. figure:: images/Failing.png
 
 `Failing From one Site to Another <https://portal.nutanix.com/page/documents/details/?targetId=Advanced-Admin-AOS-v5_15:sto-site-failover-t.html>`_
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 -----------------------------------------------------
 
 .. figure:: images/DataProtectionandDisasterRecovery.png
 
 `Data Protection and Disaster Recovery <https://www.nutanix.com/go/enterprise-cloud-data-protection-on-nutanix>`_
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 -----------------------------------------------------
 
 .. figure:: images/DefinitiveGuidetoDataProtectionandDisasterRecovery.png
 
 `Definitive Guide to Data Protection and Disaster Recovery <https://www.nutanix.com/go/the-definitive-guide-to-data-protection-and-disaster-recovery-on-enterprise-clouds>`_
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
 -----------------------------------------------------

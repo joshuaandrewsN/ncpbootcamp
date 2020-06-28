@@ -49,7 +49,7 @@ Practice questions
 
 
 Exam Blueprint Guide
-+++++++++++++++++++
+++++++++++++++++++++
 
 Nutanix doesn't teach to the exam - this day follows the Blueprint
 
@@ -59,7 +59,7 @@ The EBG covers topics such as the retake policy and the scoring method.
 
 
 Key details 
-..........
+...........
 
 - 75 questions covering twelve sections
 - 120 minute timelimit

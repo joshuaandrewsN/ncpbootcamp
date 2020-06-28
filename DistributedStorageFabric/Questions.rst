@@ -2,9 +2,9 @@
 
 .. _nutanix_Distributed_Storage_Fabric_questions:
 
--------------
+---------------------------------------
 Distributed Storage Fabric Questions
--------------
+---------------------------------------
 
 
 .. toctree::

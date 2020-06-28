@@ -2,9 +2,9 @@
 
 .. _Data_Resiliancy_questions:
 
--------------
+--------------------------
 Data Resiliancy Questions
--------------
+--------------------------
 
 
 .. toctree::
@@ -48,7 +48,3 @@ Data Resiliancy Questions
   A9/A9
   
   
-  Q10/Q10
-  A10/A10
-  
-

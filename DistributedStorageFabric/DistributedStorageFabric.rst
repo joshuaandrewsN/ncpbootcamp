@@ -161,7 +161,7 @@ Offline compression initially writes the data as normal (in an uncompressed stat
 
 Nutanix leverages LZ4 and LZ4HC for data compression. Normal data is compressed using LZ4, which provides a very good blend between compression and performance. For cold data, LZ4HC is used to provide an improved compression ratio.
 
-**Workloads less suitable for compression*
+**Workloads less suitable for compression**
 
 - Applications performing native data compression,  including JPEG or MPEG
 - Systems featuring native compression such as SQL server databases
@@ -240,12 +240,12 @@ Viewing Overall Capacity Optimization
 References
 +++++++++++++++++++++++++
 
------------------------------------------------------
+
 
 .. figure:: images/StorageManagement.png
 
 `Storage Management <https://portal.nutanix.com/page/documents/details/?targetId=Web-Console-Guide-Prism-v5_15:wc-storage-management-wc-c.html>`_
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 -----------------------------------------------------
 
@@ -253,28 +253,28 @@ References
 .. figure:: images/Software-Defined.png
 
 `Software-Defined Storage for Dummies <https://www.nutanix.com/go/software-defined-storage-for-dummies>`_
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 -----------------------------------------------------
 
 .. figure:: images/snapshots.png
 
 `Snapshots and Clones <https://www.youtube.com/watch?v=uK5wWR44UYE&feature=youtu.be>`_
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 -----------------------------------------------------
 
 .. figure:: images/Deduplication.png
 
 `Deduplication <https://www.youtube.com/watch?v=C-rp13cDpNw&feature=youtu.be>`_
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 -----------------------------------------------------
 
 .. figure:: images/DataEfficiency.png
 
 `Data Efficiency <https://www.nutanix.com/go/nutanix-data-efficiency>`_
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
 

@@ -134,7 +134,7 @@ Prism (Central) supports SSL certificate-based authentication for console access
 Cluster Lockdown
 ++++++++++++++++++++++++++++++++++++++
 
-**Password vs. Key Challenged Access*
+**Password vs. Key Challenged Access**
 
 .. figure:: images/ClusterLockdown.png
 
@@ -184,7 +184,7 @@ References
 .. figure:: images/securityguide.png
 
 `Security Guide - Guide <https://portal.nutanix.com/page/documents/details/?targetId=Nutanix-Security-Guide-v5_15:sec-security-nutanix-security-infrastructure-wc-c.html>`_
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
 -----------------------------------------------------

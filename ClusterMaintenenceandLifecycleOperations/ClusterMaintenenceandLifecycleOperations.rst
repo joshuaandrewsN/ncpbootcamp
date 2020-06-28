@@ -204,7 +204,7 @@ Removing a node – Process Details
 
 The Nutanix Operating System makes it easy to repurpose equipment as needed. You can switch a node from one hypervisor to another or take nodes offline in one datacenter where you’ve got excess capacity and move them to another where they are needed, eliminating expensive over-provisioning.
 
-**Licensing*
+**Licensing**
 
 - Nutanix Nodes are delivered with a default Starter license that does not expire
 - Reclaim Pro/Ultimate licenses removing a node or destroying a cluster
@@ -233,7 +233,7 @@ The Nutanix Operating System makes it easy to repurpose equipment as needed. You
 References
 +++++++++++++++++++++++++
 
------------------------------------------------------
+
 
 .. figure:: images/TroubleshootingTools.png
 

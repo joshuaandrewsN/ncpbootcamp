@@ -23,7 +23,7 @@ Nutanix Volumes Intro
 
 
 
-**What is Nutanix Volumes (previously know as “Acropolis Block Services (ABS)”)?*
+**What is Nutanix Volumes (previously know as “Acropolis Block Services (ABS)”)?**
 
 - ABS enables enterprise applications running on external servers to leverage the benefits of the hyperconverged Nutanix architecture.
 
@@ -226,7 +226,7 @@ Authentication & Tools Management
 ++++++++++++++++++++++++++++++++++
 
 
-.. figure:: images/AuthenticationTools Management.png
+.. figure:: images/AuthenticationToolsManagement.png
 
 
 **Microsoft Management Console (MMC)**
@@ -265,12 +265,12 @@ Files Configuration
 References
 --------------------------
 
------------------------------------------------------
+
 
 .. figure:: images/NutanixFiles.png
 
 `Nutanix Files <https://portal.nutanix.com/page/documents/details/?targetId=Acropolis-File-Services-v30:Acropolis-File-Services-v30>`_
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 -----------------------------------------------------
 
@@ -278,21 +278,21 @@ References
 .. figure:: images/NutanixVolumes.png
 
 `Nutanix Volumes <https://portal.nutanix.com/page/documents/solutions/details/?targetId=BP-2049-Nutanix-Volumes:BP-2049-Nutanix-Volumes>`_
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 -----------------------------------------------------
 
 .. figure:: images/NutanixFilesPerformance.png
 
 `Nutanix Files Performance <https://portal.nutanix.com/page/documents/solutions/details/?targetId=TN-2117-Nutanix-Files-Performance:TN-2117-Nutanix-Files-Performance>`_
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 -----------------------------------------------------
 
 .. figure:: images/Nutanix Files Tech Note.png
 
 `Nutanix Files Tech Note <https://www.nutanix.com/go/simplifying-file-storage-with-nutanix-files>`_
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
 

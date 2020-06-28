@@ -2,9 +2,9 @@
 
 .. _Data_Protection_questions:
 
--------------
+--------------------------
 Data Protection Questions
--------------
+--------------------------
 
 
 .. toctree::

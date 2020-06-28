@@ -2,9 +2,9 @@
 
 .. _Securing_a_Nutanix_Cluster_questions:
 
---------------------------
+------------------------------------
 Securing a Nutanix Cluster Questions
---------------------------
+------------------------------------
 
 
 .. toctree::
