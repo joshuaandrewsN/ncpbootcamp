@@ -2,7 +2,7 @@
 .. _VM_Creation_and_Management_1:
 
 
-. title:: NCP Bootcamp - VM Creation and Management
+.. title:: NCP Bootcamp - VM Creation and Management
 
 --------------------------
 VM Creation and Management

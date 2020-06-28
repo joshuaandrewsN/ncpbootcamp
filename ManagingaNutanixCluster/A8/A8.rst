@@ -9,6 +9,23 @@ Answer 8
 
 .. figure:: images/a8.png
 
+Information collected and shared with Nutanix Support includes:
+
+- System alerts
+- Current Nutanix software version
+- Nutanix processes and controller VM info
+- Hypervisor details such as type and version
+- System-level statistics
+- Configuration information
+
+Information NOT shared with Nutanix Support:
+
+- Guest VMs
+- User data
+- Metadata
+- Administrator credentials
+- Identification data
+- Private information
 
 Back to the Question: :ref:`MANC_question_8`
 

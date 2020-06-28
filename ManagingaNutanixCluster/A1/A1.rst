@@ -9,6 +9,8 @@ Answer 1
 
 .. figure:: images/a1.png
 
+Prism listens on ports 80 and 9440, if HTTP traffic comes in on port 80 it is redirected to HTTPS on port 9440
+
 
 Back to the Question: :ref:`MANC_question_1`
 

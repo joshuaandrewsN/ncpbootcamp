@@ -9,6 +9,8 @@ Answer 4
 
 .. figure:: images/a4.png
 
+FT = RF – 1
+
 
 Back to the Question: :ref:`DR_question_4`
 

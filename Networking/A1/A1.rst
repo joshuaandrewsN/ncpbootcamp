@@ -9,6 +9,8 @@ Answer 1
 
 .. figure:: images/a1.png
 
+Nutanix (only) highly recommends you configure CVM and Host in same VLAN, but not mandatory.
+
 
 Back to the Question: :ref:`NET_question_1`
 

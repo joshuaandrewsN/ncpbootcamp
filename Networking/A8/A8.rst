@@ -9,6 +9,19 @@ Answer 8
 
 .. figure:: images/a8.png
 
+**Backplane traffic**
+
+Backplane traffic is intra-cluster traffic that is necessary for the cluster to function, and comprises traffic between CVMs, traffic between CVMs and hosts, storage traffic, and so on. For nodes that have RDMA-enabled NICs, the CVMs use a separate RDMA LAN for Stargate-to-Stargate communications.
+
+**Management traffic**
+
+Management traffic is administrative traffic, or traffic associated with Prism and SSH connections, remote logging, SNMP, and so on. The current implementation simplifies the definition of management traffic to be any traffic that is not on the backplane network, and therefore also includes communications between user VMs and CVMs.
+
+Network segmentation is a security feature that separates management traffic from backplane traffic by creating separate virtual networks, one for each of these traffic types, on the default external virtual switch on each host. To enable the CVMs in a cluster to communicate over these networks, the CVMs are multihomed. Multihoming is facilitated by the addition of a virtual network interface card (vNIC) to the Controller VM and placing the new interface on the backplane network. Additionally, the hypervisor is assigned an interface on the backplane network. 
+The traffic associated with the CVM interfaces and host interfaces on the backplane network can be secured further by placing those interfaces on a separate VLAN.
+
+In the default, unsegmented network in a Nutanix cluster, the Controller VM has two virtual network interfaces—eth0 and eth1. Interface eth0 is connected to the built-in external virtual switch, which is in turn connected to the external network through a bond or NIC team that contains the host’s physical uplinks. Interface eth1 is connected to an internal network that enables the CVM to communicate with the hypervisor. In this network, all traffic, whether backplane traffic or management traffic, uses interface eth0. These interfaces are on the default VLAN on the virtual switch.
+
 
 
 Back to the Question: :ref:`NET_question_8`

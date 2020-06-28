@@ -9,6 +9,7 @@ Answer 5
 
 .. figure:: images/a5.png
 
+SPSS is a software package used for statistical analysis. SPSS files download in SAV format.
 
 
 Back to the Question: :ref:`HMA_question_5`

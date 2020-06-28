@@ -9,6 +9,11 @@ Answer 9
 
 .. figure:: images/a9.png
 
+MTU = Max. Transmission Unit
+The standard 1,500 byte MTU still delivers excellent performance, but increasing the MTU can be beneficial in  some scenarios. 
+Jumbo frames are Ethernet frames with more than 1500 bytes of payload.
+For example, you can configure jumbo frames in your network when using Nutanix Volumes to connect high-performance external servers to Nutanix volume groups over iSCSI. This configuration increases efficiency for applications such as databases connecting to Volumes.
+
 
 
 Back to the Question: :ref:`NET_question_9`

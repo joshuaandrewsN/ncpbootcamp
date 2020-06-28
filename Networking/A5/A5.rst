@@ -9,6 +9,11 @@ Answer 5
 
 .. figure:: images/a5.png
 
+allssh ovs-appctl bond/show							: needs to run command from host not directly from CVM
+hostssh ovs-appctl bond/show						: correct answer
+hostssh ssh host@192.168.5.1 ovs-appctl bond/show	: hostssh needs to have “ssh host@192.168.5.1” removed 
+allssh ssh root@192.168.5.2 ovs-appctl bond/show	: wrong IP: points to CVM (192.168.5.2) instead of Host (192.168.5.1)
+
 
 Back to the Question: :ref:`NET_question_5`
 

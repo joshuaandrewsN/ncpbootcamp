@@ -10,6 +10,16 @@ Answer 6
 .. figure:: images/a6.png
 
 
+Answer: A, C, and D
+
+To assign a role to a user, there are three options:
+
+1. Checking the User Administrator box allows the user to view information, perform any administrative task, and create or modify user accounts. (Checking this box automatically checks the Cluster Admin box as well to indicate this user has full Prism permissions. However, a user administrator has full permissions regardless of whether the cluster administrator box is checked.)
+2. Checking the Cluster Administrator box allows the user to view information and perform any administrative task (but not create or modify user accounts).
+3. Leaving both boxes unchecked allows the user (‘Viewer’) to view information, but it does not provide permission to perform cluster or user administrative tasks.
+
+
+
 Back to the Question: :ref:`SEC_question_6`
 
 Next Question: :ref:`SEC_question_7`
