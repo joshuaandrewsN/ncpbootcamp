@@ -12,7 +12,7 @@ At the end of the workshop you will know how to sign up to the exam, be armed wi
 
 
 Agenda
-++++++
+++++++++++++++++++++++++
 
 - Introductions
 - Nutanix Certified Professional Overview
@@ -30,7 +30,7 @@ Agenda
 - Cluster Maintenence and Lifecycle Operations
 
 Introductions
-+++++++++++++
++++++++++++++++++++++++++++++++
 
 - Name
 - Familiarity with Nutanix
@@ -56,6 +56,7 @@ Nutanix doesn't teach to the exam - this day follows the Blueprint
 The Exam Blueprint Guide, available in the NCP learning plan at NutanixUniversity or in the Certifications page at nutanix.com, lists all of the pertinent information about the exam.
 
 The EBG covers topics such as the retake policy and the scoring method.  
+
 
 Key details 
 ..........
