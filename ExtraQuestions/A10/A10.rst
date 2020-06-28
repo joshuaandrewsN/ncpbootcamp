@@ -9,6 +9,7 @@ Answer 10
 
 .. figure:: images/a10.png
 
+
 Back to the Question: :ref:`E_question_10`
 
 Next Question: :ref:`E_question_11`
