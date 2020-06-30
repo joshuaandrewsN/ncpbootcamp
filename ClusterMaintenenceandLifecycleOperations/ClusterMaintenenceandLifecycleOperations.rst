@@ -2,7 +2,7 @@
 .. _Cluster_Maintenence_and_Lifecycle_Operations_1:
 
 ----------------------------------------------------
-Cluster Maintenence and Lifecycle Operations
+Cluster Maintenance and Lifecycle Operations
 ----------------------------------------------------
 
 

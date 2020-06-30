@@ -3,7 +3,7 @@
 .. _Extra_questions:
 
 --------------------------
-Nutanix Extra Questions
+Extra Practice Questions
 --------------------------
 
 
