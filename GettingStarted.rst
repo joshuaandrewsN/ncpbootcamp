@@ -19,15 +19,15 @@ Agenda
 - Nutanix Concepts
 - Managing a Nutanix Cluster
 - Securing a Nutanix Cluster
-- Networking
+- Nutanix Networking
 - VM Creation and Management
 - Health Monitoring and Alerts
 - Distributed Storage Fabric
 - Acropolis Storage Services
-- Data Resiliancy
+- Data Resiliency
 - Data Protection
 - Prism Central
-- Cluster Maintenence and Lifecycle Operations
+- Cluster Maintenance and Lifecycle Operations
 
 Introductions
 +++++++++++++++++++++++++++++++
