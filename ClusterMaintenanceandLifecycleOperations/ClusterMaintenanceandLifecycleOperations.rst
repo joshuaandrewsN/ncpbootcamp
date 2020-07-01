@@ -1,5 +1,5 @@
 .. Adding labels to the beginning of your lab is helpful for linking to the lab from other pages
-.. _Cluster_Maintenence_and_Lifecycle_Operations_1:
+.. _Cluster_Maintenance_and_Lifecycle_Operations_1:
 
 ----------------------------------------------------
 Cluster Maintenance and Lifecycle Operations

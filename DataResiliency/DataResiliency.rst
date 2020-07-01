@@ -1,8 +1,8 @@
 .. Adding labels to the beginning of your lab is helpful for linking to the lab from other pages
-.. _Data_Resiliancy_1:
+.. _Data_Resiliency_1:
 
 -----------------
-Data Resiliancy
+Data Resiliency
 -----------------
 
 Session 9
