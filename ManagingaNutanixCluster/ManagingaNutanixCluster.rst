@@ -35,8 +35,6 @@ Graphical interface (UI) and Command Line (CLI)
 
 - aCLI (Acropolis CLI)
 
-- eCLI (Support)
-
 
 **There are several methods to manage a Nutanix implementation**
 
@@ -110,7 +108,7 @@ Configuration management:
   - Virtual Networking: Setup and configure VLAN-backed virtual networks spanning the cluster. Use built-in IP management
   - Upgrades: Non-Disruptive rolling Hypervisor upgrade in a Nutanix cluster
   - Maintenance Mode: Put hosts into maintenance mode for upgrades and host removals
-  - Scaling: Easily add and remove nodes in minutes
+  - Scaling: Easily add and remove nodes
 
 
 - Storage policy - compression, deduplication, erasure coding
@@ -159,7 +157,11 @@ RF -> FT
 
 .. figure:: images/PrismElementDataResiliency.png
 
-RF2=FT1 and RF3=FT2
+FT = Number of failures tolerated 
+
+RF = Number of data copies 
+
+RF2=FT1 and RF3=FT2 
 
 FT0 (zero) means cluster still running, but no additional failures can be tolerated
 
@@ -188,7 +190,7 @@ Two CLIs:
 - aCLI – Manage hosts, networks, snapshots and VMs the Acropolis portion of the Nutanix environment
 
 
-Acropolis 5.5 Command Reference Guide
+Acropolis 5.15 Command Reference Guide
 
 - Contains nCLI, aCLI and CVM commands
 
@@ -250,7 +252,7 @@ Always run commands from CVM
 PowerShell
 ++++++++++++++++++++++++
 
-Always run commands from CVM
+.. Always run commands from CVM
 
 .. figure:: images/powershell.png
 
@@ -274,7 +276,7 @@ System administration tasks using PowerShell
   - PowerShell v2
   - .NET framework 4
 
-- Downloaded Prism installer based on AOS version
+.. - Downloaded Prism installer based on AOS version
 - Extra set of PowerShell cmdlets 
 
 ``Get-NutanixCluster -Server cvm_ip_addr``

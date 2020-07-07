@@ -123,6 +123,7 @@ vSwitch Implementation (AHV)
   - It has no physical adapter and is dedicated to the communication between the CVM and the internal interface on the AHV bridge called virbr0.
 
     - This virbr0 is preconfigured with a private IP address 192.168.5.1.
+	- 192.168.5.2 and 192.168.5.254 are configured on the CVM 
 
 - The open vSwitch br0 is a public virtual switch.
 
@@ -134,7 +135,7 @@ vSwitch Implementation (AHV)
 
 - Since br0 has similar configuration on all AHV hosts, these br0 collectively appear like a single distributed virtual switch.
 
-  - Also when a virtual network is created from the Prism web console or ACLI, it is created on all AHV hosts.
+  - Also when a virtual network is created, it is created on all AHV hosts.
 
 Each AHV server maintains an OVS instance, and all OVS instances combine to form a single logical switch.
 

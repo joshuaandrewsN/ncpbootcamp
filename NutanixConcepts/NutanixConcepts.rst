@@ -159,11 +159,14 @@ More AOS details can be found on nutanixbible.com
 
 A large number of AOS services are running inside the CVM.
 
-- Apache Zookeeper implements Zeus, which is the Nutanix library that all other components use to access the cluster configuration.
-- Medusa is a Nutanix abstraction layer that sits in front of the database that holds metadata. A modified form of Apache Cassandra distributes the database across all nodes in the cluster.
-- From the perspective of the hypervisor, Stargate is the main point of contact for the Nutanix cluster. 
-- In the Nutanix cluster, each node runs a Curator process that watches over the entire process.
+- Apache **Zookeeper** implements Zeus, which is the Nutanix library that all other components use to access the cluster configuration.
+- **Medusa** is a Nutanix abstraction layer that sits in front of the database that holds metadata. 
+  - A modified form of Apache **Cassandra** distributes the metadata database across all nodes in the cluster.
+- From the perspective of the hypervisor, **Stargate** is the main point of contact for the Nutanix cluster. 
+- In the Nutanix cluster, each node runs a **Curator** process that watches over the entire process.
+  - Curator is responsible for managing and distributing tasks throughout the cluster, including disk balancing, proactive scrubbing, and many more
 
+  
 
 
 
@@ -328,13 +331,13 @@ Nutanix Enterprise Cloud delivers a consistent, high-performance and seamless ex
 .. **Era:** Elegant and efficient one-click operations that simplify database administration.
 
 
------------------------------------------------------
+.. -----------------------------------------------------
 
-What’s in a Name?
-++++++++++++++++++++++
+..  What’s in a Name?
+.. ++++++++++++++++++++++
 
 
-.. figure:: images/WhatsinaName.png
+.. .. figure:: images/WhatsinaName.png
 
 
 

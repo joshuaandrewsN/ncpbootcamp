@@ -29,7 +29,7 @@ Virtual IO Drivers
 
 - Enables Windows 64-bit VMs to recognize AHV virtual hardware
 - Contains Network, Storage and Ballooning driver (for perf data collection)
-- If not added as ISO (CDROM), Windows VM may not boot
+- If not added as ISO (CDROM), Windows cannot be installed
 - Most modern Linux distributions already include drivers
 
 - Nutanix Support Portal: 

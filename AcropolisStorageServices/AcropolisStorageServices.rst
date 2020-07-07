@@ -23,11 +23,11 @@ Nutanix Volumes Intro
 
 
 
-**What is Nutanix Volumes (previously know as “Acropolis Block Services (ABS)”)?**
+**What is Nutanix Volumes?**
 
-- ABS enables enterprise applications running on external servers to leverage the benefits of the hyperconverged Nutanix architecture.
+- Nutanix Volumes enables enterprise applications running on external servers to leverage the benefits of the hyperconverged Nutanix architecture.
 
-  - The Acropolis Block Services (ABS) feature exposes back-end DSF storage to external consumers (guest OS, physical hosts, containers, etc.) via iSCSI.
+  - The Nutanix Volumes feature exposes back-end DSF storage to external consumers (guest OS, physical hosts, containers, etc.) via iSCSI.
 
 - This allows any operating system to access DSF and leverage its storage capabilities. In this deployment scenario, the OS is talking directly to Nutanix bypassing any hypervisor.
 
@@ -91,7 +91,7 @@ Hosts access NTNX VG through iSCSI Qualifier Name
 
 **Attaching Initiators to Targets**
 
-- ABS presents a volume group and its vDisks as iSCSI targets and assigns IQNs.  Initiators or hosts have their IQNs attached to a volume group to gain access.
+- Nutanix Volumes presents a volume group and its vDisks as iSCSI targets and assigns IQNs.  Initiators or hosts have their IQNs attached to a volume group to gain access.
 - In the above picture, the administrator has created two volume groups, Volume Group A and Volume Group B.  Volume Group A has three vDisks and Volume Group B has 2 vDisks.  The hosts Host A and Host B have their iSCSI initiators configured to communicate with the iSCSI target (Data Services IP). The vDisks will be presented to the initiators as LUNs.
 
 **Configuring Volume Group for Shared Access**
@@ -112,7 +112,7 @@ Volume Group Connectivity Options
 .. figure:: images/VolumeGroupConnectivityOptions.png
 
 
-**Volume Group Connectivity Options (ABS)**
+**Volume Group Connectivity Options**
 
 - The Data Services IP is leveraged for discovery.  .This allows for a single address that can be leveraged without the need of knowing individual CVM IP addresses.
 - The Data Services IP will be assigned to the current iSCSI master.  In the event that fails, a new iSCSI master will become elected and assigned the Data Services IP.  This ensures the discovery portal will always remain available.
@@ -132,7 +132,7 @@ Failover Scenarios
 
 .. figure:: images/FailoverScenarios.png
 
-**Failover Scenarios (ABS)**
+**Failover Scenarios (Nutanix Volumes)**
 
 - In the event that fails, a new iSCSI master will become elected and assigned the Data Services IP. 
 
@@ -215,7 +215,7 @@ File Services Constructs Construct
 
 A DFS referral is an ordered list of servers that a client computer receives from a domain controller or namespace server when the user accesses a namespace root or DFS folder with targets. For example, the dfs targets are server \\NTNX_HR1\info and server \\NTNX_HR2\info. These are the real folder locations linked to DFS namespaces.
 
-When creating a namespace \\ntnx.com\HR\info, a client who accesses \\ntnx.com\HR\info in fact accesses folders \\NTNX_HR1\info and \\NTNX_HR2\info. 
+When creating a namespace \\\\ntnx.com\\HR\\info, a client who accesses \\\\ntnx.com\\HR\\info in fact accesses folders \\\\NTNX_HR1\\info and \\\\NTNX_HR2\\info. 
 
 More info here: https://docs.microsoft.com/en-us/windows-server/storage/dfs-namespaces/enable-or-disable-referrals-and-client-failback
 
@@ -231,7 +231,7 @@ Authentication & Tools Management
 
 **Microsoft Management Console (MMC)**
 
-Component of Windows 2000 and its successors that provides system administrators and advanced users an interface for configuring and monitoring the system.
+.. Component of Windows 2000 and its successors that provides system administrators and advanced users an interface for configuring and monitoring the system.
 
 The Microsoft management Console snapin is available on the Nutanix Support Portal under downloads > Tools & Firmware.
 
@@ -250,9 +250,12 @@ Files Configuration
 **Authentication & Authorization**
 
 - The File Services feature is fully integrated into Microsoft Active Directory (AD) and DNS.
+
   - This allows all of the secure and established authentication and authorization capabilities of AD to be leveraged.
+
 - All share permissions, user and group management is done using the traditional Windows MMC for file management.
 - As part of the installation process the following AD / DNS objects will be created:
+
   - AD Computer Account for File Server
   - AD Service Principal Name (SPN) for File Server and each FSVM
   - DNS entry for File Server pointing to all FSVM(s)
