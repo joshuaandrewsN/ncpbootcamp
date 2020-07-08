@@ -41,6 +41,9 @@ Remote sites are a logical construct. Admins must first configure any Acropolis 
 **RPO and RTO considerations:**
 
 - Time Stream and Cloud: High RPO and RTO (hours), used for minor incidents.
+
+  - Time Stream is a set of scheduled snapshots of a Protection Domain (more on PDs later) stored on the same cluster as the VMs.
+  
 - Synchronous and Asynchronous: (Near)-Zero RPO and RTO, used for major incidents.
 
 
@@ -59,7 +62,7 @@ Multi-site Async Example
 Disaster Recovery (DR) is an area of security planning that aims to protect an organization from the effects of significant negative events. 
 DR allows an organization to maintain or quickly resume **mission-critical functions** following a disaster.
 
-For environments that do not want to switch hypervisors in the main datacenter, Nutanix offers cross-hypervisor disaster recovery to replicate VMs from AHV to ESXi or ESXi to AHV. In the event of a disaster, administrators can restore their AHV VM to ESXi for quick recovery or replicate the VM back to the remote site with easy workflows.
+For environments that do not want to switch hypervisors in the main datacenter, Nutanix offers cross-hypervisor disaster recovery to replicate VMs from ESXi to AHV. In the event of a disaster, administrators can restore their ESXi VM to AHV for quick recovery or replicate the VM back to the remote site with easy workflows.
 
 **Native (on-site) and Remote Data Replication capabilities**
 
@@ -347,7 +350,6 @@ The Nutanix Cloud Connect feature enables you to configure Amazon Web Services (
 **The Nutanix Cloud Connect feature also enables you to configure Azure Virtual Machines (currently D3).**
 
 - AWS = Amazon Web Services
-- DR = Disaster Recovery
 - Cloud Connect is meant for backup/archive, not for running VMs.
 
 

@@ -46,11 +46,11 @@ Prism Element <> Prism Central Proxy
 SSL port 9440 needs to be open in both directions between the Prism Central VM and any registered clusters or clusters to be registered.
 
 - If you are implementing a proxy server in your cluster environment with this port open, you do not need to whitelist Prism Central and its managed/registered clusters. 
-- For more info, refer to: https://portal.nutanix.com/#/page/docs/details?targetId=Prism-Central-Guide-Prism-v55:mul-pc-proxy-server-c.html#concept_cms_khq_hw
+- For more info, refer to the `Prism Central v5.15 Guide <https://portal.nutanix.com/page/documents/details?targetId=Prism-Central-Guide-Prism-v5_15:Prism-Central-Guide-Prism-v5_15>`_
+
 
 **The nCLI includes ncli http-proxy add-to-whitelist and ncli http-proxy delete-from-whitelist command options for use when you are implementing a proxy server in your cluster environment.**
 
-- See also https://portal.nutanix.com/#/page/docs/details?targetId=Prism-Central-Guide-Prism-v55:mul-pc-proxy-server-t.html on how to use CLI to set the proxies.
 - E.g. *nutanix@cvm$ ncli http-proxy add-to-whitelist target-type=ipv4_address target=10.11.12.13*
 
 

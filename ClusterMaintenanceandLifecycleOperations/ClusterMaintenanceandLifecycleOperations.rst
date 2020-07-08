@@ -29,6 +29,7 @@ Stopping/Starting a Cluster
   - Shut down all guest virtual machines, including vCenter if it is running on the cluster.
   - Do not shut down Nutanix Controller VMs.
 
+- **Note:** AHV will not allow the cluster to stop if a VM (other than CVM) is running.
 - **Note:** If you are running Acropolis File Services (AFS), stop AFS before stopping your AOS cluster.
 - **Note:** This procedure stops all services provided by guest virtual machines and the Nutanix cluster.
 
@@ -81,9 +82,11 @@ AOS Release Notes
 
 .. figure:: images/AOSReleaseNotes.png
 
-Short Term Support (STS): 3 months of maintenance followed by an additional 3 months of support.
+Short Term Support (STS): Maintenance until the next Release that is an Upgrade followed by an additional 3 months of support.
 
-Long Term Support (LTS): 12 months of maintenance (after the Release Date) followed by an additional 6 months of support.
+Long Term Support (LTS): 3 months of maintenance after the Release Date for the next LTS Release that is an Upgrade followed by an additional 6 months of support.
+
+`See KB5505 for more information <https://portal.nutanix.com/page/documents/kbs/details?targetId=kA00e000000LIi9CAG>`_
 
 -----------------------------------------------------
 
@@ -113,7 +116,7 @@ Nutanix Cluster Check (NCC)
 **The NCC output log is also stored on the:**
 
 - Foundation VM: */home/nutanix/foundation/log/ncc/’cluster_name’ /logs/ncc-output.log*
-- The Cluster itself: */home/nutanix/data/logs/ncc-output.log*
+- The Cluster itself: */home/nutanix/data/logs/ncc-output.log* can be found on the CVM where the ncc health_checks run_all has been run. 
 
 
 
@@ -161,7 +164,7 @@ Cluster Events: Log File Analysis
 
 Depending on the issue (broken hardware, broken service, performance issue, etc.) you may have to look at different locations.
 
-If there is no obvious error in the Prism UI, you may need to look in the ~nutanix/data/logs folder on any CVM (via SSH).
+If there is no obvious error in the Prism UI, you may need to look in the ~/data/logs folder on any CVM (via SSH).
 
 There you will find the logs of all the Nutanix services: Stargate, Curator, Cassandra, Genesis, ZooKeeper, etc.
 
@@ -207,7 +210,7 @@ The Nutanix Operating System makes it easy to repurpose equipment as needed. You
 **Licensing**
 
 - Nutanix Nodes are delivered with a default Starter license that does not expire
-- Reclaim Pro/Ultimate licenses removing a node or destroying a cluster
+- Reclaim Pro/Ultimate licenses **BEFORE** removing a node or destroying a cluster
 - Ensure consistent licensing for all nodes in a cluster (Nodes with different licensing default to minimum feature set)
 
 **Starter free license never expires (no need to register on portal)**
