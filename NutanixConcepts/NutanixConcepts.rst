@@ -10,95 +10,6 @@ Session 1
 
 -----------------------------------------------------
 
-What is (Server) Virtualization
-++++++++++++++++++++++++++++++++
-
-.. figure:: images/WhatIs.png
-
-- **Host** computer on which hypervisor runs
-- **Hypervisor** creates/manages guest VMs and presents VMs with virtual O.S.
-- **Guest virtual machine (VM)**  emulation of a physical computer, based on a computer architecture
-
-**Summary**
-
-Virtualization, as the name implies, creates a virtual version of a once-physical item. In a datacenter, the most commonly virtualized items include operating systems, servers, storage devices, or desktops. With virtualization, technologies like applications and operating systems are abstracted away from the hardware or software beneath them. 
-Hardware virtualization involves virtual machines (VMs), which take the place of a “real” computer with a “real” operating system.
-
-How does virtualization work? 
-One of the main reasons businesses use virtualization technology is server virtualization, which uses a hypervisor to “duplicate” the hardware underneath. In a non-virtualized environment, the guest operating system (OS) normally works in conjunction with the hardware. When virtualized, the OS still runs as if its on hardware, letting companies enjoy much of the same performance they expect without hardware. Though the hardware performance vs. virtualized performance isn’t always equal, virtualization still works and is preferable since most guest operating systems don’t need complete access to hardware.  As a result, businesses can enjoy better flexibility and control and eliminate any dependency on a single piece of hardware. Because of its success with server virtualization, virtualization has spread to other areas of the datacenter, including applications, networks, data, and desktops.
-
-Put simply, virtualization solutions streamline your enterprise datacenter. It abstracts away the complexity in deploying and administering a virtualized solution, while providing the flexibility needed in the modern datacenter.
-
-**Virtualization Terminology:**
-
-- Host (machine): a computer on which a hypervisor runs. 
-- Hypervisor: creates a virtual version of a once-physical system. Manages multiple guest VMs simultaneously. Apps and O.S. are abstracted away from the hardware. VMs are presented with a virtual O.S.
-- Guest (virtual) machine: virtual machine (VM). VMs have run their own OS. Interaction with physical hardware is done through para-virtualized drivers 
-
-
-
------------------------------------------------------
-
-Nutanix HCI 
-++++++++++++++++++++++
-CPU, Memory, Storage, Network
-
-.. figure:: images/NutanixHCI.png
-
-HCL: Hardware Compatibility Matrix (Support Portal) 
-IPMI: Intelligent Platform Management Interface
-
-**Hyperconverged infrastructure (HCI):** combines x86-based compute and storage resources with intelligent software to create flexible building blocks.  
-
-HCI replaces legacy infrastructure.
-
-https://www.nutanix.com/hyperconverged-infrastructure
-
-
------------------------------------------------------
-
-Hardware Platforms
-++++++++++++++++++++++
-
-Eligible hardware vendor platforms and configurations as per HCL
-
-.. figure:: images/HardwarePlatforms.png
-
-The software solution runs on nodes from a variety of manufacturers that are either all-flash for optimal performance, or a hybrid combination of SSD and HDD that provides a combination of performance and additional capacity.   
-Source: https://www.nutanix.com/content/nutanix/en/products/hardware-platforms 
-
-The Nutanix Enterprise Cloud Platform is also available on industry-leading OEM appliance platforms from HPE, Lenovo, Fujitsu, InSpur, Dell EMC and IBM.
-
-
-**Third-Party Server Vendors**
-
-The Nutanix Enterprise Cloud Platform is also available as a software option through your local reseller on Cisco and HPE x86 servers, and on specialized rugged x86 platforms from Crystal and Klas Telecom:
-
-- Cisco Hardware 
-- Hitachi Hardware
-- HPE Hardware
-- Inspur Hardware
-- Intel Hardware
-- Klas Hardware
-
-See the Hardware Compatibility List (HCL) on the Support Portal (Documentation section).
-
-**Supported Architectures**
-
-Nutanix currently supports both x86 and IBM POWER architectures, pulling key logic from hardware and doing it in software (software-defined) on commodity hardware. Benefits include:
-
-- Rapid release cycles
-- Elimination of proprietary hardware reliance
-- Utilization of commodity hardware for better economics
-- Lifespan investment protection
-
-To elaborate on the last point: old hardware can run the latest and greatest software. This means that a piece of hardware years into its depreciation cycle can run the latest shipping software and be feature parity with new deployments shipping from the factory. 
-
-
-
-
-
------------------------------------------------------
 
 Cluster Construct
 ++++++++++++++++++++++
@@ -232,8 +143,130 @@ Individual clusters (Prism Element) register to the Prism Central. PC, a single 
 
 -----------------------------------------------------
 
-Licensing
+Enterprise Cloud Components
+++++++++++++++++++++++++++++++
+
+License by capacity, appliance, or specific use cases/workloads
+
+.. figure:: images/EnterpriseCloudComponents.png
+
+An Enterprise Cloud is a unified IT operating environment that provides a single point of control for private, public and distributed clouds for managing infrastructure and applications. 
+
+Nutanix Enterprise Cloud delivers a consistent, high-performance and seamless experience for cloud-delivered services and applications.
+
+- **Acropolis:** A software-driven infrastructure stack, converging storage, virtualization, networking and security that delivers applications. This data plane is made up of App Mobility Fabric (AMF), Distributed Storage Fabric (DSF) and hypervisor integration.
+
+  - **App Mobility Fabric (AMF)** – logical construct built into Nutting solutions that allows application and data to freely move between environments. The AMF abstracts the workloads (Containers, VMs, etc.) from the hypervisor, which is what provides this ability to easily move applications and datas around.
+  - **Distributed Storage Fabric (DSF)**  – distributed system that pool storage resources and provides storage platform capabilities such as snapshots, disaster recovery, compression, erasure coding, and more. Nodes work together across a 10 GbE network to form a Nutanix cluster and the DSF.
+  - **Hypervisor** –  ESXi, Hyper-V, and Acropolis Hypervisor (AHV)
+
+- **Prism:** Complete infrastructure management and operations. Provides management UI for administrators to configure and monitor the cluster. This web interface also provides access to REST APIs and the nCLI.
+- **Calm:** Application automation and orchestration in private and public clouds, such as Amazon Web Services (AWS) and Google Cloud Platform.
+
+
+
+
+-----------------------------------------------------
+
+Questions
 ++++++++++++++++++++++
+
+This is a link to the Questions : :doc:`Questions`
+
+-----------------------------------------------------
+
+Bonus Material
+++++++++++++++++++++++++++++++++
+
+What is (Server) Virtualization
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+.. figure:: images/WhatIs.png
+
+- **Host** computer on which hypervisor runs
+- **Hypervisor** creates/manages guest VMs and presents VMs with virtual O.S.
+- **Guest virtual machine (VM)**  emulation of a physical computer, based on a computer architecture
+
+**Summary**
+
+Virtualization, as the name implies, creates a virtual version of a once-physical item. In a datacenter, the most commonly virtualized items include operating systems, servers, storage devices, or desktops. With virtualization, technologies like applications and operating systems are abstracted away from the hardware or software beneath them. 
+Hardware virtualization involves virtual machines (VMs), which take the place of a “real” computer with a “real” operating system.
+
+How does virtualization work? 
+One of the main reasons businesses use virtualization technology is server virtualization, which uses a hypervisor to “duplicate” the hardware underneath. In a non-virtualized environment, the guest operating system (OS) normally works in conjunction with the hardware. When virtualized, the OS still runs as if its on hardware, letting companies enjoy much of the same performance they expect without hardware. Though the hardware performance vs. virtualized performance isn’t always equal, virtualization still works and is preferable since most guest operating systems don’t need complete access to hardware.  As a result, businesses can enjoy better flexibility and control and eliminate any dependency on a single piece of hardware. Because of its success with server virtualization, virtualization has spread to other areas of the datacenter, including applications, networks, data, and desktops.
+
+Put simply, virtualization solutions streamline your enterprise datacenter. It abstracts away the complexity in deploying and administering a virtualized solution, while providing the flexibility needed in the modern datacenter.
+
+**Virtualization Terminology:**
+
+- Host (machine): a computer on which a hypervisor runs. 
+- Hypervisor: creates a virtual version of a once-physical system. Manages multiple guest VMs simultaneously. Apps and O.S. are abstracted away from the hardware. VMs are presented with a virtual O.S.
+- Guest (virtual) machine: virtual machine (VM). VMs have run their own OS. Interaction with physical hardware is done through para-virtualized drivers 
+
+
+
+-----------------------------------------------------
+
+Nutanix HCI 
+!!!!!!!!!!!
+
+CPU, Memory, Storage, Network
+
+.. figure:: images/NutanixHCI.png
+
+HCL: Hardware Compatibility Matrix (Support Portal) 
+IPMI: Intelligent Platform Management Interface
+
+**Hyperconverged infrastructure (HCI):** combines x86-based compute and storage resources with intelligent software to create flexible building blocks.  
+
+HCI replaces legacy infrastructure.
+
+https://www.nutanix.com/hyperconverged-infrastructure
+
+
+-----------------------------------------------------
+
+Hardware Platforms
+!!!!!!!!!!!!!!!!!!
+
+Eligible hardware vendor platforms and configurations as per HCL
+
+.. figure:: images/HardwarePlatforms.png
+
+The software solution runs on nodes from a variety of manufacturers that are either all-flash for optimal performance, or a hybrid combination of SSD and HDD that provides a combination of performance and additional capacity.   
+Source: https://www.nutanix.com/content/nutanix/en/products/hardware-platforms 
+
+The Nutanix Enterprise Cloud Platform is also available on industry-leading OEM appliance platforms from HPE, Lenovo, Fujitsu, InSpur, Dell EMC and IBM.
+
+
+**Third-Party Server Vendors**
+
+The Nutanix Enterprise Cloud Platform is also available as a software option through your local reseller on Cisco and HPE x86 servers, and on specialized rugged x86 platforms from Crystal and Klas Telecom:
+
+- Cisco Hardware 
+- Hitachi Hardware
+- HPE Hardware
+- Inspur Hardware
+- Intel Hardware
+- Klas Hardware
+
+See the Hardware Compatibility List (HCL) on the Support Portal (Documentation section).
+
+**Supported Architectures**
+
+Nutanix currently supports both x86 and IBM POWER architectures, pulling key logic from hardware and doing it in software (software-defined) on commodity hardware. Benefits include:
+
+- Rapid release cycles
+- Elimination of proprietary hardware reliance
+- Utilization of commodity hardware for better economics
+- Lifespan investment protection
+
+To elaborate on the last point: old hardware can run the latest and greatest software. This means that a piece of hardware years into its depreciation cycle can run the latest shipping software and be feature parity with new deployments shipping from the factory. 
+
+-----------------------------------------------------
+
+Licensing
+!!!!!!!!!
 
 License by capacity, appliance, or specific use cases/workloads
 
@@ -256,31 +289,7 @@ Select a Nutanix AOS license model based on the needs of your organization. You 
 
 This page can be found on the Nutanix web Site nutanix.com  under Products, followed by Software Options.
 
-
-
 -----------------------------------------------------
-
-Enterprise Cloud Components
-++++++++++++++++++++++++++++++
-
-License by capacity, appliance, or specific use cases/workloads
-
-.. figure:: images/EnterpriseCloudComponents.png
-
-An Enterprise Cloud is a unified IT operating environment that provides a single point of control for private, public and distributed clouds for managing infrastructure and applications. 
-
-Nutanix Enterprise Cloud delivers a consistent, high-performance and seamless experience for cloud-delivered services and applications.
-
-- **Acropolis:** A software-driven infrastructure stack, converging storage, virtualization, networking and security that delivers applications. This data plane is made up of App Mobility Fabric (AMF), Distributed Storage Fabric (DSF) and hypervisor integration.
-
-  - **App Mobility Fabric (AMF)** – logical construct built into Nutting solutions that allows application and data to freely move between environments. The AMF abstracts the workloads (Containers, VMs, etc.) from the hypervisor, which is what provides this ability to easily move applications and datas around.
-  - **Distributed Storage Fabric (DSF)**  – distributed system that pool storage resources and provides storage platform capabilities such as snapshots, disaster recovery, compression, erasure coding, and more. Nodes work together across a 10 GbE network to form a Nutanix cluster and the DSF.
-  - **Hypervisor** –  ESXi, Hyper-V, and Acropolis Hypervisor (AHV)
-
-- **Prism:** Complete infrastructure management and operations. Provides management UI for administrators to configure and monitor the cluster. This web interface also provides access to REST APIs and the nCLI.
-- **Calm:** Application automation and orchestration in private and public clouds, such as Amazon Web Services (AWS) and Google Cloud Platform.
-
-
 
 .. -----------------------------------------------------
 
@@ -344,7 +353,7 @@ Nutanix Enterprise Cloud delivers a consistent, high-performance and seamless ex
 -----------------------------------------------------
 
 References
-++++++++++++++++++++++
+++++++++++++++++++++++++++++++++
 
 Simple Explanation of How Nutanix Works Video
 - https://www.youtube.com/watch?v=wfFuohZwi5Q
@@ -356,10 +365,3 @@ my.nutanix.com Support Portal
 
 .. figure:: images/SupportPortal.png
 
-
------------------------------------------------------
-
-Questions
-++++++++++++++++++++++
-
-This is a link to the Questions : :doc:`Questions`
