@@ -146,26 +146,6 @@ Focus is on common operational tasks in four areas:
 
 
 
-
------------------------------------------------------
-
-
-Prism Element: Data Resiliency
-++++++++++++++++++++++++++++++++++++++++
-
-RF -> FT
-
-.. figure:: images/PrismElementDataResiliency.png
-
-FT = Number of failures tolerated 
-
-RF = Number of data copies 
-
-RF2=FT1 and RF3=FT2 
-
-FT0 (zero) means cluster still running, but no additional failures can be tolerated
-
-
 -----------------------------------------------------
 
 
@@ -202,12 +182,47 @@ Action help (e.g. creating a VM): ncli> vm create help
 
 
 
+-----------------------------------------------------
+
+Questions
+++++++++++++++++++++++
+
+:doc:`Questions`
+
+
+
+-----------------------------------------------------
+
+Bonus Material
+++++++++++++++++++++++++++++++++
+
+
+-----------------------------------------------------
+
+
+Prism Element: Data Resiliency
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+RF -> FT
+
+.. figure:: images/PrismElementDataResiliency.png
+
+FT = Number of failures tolerated 
+
+RF = Number of data copies 
+
+RF2=FT1 and RF3=FT2 
+
+FT0 (zero) means cluster still running, but no additional failures can be tolerated
+
+
+
 
 -----------------------------------------------------
 
 
 nCLI Command Syntax
-++++++++++++++++++++++++
+!!!!!!!!!!!!!!!!!!!!!!!
 
 Behaves like any Linux (no man pages)
 
@@ -223,7 +238,7 @@ Behaves like any Linux (no man pages)
 
 
 aCLI Command Syntax
-++++++++++++++++++++++++
+!!!!!!!!!!!!!!!!!!!!!!
 
 acli: help <entity> ; ncli: <entity> help
 
@@ -237,7 +252,7 @@ acli: help <entity> ; ncli: <entity> help
 
 
 allssh vs. hostssh
-++++++++++++++++++++++++
+!!!!!!!!!!!!!!!!!!!!
 
 Always run commands from CVM
 
@@ -250,7 +265,7 @@ Always run commands from CVM
 
 
 PowerShell
-++++++++++++++++++++++++
+!!!!!!!!!!!
 
 .. Always run commands from CVM
 
@@ -288,7 +303,7 @@ System administration tasks using PowerShell
 
 
 REST API Explorer
-++++++++++++++++++++++++
+!!!!!!!!!!!!!!!!!
 
 HTTP requests to retrieve/edit entities in JSON format  
 
@@ -311,7 +326,7 @@ Prism Element includes a REST API Explorer
 -----------------------------------------------------
 
 REST API Explorer: Sample
-+++++++++++++++++++++++++
+!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 .. figure:: images/RESTAPIExplorerSample.png
 
@@ -327,6 +342,7 @@ Prism Element includes a REST API Explorer
 Sample API script/call creates a Network (POST operation) on default distributed switch br0.
 - Specify content in the body in JSON format
 - Clicking the “Try It Out” button really means “execute” and cannot be undone for POST and DELETE operations.
+
 
 
 -----------------------------------------------------
@@ -376,9 +392,3 @@ References
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
------------------------------------------------------
-
-Questions
-++++++++++++++++++++++
-
-This is a link to the Questions : :doc:`Questions`
