@@ -1,0 +1,34 @@
+.. Adding labels to the beginning of your lab is helpful for linking to the lab from other pages
+.. _E_answer_23:
+
+-------------
+Answer 23
+-------------
+
+
+
+.. figure:: images/a23.png
+
+Information collected and shared with Nutanix Support includes:
+
+- System alerts
+- Current Nutanix software version
+- Nutanix processes and controller VM info
+- Hypervisor details such as type and version
+- System-level statistics
+- Configuration information
+
+Information NOT shared with Nutanix Support:
+
+- Guest VMs
+- User data
+- Metadata
+- Administrator credentials
+- Identification data
+- Private information
+
+Back to the Question: :ref:`MANC_question_23`
+
+Next Question: :ref:`MANC_question_24`
+
+

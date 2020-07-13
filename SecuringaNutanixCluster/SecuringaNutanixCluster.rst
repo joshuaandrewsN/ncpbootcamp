@@ -168,6 +168,17 @@ Nutanix includes five custom STIG components installed with AOS:
 - Implemented via nCLI commands
 
 
+-----------------------------------------------------
+
+Questions
+++++++++++++++++++++++
+
+:doc:`Questions`
+
+
+-----------------------------------------------------
+
+
 
 References
 +++++++++++++++++++++++++
@@ -186,10 +197,3 @@ References
 `Security Guide - Guide <https://portal.nutanix.com/page/documents/details/?targetId=Nutanix-Security-Guide-v5_15:sec-security-nutanix-security-infrastructure-wc-c.html>`_
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-
------------------------------------------------------
-
-Questions
-++++++++++++++++++++++
-
-This is a link to the Questions : :doc:`Questions`

@@ -12,5 +12,3 @@ Answer 7
 
 Back to the Question: :ref:`SEC_question_7`
 
-Next Question: :ref:`SEC_question_8`
-
