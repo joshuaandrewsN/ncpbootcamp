@@ -27,8 +27,8 @@ Information NOT shared with Nutanix Support:
 - Identification data
 - Private information
 
-Back to the Question: :ref:`MANC_question_23`
+Back to the Question: :ref:`E_question_23`
 
-Next Question: :ref:`MANC_question_24`
+Next Question: :ref:`E_question_24`
 
 

@@ -9,6 +9,7 @@ Answer 30
 
 .. figure:: images/a30.png
 
+The Acropolis IP address management (IPAM) solution provides the ability to establish a DHCP scope and assign addresses to VMs.  This leverages VXLAN and OpenFlow rules to intercept the DHCP request and respond with a DHCP response.
 
 
 Back to the Question: :ref:`E_question_30`

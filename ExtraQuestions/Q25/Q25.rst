@@ -1,12 +1,13 @@
 .. Adding labels to the beginning of your lab is helpful for linking to the lab from other pages
-.. _SEC_question_10:
+.. _E_question_25:
 
 -------------
-Question 10
+Question 25
 -------------
 
 
 
-.. figure:: images/q10.png
+.. figure:: images/q25.png
 
-Answer: :ref:`SEC_answer_10`
+
+Answer: :ref:`E_answer_25`
