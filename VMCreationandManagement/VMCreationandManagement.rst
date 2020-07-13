@@ -116,6 +116,17 @@ To install NGT:
 -----------------------------------------------------
 
 
+Questions
+++++++++++++++++++++++
+
+:doc:`Questions`
+
+
+
+
+-----------------------------------------------------
+
+
 References
 ++++++++++
 
@@ -135,7 +146,7 @@ References
 
 .. figure:: images/vm-data-protection-ahv.png
 
-`Data Protection for AHV-Based VMs <https://www.nutanix.com/go/vm-data-protection-ahv >`_
+`Data Protection for AHV-Based VMs <https://www.nutanix.com/go/vm-data-protection-ahv>`_
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 -----------------------------------------------------
@@ -144,14 +155,3 @@ References
 
 `AHV Best Practices Guide <https://www.nutanix.com/go/ahv-best-practices-guide>`_
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
------------------------------------------------------
-
-
-Questions
-++++++++++++++++++++++
-
-This is a link to the Questions : :doc:`Questions`
-
-
-

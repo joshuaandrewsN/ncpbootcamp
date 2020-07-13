@@ -346,7 +346,7 @@ Sample API script/call creates a Network (POST operation) on default distributed
 -----------------------------------------------------
 
 References
-+++++++++++++++++++++++++
+""""""""""
 
 .. figure:: images/webconsoleguide.png
 

@@ -11,38 +11,6 @@ Session 4
 
 -----------------------------------------------------
 
-Network Configuration
-++++++++++++++++++++++++++++++++
-
-.. figure:: images/networkconfiguration.png
-
-Eth2: Network segmentation is designed to separate management traffic from backplane (storage and CVM) traffic 
-
-Separates storage traffic from routable management traffic for security purposes
-
-Separate virtual networks are created for each traffic type
-
-
------------------------------------------------------
-
-
-
-VM Network: Enabling IPAM
-++++++++++++++++++++++++++++++++
-
-.. figure:: images/EnablingIPAM.png
-
-
-Enabling IPAM on a User VM Network.
-
-During the VM Network creation process, if you decide to enable IPAM, you will be prompted to provide an IP Pool start and end address
-
-Provide the required values and click Submit
-
-
-
------------------------------------------------------
-
 Prism Network Dashboard
 ++++++++++++++++++++++++++++++++
 
@@ -179,7 +147,7 @@ Load Balancing Modes
 
 .. figure:: images/LoadBalancingModes.png
 
-**Active-Passive**
+**Active-Backup**
 
 - Provides only fault tolerance
 - No special hardware required (physical switches available for redundancy)
@@ -212,11 +180,75 @@ AHV vSwitch Management: Open Virtual Switch
 
 
 
+
+-----------------------------------------------------
+
+
+
+.. figure:: images/TechTopX.png
+
+**nu.school Tech TopX Networking Series**
+
+
+
+
+-----------------------------------------------------
+
+Questions
+++++++++++++++++++++++
+
+:doc:`Questions`
+
+
+-----------------------------------------------------
+
+Bonus Material
+++++++++++++++++++++++++++++++++
+
+
+
+-----------------------------------------------------
+
+Network Configuration
+!!!!!!!!!!!!!!!!!!!!!
+
+.. figure:: images/networkconfiguration.png
+
+Eth2: Network segmentation is designed to separate management traffic from backplane (storage and CVM) traffic 
+
+Separates storage traffic from routable management traffic for security purposes
+
+Separate virtual networks are created for each traffic type
+
+
+
+-----------------------------------------------------
+
+
+
+VM Network: Enabling IPAM
+!!!!!!!!!!!!!!!!!!!!!!!!!
+
+.. figure:: images/EnablingIPAM.png
+
+
+Enabling IPAM on a User VM Network.
+
+During the VM Network creation process, if you decide to enable IPAM, you will be prompted to provide an IP Pool start and end address
+
+Provide the required values and click Submit
+
+
+
+
+
+
+
 -----------------------------------------------------
 
 
 References
-++++++++++++++++++++++
+!!!!!!!!!!
 
 
 .. figure:: images/NetworkManagement.png
@@ -250,26 +282,3 @@ References
 
 `AHV Best Practices Guide <https://www.nutanix.com/go/ahv-best-practices-guide>`_
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-
------------------------------------------------------
-
-
-
-.. figure:: images/TechTopX.png
-
-**nu.school Tech TopX Networking Series**
-
-
-
-
------------------------------------------------------
-
-Questions
-++++++++++++++++++++++
-
-This is a link to the Questions : :doc:`Questions`
-
-
-
-
