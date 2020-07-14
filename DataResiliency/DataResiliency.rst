@@ -310,6 +310,20 @@ CVM Resiliency
 
 
 
+-----------------------------------------------------
+
+Questions
+++++++++++++++++++++++
+
+This is a link to the Questions : :doc:`Questions`
+
+
+
+
+
+
+
+
 
 -----------------------------------------------------
 
@@ -366,18 +380,4 @@ References
 
 `Data Protection and Disaster Recovery <https://www.nutanix.com/go/data-protection-and-disaster-recovery-on-nutanix>`_
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-
-
------------------------------------------------------
-
-Questions
-++++++++++++++++++++++
-
-This is a link to the Questions : :doc:`Questions`
-
-
-
-
-
 

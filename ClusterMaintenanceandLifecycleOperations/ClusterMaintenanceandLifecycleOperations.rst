@@ -53,18 +53,6 @@ Shut Down CVM/Host on Single AHV Node
 
 -----------------------------------------------------
 
-Starting a CVM on a Single Node (AHV)
-+++++++++++++++++++++++++++++++++++++
-
-
-.. figure:: images/StartCVM.png
-
-Virsh commands are not recommended except in specific circumstances such as if a cvm does not automatically start when the hypervisor is restarted. 
-
-If you are not a seasoned Nutanix admin, virsh commands should only be used at the instruction of Nutanix Support or engineering.
-
------------------------------------------------------
-
 AOS Upgrade
 --------------------------
 
@@ -74,19 +62,6 @@ AOS Upgrade Path
 
 
 .. figure:: images/AOSUpgradePath.png
-
------------------------------------------------------
-
-AOS Release Notes
-+++++++++++++++++++++++++++++++++++++
-
-.. figure:: images/AOSReleaseNotes.png
-
-Short Term Support (STS): Maintenance until the next Release that is an Upgrade followed by an additional 3 months of support.
-
-Long Term Support (LTS): 3 months of maintenance after the Release Date for the next LTS Release that is an Upgrade followed by an additional 6 months of support.
-
-`See KB5505 for more information <https://portal.nutanix.com/page/documents/kbs/details?targetId=kA00e000000LIi9CAG>`_
 
 -----------------------------------------------------
 
@@ -137,40 +112,6 @@ Software and Firmware Upgrades
   - Upgrade Software, available from the main menu, shows the current status of your software and firmware versions.
 
 - The slide above displays all the entities that can be upgraded directly from the console.
-
-
-
------------------------------------------------------
-
-Checking the Status of Cluster Services
-++++++++++++++++++++++++++++++++++++++++
-
-**Not all services and their PIDs are shown**
-
-.. figure:: images/status.png
-
-PID – Process ID, unique within the cluster.  Although the same services will be shown for each CVM, they have their own unique PIDs.
-
-
------------------------------------------------------
-
-Cluster Events: Log File Analysis
-++++++++++++++++++++++++++++++++++++++++
-
-**Not all services and their PIDs are shown**
-
-.. figure:: images/events.png
-
-
-Depending on the issue (broken hardware, broken service, performance issue, etc.) you may have to look at different locations.
-
-If there is no obvious error in the Prism UI, you may need to look in the ~/data/logs folder on any CVM (via SSH).
-
-There you will find the logs of all the Nutanix services: Stargate, Curator, Cassandra, Genesis, ZooKeeper, etc.
-
-In this folder, you will find raw logs *<service_name>.out*, .INFO, .WARNING, .ERROR (i.e. errors only), and .FATAL. 
-
-For example the file *~nutanix/data/logs/stargate.out* is the current log file for all Stargate logs and *~nutanix/data/logs/stargate.FATAL* is the current log file only for FATAL logs concerning Stargate.
 
 
 -----------------------------------------------------
@@ -231,10 +172,92 @@ The Nutanix Operating System makes it easy to repurpose equipment as needed. You
 ***Applies to transitions between Ultimate and Pro**
 
 
+
+
+-----------------------------------------------------
+
+Questions
+++++++++++++++++++++++
+
+This is a link to the Questions : :doc:`Questions`
+
+
+
+-----------------------------------------------------
+
+Bonus Material
+++++++++++++++
+
+-----------------------------------------------------
+
+Starting a CVM on a Single Node (AHV)
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+.. figure:: images/StartCVM.png
+
+Virsh commands are not recommended except in specific circumstances such as if a cvm does not automatically start when the hypervisor is restarted. 
+
+If you are not a seasoned Nutanix admin, virsh commands should only be used at the instruction of Nutanix Support or engineering.
+
+
+
+
+-----------------------------------------------------
+
+AOS Release Notes
+!!!!!!!!!!!!!!!!!
+
+.. figure:: images/AOSReleaseNotes.png
+
+Short Term Support (STS): Maintenance until the next Release that is an Upgrade followed by an additional 3 months of support.
+
+Long Term Support (LTS): 3 months of maintenance after the Release Date for the next LTS Release that is an Upgrade followed by an additional 6 months of support.
+
+`See KB5505 for more information <https://portal.nutanix.com/page/documents/kbs/details?targetId=kA00e000000LIi9CAG>`_
+
+
+
+
+-----------------------------------------------------
+
+Checking the Status of Cluster Services
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+**Not all services and their PIDs are shown**
+
+.. figure:: images/status.png
+
+PID – Process ID, unique within the cluster.  Although the same services will be shown for each CVM, they have their own unique PIDs.
+
+
+
+-----------------------------------------------------
+
+Cluster Events: Log File Analysis
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+**Not all services and their PIDs are shown**
+
+.. figure:: images/events.png
+
+
+Depending on the issue (broken hardware, broken service, performance issue, etc.) you may have to look at different locations.
+
+If there is no obvious error in the Prism UI, you may need to look in the ~/data/logs folder on any CVM (via SSH).
+
+There you will find the logs of all the Nutanix services: Stargate, Curator, Cassandra, Genesis, ZooKeeper, etc.
+
+In this folder, you will find raw logs *<service_name>.out*, .INFO, .WARNING, .ERROR (i.e. errors only), and .FATAL. 
+
+For example the file *~nutanix/data/logs/stargate.out* is the current log file for all Stargate logs and *~nutanix/data/logs/stargate.FATAL* is the current log file only for FATAL logs concerning Stargate.
+
+
+
 -----------------------------------------------------
 
 References
-+++++++++++++++++++++++++
+!!!!!!!!!!!!!
 
 
 
@@ -287,15 +310,3 @@ References
 
 `Maintain Infrastructure with Zero Downtime <https://www.youtube.com/watch?v=6B9d3JXXAHg&feature=youtu.be>`_
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-
-
------------------------------------------------------
-
-Questions
-++++++++++++++++++++++
-
-This is a link to the Questions : :doc:`Questions`
-
-
-
