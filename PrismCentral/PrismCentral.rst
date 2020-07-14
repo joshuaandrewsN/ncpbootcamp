@@ -138,19 +138,16 @@ References
 .. figure:: images/PrismCentral.png
 
 `Prism Central <https://portal.nutanix.com/page/documents/details/?targetId=Prism-Central-Guide-Prism-v5_15:Prism-Central-Guide-Prism-v5_15>`_
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 -----------------------------------------------------
 
 .. figure:: images/PrismPrismPrism.png
 
 `Prism Element - Prism Central - Prism Pro <https://www.youtube.com/watch?v=tGzcUL6RN6s&feature=youtu.be>`_
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 -----------------------------------------------------
 
 .. figure:: images/PrismPro.png
 
 `Prism Pro Tech Note <https://www.nutanix.com/go/managing-enterprise-infrastructure-with-prism>`_
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 

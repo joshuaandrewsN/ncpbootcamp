@@ -264,28 +264,24 @@ References
 .. figure:: images/TroubleshootingTools.png
 
 `Troubleshooting Tools <https://portal.nutanix.com/page/documents/details/?targetId=Advanced-Admin-AOS-v5_15:Troubleshooting%20Tools>`_
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 -----------------------------------------------------
 
 .. figure:: images/SupportServices.png
 
 `Support Services <https://portal.nutanix.com/page/documents/details/?targetId=Web-Console-Guide-Prism-v5_15:wc-support-management-wc-c.html>`_
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 -----------------------------------------------------
 
 .. figure:: images/UpgradingNutanixClusterCheck.png
 
 `Upgrading Nutanix Cluster Check <https://portal.nutanix.com/page/documents/details/?targetId=Acropolis-Upgrade-Guide-v5_15:ncc-ncc-install-pc-t.html>`_
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 -----------------------------------------------------
 
 .. figure:: images/NutanixClusterCheckGuide.png
 
 `Nutanix Cluster Check Guide <https://portal.nutanix.com/page/documents/details/?targetId=NCC-Guide-NCC-v39:NCC-Guide-NCC-v39>`_
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
 -----------------------------------------------------
@@ -293,7 +289,6 @@ References
 .. figure:: images/AOSAdvanced.png
 
 `AOS Advanced Administration Guide <https://portal.nutanix.com/page/documents/details/?targetId=Advanced-Admin-AOS-v5_15:app-cluster-management-ops-c.html>`_
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
 -----------------------------------------------------
@@ -301,7 +296,6 @@ References
 .. figure:: images/PrismWebConsoleGuide.png
 
 `Prism Web Console Guide <https://portal.nutanix.com/page/documents/details/?targetId=Web-Console-Guide-Prism-v5_15:wc-cluster-management-wc-c.html>`_
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
 -----------------------------------------------------
@@ -309,4 +303,3 @@ References
 .. figure:: images/MaintainInfrastructure.png
 
 `Maintain Infrastructure with Zero Downtime <https://www.youtube.com/watch?v=6B9d3JXXAHg&feature=youtu.be>`_
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
