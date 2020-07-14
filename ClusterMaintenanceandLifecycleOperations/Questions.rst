@@ -40,15 +40,5 @@ Cluster Maintenence and Lifecycle Operations Questions
   A7/A7
   
   
-  Q8/Q8
-  A8/A8
-  
-  
-  Q9/Q9
-  A9/A9
-  
-  
-  Q10/Q10
-  A10/A10
-  
+
 

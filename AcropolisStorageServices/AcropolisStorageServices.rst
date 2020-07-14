@@ -63,69 +63,6 @@ Nutanix Volumes Intro
 
 -----------------------------------------------------
  
-Nutanix Volumes Advantages
-++++++++++++++++++++++++++++++++++
-
-
-.. figure:: images/NutanixVolumesAdvantages.png
-
-**Nutanix Volumes**
-
-Take advantage of scale-out block storage built into AOS.
-
-**Manage Effortlessly**
-
-Provision storage with 1-click ease through Prism. Access block storage resources from both VMs and iSCSI simultaneously. Manage block, file, and objects from the same interface. 
-
-
-
------------------------------------------------------
- 
-Attaching Initiators to Targets
-++++++++++++++++++++++++++++++++++
-
-Hosts access NTNX VG through iSCSI Qualifier Name
-
-.. figure:: images/attachinginitiators.png
-
-
-**Attaching Initiators to Targets**
-
-- Nutanix Volumes presents a volume group and its vDisks as iSCSI targets and assigns IQNs.  Initiators or hosts have their IQNs attached to a volume group to gain access.
-- In the above picture, the administrator has created two volume groups, Volume Group A and Volume Group B.  Volume Group A has three vDisks and Volume Group B has 2 vDisks.  The hosts Host A and Host B have their iSCSI initiators configured to communicate with the iSCSI target (Data Services IP). The vDisks will be presented to the initiators as LUNs.
-
-**Configuring Volume Group for Shared Access**
-
-- In some cases, a LUN needs to be presented to multiple Virtual Machines or bare metal server for features like clustering.
-- To share the volume group across multiple servers, select the checkbox Share across multiple iSCSI initiators or multiple VMs.
-
-**NOTE:** Allowing multiple systems to concurrently access this Volume Group can cause serious problems.
-
-
-
------------------------------------------------------
- 
-Volume Group Connectivity Options
-++++++++++++++++++++++++++++++++++
-
-
-.. figure:: images/VolumeGroupConnectivityOptions.png
-
-
-**Volume Group Connectivity Options**
-
-- The Data Services IP is leveraged for discovery.  .This allows for a single address that can be leveraged without the need of knowing individual CVM IP addresses.
-- The Data Services IP will be assigned to the current iSCSI master.  In the event that fails, a new iSCSI master will become elected and assigned the Data Services IP.  This ensures the discovery portal will always remain available.
-- The iSCSI initiator is configured with the Data Services IP as the iSCSI target portal.  Upon a login request, the platform will perform an iSCSI login redirect to a healthy Stargate.
-- Define virtual IP address as iSCSI data services IP address
-- One CVM “owns” iSCSI data services IP address 
-- Set initiator’s iSCSI discovery portal to this address
-- Initiators use address to locate volume groups and vDisks
-- Initiators redirected to CVMs hosting vDisks
-
-
------------------------------------------------------
- 
 Failover Scenarios
 ++++++++++++++++++++++++++++++++++
 
@@ -222,23 +159,6 @@ More info here: https://docs.microsoft.com/en-us/windows-server/storage/dfs-name
 
 -----------------------------------------------------
 
-Authentication & Tools Management
-++++++++++++++++++++++++++++++++++
-
-
-.. figure:: images/AuthenticationToolsManagement.png
-
-
-**Microsoft Management Console (MMC)**
-
-.. Component of Windows 2000 and its successors that provides system administrators and advanced users an interface for configuring and monitoring the system.
-
-The Microsoft management Console snapin is available on the Nutanix Support Portal under downloads > Tools & Firmware.
-
-
-
------------------------------------------------------
-
 
 Files Configuration
 ++++++++++++++++++++++++++++++++++
@@ -265,8 +185,105 @@ Files Configuration
 
 -----------------------------------------------------
 
+Questions
++++++++++++++++
+
+:doc:`Questions`
+
+
+
+-----------------------------------------------------
+
+Bonus Material
+++++++++++++++++++++++++++++++++
+
+
+
+-----------------------------------------------------
+ 
+Nutanix Volumes Advantages
+!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+.. figure:: images/NutanixVolumesAdvantages.png
+
+**Nutanix Volumes**
+
+Take advantage of scale-out block storage built into AOS.
+
+**Manage Effortlessly**
+
+Provision storage with 1-click ease through Prism. Access block storage resources from both VMs and iSCSI simultaneously. Manage block, file, and objects from the same interface. 
+
+
+-----------------------------------------------------
+ 
+Attaching Initiators to Targets
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+Hosts access NTNX VG through iSCSI Qualifier Name
+
+.. figure:: images/attachinginitiators.png
+
+
+**Attaching Initiators to Targets**
+
+- Nutanix Volumes presents a volume group and its vDisks as iSCSI targets and assigns IQNs.  Initiators or hosts have their IQNs attached to a volume group to gain access.
+- In the above picture, the administrator has created two volume groups, Volume Group A and Volume Group B.  Volume Group A has three vDisks and Volume Group B has 2 vDisks.  The hosts Host A and Host B have their iSCSI initiators configured to communicate with the iSCSI target (Data Services IP). The vDisks will be presented to the initiators as LUNs.
+
+**Configuring Volume Group for Shared Access**
+
+- In some cases, a LUN needs to be presented to multiple Virtual Machines or bare metal server for features like clustering.
+- To share the volume group across multiple servers, select the checkbox Share across multiple iSCSI initiators or multiple VMs.
+
+**NOTE:** Allowing multiple systems to concurrently access this Volume Group can cause serious problems.
+
+
+
+-----------------------------------------------------
+ 
+Volume Group Connectivity Options
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+.. figure:: images/VolumeGroupConnectivityOptions.png
+
+
+**Volume Group Connectivity Options**
+
+- The Data Services IP is leveraged for discovery.  .This allows for a single address that can be leveraged without the need of knowing individual CVM IP addresses.
+- The Data Services IP will be assigned to the current iSCSI master.  In the event that fails, a new iSCSI master will become elected and assigned the Data Services IP.  This ensures the discovery portal will always remain available.
+- The iSCSI initiator is configured with the Data Services IP as the iSCSI target portal.  Upon a login request, the platform will perform an iSCSI login redirect to a healthy Stargate.
+- Define virtual IP address as iSCSI data services IP address
+- One CVM “owns” iSCSI data services IP address 
+- Set initiator’s iSCSI discovery portal to this address
+- Initiators use address to locate volume groups and vDisks
+- Initiators redirected to CVMs hosting vDisks
+
+
+
+-----------------------------------------------------
+
+Authentication & Tools Management
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+.. figure:: images/AuthenticationToolsManagement.png
+
+
+**Microsoft Management Console (MMC)**
+
+.. Component of Windows 2000 and its successors that provides system administrators and advanced users an interface for configuring and monitoring the system.
+
+The Microsoft management Console snapin is available on the Nutanix Support Portal under downloads > Tools & Firmware.
+
+
+
+
+-----------------------------------------------------
+
 References
---------------------------
+!!!!!!!!!!
 
 
 
@@ -296,15 +313,5 @@ References
 
 `Nutanix Files Tech Note <https://www.nutanix.com/go/simplifying-file-storage-with-nutanix-files>`_
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-
-
------------------------------------------------------
-
-Questions
---------------------------
-
-This is a link to the Questions : :doc:`Questions`
-
 
 

@@ -7,28 +7,6 @@ Distributed Storage Fabric
 
 Session 7
 
------------------------------------------------------
-
-VMs, CVMs and DSF
-++++++++++++++++++++++++
-
-
-.. figure:: images/VMCVMDSF.png
-
-
-
-
------------------------------------------------------
-
-Storage Containers
-++++++++++++++++++++++++
-
-
-.. figure:: images/StorageContainers.png
-
-
-
-
 
 
 -----------------------------------------------------
@@ -105,22 +83,6 @@ When a VM is moved from one hypervisor node to another (or during a HA event), t
 
 
 
-
------------------------------------------------------
-
-Storage Container Settings
-++++++++++++++++++++++++++++++
-
-**Create Storage Container Script**
-
-.. figure:: images/StorageContainerSettings.png
-
-Software-defined intelligence is taking the core logic from normally proprietary or specialized hardware (e.g. ASIC / FPGA) and performing those functionalities in software on commodity hardware. 
-
-For Nutanix, we take the traditional storage logic (e.g. RAID, deduplication, compression, etc.) and put that into software that runs in each of the Nutanix Controller VMs (CVM) on standard hardware.
-
-
-
 -----------------------------------------------------
 
 Storage Capacity Optimization
@@ -143,31 +105,6 @@ Storage Capacity Optimization
 - Text compression can be as simple as removing all unneeded characters, inserting a single repeat character to indicate a string of repeated characters, and substituting a smaller bit string for a frequently occurring bit string.
   - Data compression can reduce a text file to 50% or a significantly higher percentage of its original size.
 
-
-
-
-
------------------------------------------------------
-
-Compression
-++++++++++++++++++++++++++++++
-
-.. figure:: images/Compression.png
-
-**Compression Process**
-
-Inline compression compresses sequential streams of data or large I/O sizes (>64K) when written to the Extent Store (SSD + HDD). This includes data draining from OpLog as well as sequential data skipping it.
-Offline compression initially writes the data as normal (in an uncompressed state) and then leverages the Curator framework to compress the data cluster-wide. When inline compression is enabled but the I/Os are random in nature, the data is written uncompressed in the OpLog, coalesced, and then compressed in memory before being written to the Extent Store.
-
-Nutanix leverages LZ4 and LZ4HC for data compression. Normal data is compressed using LZ4, which provides a very good blend between compression and performance. For cold data, LZ4HC is used to provide an improved compression ratio.
-
-**Workloads less suitable for compression**
-
-- Applications performing native data compression,  including JPEG or MPEG
-- Systems featuring native compression such as SQL server databases
-- Workloads generating heavy random write operations
-- Workloads that frequently update data (CAD)
-- Data already storage optimized, like VCAI snapshots, linked clones, and so forth
 
 
 
@@ -202,26 +139,6 @@ Encodes a strip of data blocks on different nodes and calculates parity based on
 
 
 
-
------------------------------------------------------
-
-Deduplication and Compression Best Practices
-++++++++++++++++++++++++++++++++++++++++++++
-
-
-
-
-.. figure:: images/DCBP.png
-
-**Deduplication and Compression Best Practices**
-
-- VCAI = (Horizon) View Composer API for Array Integration.
-
-  - Turning on deduplication for VAAI (vStorage APIs for Array Integration) clone or linked clone environments is not recommended.
-
-
-
-
 -----------------------------------------------------
 
 Viewing Overall Capacity Optimization
@@ -237,8 +154,103 @@ Viewing Overall Capacity Optimization
 
 -----------------------------------------------------
 
+Questions
+++++++++++++++++++++++
+
+:doc:`Questions`
+
+
+-----------------------------------------------------
+
+Bonus Material
+++++++++++++++++++++++++++++++++
+
+
+
+-----------------------------------------------------
+
+VMs, CVMs and DSF
+!!!!!!!!!!!!!!!!!
+
+
+.. figure:: images/VMCVMDSF.png
+
+
+
+
+-----------------------------------------------------
+
+Storage Containers
+!!!!!!!!!!!!!!!!!!
+
+
+.. figure:: images/StorageContainers.png
+
+
+
+
+-----------------------------------------------------
+
+Storage Container Settings
+!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+**Create Storage Container Script**
+
+.. figure:: images/StorageContainerSettings.png
+
+Software-defined intelligence is taking the core logic from normally proprietary or specialized hardware (e.g. ASIC / FPGA) and performing those functionalities in software on commodity hardware. 
+
+For Nutanix, we take the traditional storage logic (e.g. RAID, deduplication, compression, etc.) and put that into software that runs in each of the Nutanix Controller VMs (CVM) on standard hardware.
+
+
+
+-----------------------------------------------------
+
+Compression
+!!!!!!!!!!!
+
+.. figure:: images/Compression.png
+
+**Compression Process**
+
+Inline compression compresses sequential streams of data or large I/O sizes (>64K) when written to the Extent Store (SSD + HDD). This includes data draining from OpLog as well as sequential data skipping it.
+Offline compression initially writes the data as normal (in an uncompressed state) and then leverages the Curator framework to compress the data cluster-wide. When inline compression is enabled but the I/Os are random in nature, the data is written uncompressed in the OpLog, coalesced, and then compressed in memory before being written to the Extent Store.
+
+Nutanix leverages LZ4 and LZ4HC for data compression. Normal data is compressed using LZ4, which provides a very good blend between compression and performance. For cold data, LZ4HC is used to provide an improved compression ratio.
+
+**Workloads less suitable for compression**
+
+- Applications performing native data compression,  including JPEG or MPEG
+- Systems featuring native compression such as SQL server databases
+- Workloads generating heavy random write operations
+- Workloads that frequently update data (CAD)
+- Data already storage optimized, like VCAI snapshots, linked clones, and so forth
+
+
+
+
+-----------------------------------------------------
+
+Deduplication and Compression Best Practices
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+
+
+.. figure:: images/DCBP.png
+
+**Deduplication and Compression Best Practices**
+
+- VCAI = (Horizon) View Composer API for Array Integration.
+
+  - Turning on deduplication for VAAI (vStorage APIs for Array Integration) clone or linked clone environments is not recommended.
+
+
+
+-----------------------------------------------------
+
 References
-+++++++++++++++++++++++++
+!!!!!!!!!!
 
 
 
@@ -278,11 +290,7 @@ References
 
 
 
------------------------------------------------------
 
-Questions
-++++++++++++++++++++++
 
-This is a link to the Questions : :doc:`Questions`
 
 
