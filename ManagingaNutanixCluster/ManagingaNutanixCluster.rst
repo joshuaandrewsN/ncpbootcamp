@@ -80,14 +80,14 @@ Prism is the Nutanix UI used for administrative purposes and is broken down into
 Prism listens on ports 80 and 9440. If HTTP traffic comes in on port 80 it is redirected to HTTPS on port 9440.
 
 Interfaces
-""""""""""
+!!!!!!!!!!
 
 - HTML5 (PE/PC)
 - API (e.g. REST, Powershell, Java, Python)
 - CLI (aCLI, nCLI)
 
 Configuration management:
-"""""""""""""""""""""""""
+!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 - VM management:
 
