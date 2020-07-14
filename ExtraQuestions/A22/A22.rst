@@ -12,4 +12,4 @@ Answer 22
 
 Back to the Question: :ref:`E_question_22`
 
-Next Question: :ref:`MANC_question_23`
+Next Question: :ref:`E_question_23`
