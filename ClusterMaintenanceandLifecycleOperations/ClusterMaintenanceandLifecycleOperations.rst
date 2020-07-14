@@ -177,7 +177,7 @@ The Nutanix Operating System makes it easy to repurpose equipment as needed. You
 -----------------------------------------------------
 
 Questions
-++++++++++++++++++++++
+---------
 
 This is a link to the Questions : :doc:`Questions`
 
@@ -186,12 +186,12 @@ This is a link to the Questions : :doc:`Questions`
 -----------------------------------------------------
 
 Bonus Material
-++++++++++++++
+--------------
 
 -----------------------------------------------------
 
 Starting a CVM on a Single Node (AHV)
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
++++++++++++++++++++++++++++++++++++++
 
 
 .. figure:: images/StartCVM.png
@@ -206,7 +206,7 @@ If you are not a seasoned Nutanix admin, virsh commands should only be used at t
 -----------------------------------------------------
 
 AOS Release Notes
-!!!!!!!!!!!!!!!!!
++++++++++++++++++
 
 .. figure:: images/AOSReleaseNotes.png
 
@@ -222,7 +222,7 @@ Long Term Support (LTS): 3 months of maintenance after the Release Date for the 
 -----------------------------------------------------
 
 Checking the Status of Cluster Services
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
++++++++++++++++++++++++++++++++++++++++
 
 **Not all services and their PIDs are shown**
 
@@ -235,7 +235,7 @@ PID – Process ID, unique within the cluster.  Although the same services will 
 -----------------------------------------------------
 
 Cluster Events: Log File Analysis
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
++++++++++++++++++++++++++++++++++
 
 **Not all services and their PIDs are shown**
 
@@ -257,7 +257,7 @@ For example the file *~nutanix/data/logs/stargate.out* is the current log file f
 -----------------------------------------------------
 
 References
-!!!!!!!!!!!!!
+++++++++++
 
 
 

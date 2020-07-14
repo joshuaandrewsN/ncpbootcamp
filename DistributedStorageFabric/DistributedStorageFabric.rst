@@ -257,7 +257,6 @@ References
 .. figure:: images/StorageManagement.png
 
 `Storage Management <https://portal.nutanix.com/page/documents/details/?targetId=Web-Console-Guide-Prism-v5_15:wc-storage-management-wc-c.html>`_
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 -----------------------------------------------------
 
@@ -265,28 +264,25 @@ References
 .. figure:: images/Software-Defined.png
 
 `Software-Defined Storage for Dummies <https://www.nutanix.com/go/software-defined-storage-for-dummies>`_
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 -----------------------------------------------------
 
 .. figure:: images/snapshots.png
 
 `Snapshots and Clones <https://www.youtube.com/watch?v=uK5wWR44UYE&feature=youtu.be>`_
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 -----------------------------------------------------
 
 .. figure:: images/Deduplication.png
 
 `Deduplication <https://www.youtube.com/watch?v=C-rp13cDpNw&feature=youtu.be>`_
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 -----------------------------------------------------
 
 .. figure:: images/DataEfficiency.png
 
 `Data Efficiency <https://www.nutanix.com/go/nutanix-data-efficiency>`_
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
 
 
 

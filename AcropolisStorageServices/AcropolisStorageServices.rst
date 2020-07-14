@@ -186,7 +186,7 @@ Files Configuration
 -----------------------------------------------------
 
 Questions
-+++++++++++++++
+----------
 
 :doc:`Questions`
 
@@ -195,14 +195,14 @@ Questions
 -----------------------------------------------------
 
 Bonus Material
-++++++++++++++++++++++++++++++++
+--------------
 
 
 
 -----------------------------------------------------
  
 Nutanix Volumes Advantages
-!!!!!!!!!!!!!!!!!!!!!!!!!!
+++++++++++++++++++++++++++
 
 
 .. figure:: images/NutanixVolumesAdvantages.png
@@ -219,7 +219,7 @@ Provision storage with 1-click ease through Prism. Access block storage resource
 -----------------------------------------------------
  
 Attaching Initiators to Targets
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
++++++++++++++++++++++++++++++++
 
 Hosts access NTNX VG through iSCSI Qualifier Name
 
@@ -243,7 +243,7 @@ Hosts access NTNX VG through iSCSI Qualifier Name
 -----------------------------------------------------
  
 Volume Group Connectivity Options
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
++++++++++++++++++++++++++++++++++
 
 
 .. figure:: images/VolumeGroupConnectivityOptions.png
@@ -265,7 +265,7 @@ Volume Group Connectivity Options
 -----------------------------------------------------
 
 Authentication & Tools Management
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
++++++++++++++++++++++++++++++++++
 
 
 .. figure:: images/AuthenticationToolsManagement.png
@@ -283,7 +283,7 @@ The Microsoft management Console snapin is available on the Nutanix Support Port
 -----------------------------------------------------
 
 References
-!!!!!!!!!!
+++++++++++
 
 
 
