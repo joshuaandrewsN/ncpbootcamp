@@ -199,7 +199,7 @@ Bonus Material
 
 
 Prism Element: Data Resiliency
-""""""""""""""""""""""""""""""
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 RF -> FT
 
@@ -220,7 +220,7 @@ FT0 (zero) means cluster still running, but no additional failures can be tolera
 
 
 nCLI Command Syntax
-""""""""""""""""""""
+!!!!!!!!!!!!!!!!!!!!
 
 Behaves like any Linux (no man pages)
 
@@ -236,7 +236,7 @@ Behaves like any Linux (no man pages)
 
 
 aCLI Command Syntax
-""""""""""""""""""""
+!!!!!!!!!!!!!!!!!!!
 
 acli: help <entity> ; ncli: <entity> help
 
@@ -250,7 +250,7 @@ acli: help <entity> ; ncli: <entity> help
 
 
 allssh vs. hostssh
-""""""""""""""""""""
+!!!!!!!!!!!!!!!!!!
 
 Always run commands from CVM
 
@@ -263,7 +263,7 @@ Always run commands from CVM
 
 
 PowerShell
-""""""""""
+!!!!!!!!!!
 
 .. Always run commands from CVM
 
@@ -301,7 +301,7 @@ System administration tasks using PowerShell
 
 
 REST API Explorer
-""""""""""""""""""""
+!!!!!!!!!!!!!!!!!
 
 HTTP requests to retrieve/edit entities in JSON format  
 
@@ -324,7 +324,7 @@ Prism Element includes a REST API Explorer
 -----------------------------------------------------
 
 REST API Explorer: Sample
-""""""""""""""""""""""""""""""
+!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 .. figure:: images/RESTAPIExplorerSample.png
 
@@ -346,7 +346,7 @@ Sample API script/call creates a Network (POST operation) on default distributed
 -----------------------------------------------------
 
 References
-""""""""""
+!!!!!!!!!!
 
 .. figure:: images/webconsoleguide.png
 

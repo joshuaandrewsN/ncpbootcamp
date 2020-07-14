@@ -1,4 +1,4 @@
-.. title:: Nutanix NCP Bootcamp
+.. title:: Nutanix NCP-MCI 5.15 Bootcamp
 
 .. toctree::
   :maxdepth: 1
