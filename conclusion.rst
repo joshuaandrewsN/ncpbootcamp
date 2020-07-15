@@ -14,9 +14,14 @@ Exam tips and tricks
 Taking the exam
 
 - The exam is delivered online with a live proctor 
+  
+  - Proctors usually contact you within 15 minutes of exam launch but in some cases take much longer
+
+  - You need a computer with a camera and mic.
 
   - You will need a current government ID with the same name as the one used to schedule the exam
   - Clear your desk and work area - you will be asked to pan your camera around to make sure your area is clear
+  - If you have multiple monitors you need to disable all but one to start the exam.
   - Make sure you are ready to sit for up to two hours
   - Exams must be canceled or rescheduled 48 hours before the scheduled appointment time.
 
@@ -31,16 +36,16 @@ Taking the exam
   
 	- Then compare the answers that remain.  Choosing 1 of 2 has a better chance of success than 1 of 4.
 
+  - If you are not sure, flag the question and come back to it later.
+  
+  - The answers are in random order - always choosing "C" is not a viable strategy.
+  
+  - Take your time.  You have over 90 seconds per question on average.  Use them to read and answer carefully.
 
-
-Nutanix Certified Professional (NCP)
-++++++++++++++++++++++++++++++++++++++++++++++++
-
-.. figure:: images/NCP.png
-
------------------------------------------------------
-
-
+    - Some questions (questions requiring matching) will take longer than others
+    - All questions have the same value
+	
+	
 
 ECA -> NCP   AAPM->NCAP
 ++++++++++++++++++++++++++++++++++++++++++++++++
