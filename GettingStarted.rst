@@ -4,7 +4,7 @@
 Getting Started
 ---------------
 
-Welcome to the Nutanix NCP-MCI 5.15 Exam Prep Workshop.  The NCP-MCI 5.15 certification validates your skills and abilities in deploying, administering, and troubleshooting AOS 5.15.
+Welcome to the Nutanix Certified Professional - Multicloud Infrastructure 5.15 Exam Prep Workshop.  The NCP-MCI 5.15 certification validates your skills and abilities in deploying, administering, and troubleshooting AOS 5.15.
 
 This short workshop is intended to provide a highlight of the NCP exam including briefly discussing the objectives covered by the exam and reviewing practice questions. This is intended to supplement the Enterprise Cloud Administration training course, hopefully you have already attended that course with an instructor or reviewed the modules at Nutanix University.
 
@@ -49,13 +49,15 @@ Practice questions
 - Question layout and standards
 - Get into the exam mindset
 
+Each section of the workshop is split in to primary material, questions, bonus material and references. There is also a pool of Extra Questions at the end.  The workshop is expected to run about four hours, not including breaks, bonus material or extra questions.  
+
 
 Exam Blueprint Guide
 ++++++++++++++++++++
 
 Nutanix doesn't teach to the exam - this day follows the Blueprint
 
-The Exam Blueprint Guide, available in the NCP learning plan at NutanixUniversity or in the Certifications page at nutanix.com, lists all of the pertinent information about the exam.
+The Exam Blueprint Guide (EBG), available in the NCP learning plan at NutanixUniversity or on the Certifications page at nutanix.com, lists all of the pertinent information about the exam.
 
 The EBG covers topics such as the retake policy and the scoring method.  
 
@@ -66,7 +68,7 @@ Key details
 - 75 questions covering twelve sections
 - 120 minute time limit
 
-The exam normally requires at least 24 hours advanced scheduling and is remote-proctored.
+The exam normally requires scheduling at least 24 hours in advance and is remote-proctored.
 
 
 .. figure:: images/ebg.png
