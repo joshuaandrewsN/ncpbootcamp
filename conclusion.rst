@@ -25,6 +25,8 @@ Taking the exam
   - Make sure you are ready to sit for up to two hours
   - Exams must be canceled or rescheduled 48 hours before the scheduled appointment time.
 
+..  
+
 - Normal exam processes apply
 
   - Read each question and the possible responses carefully
@@ -34,7 +36,7 @@ Taking the exam
   - If something isn't mentioned, consider it set to the default.
   - If the right answer isn't obvious, start eliminating the wrong answers
   
-	- Then compare the answers that remain.  Choosing 1 of 2 has a better chance of success than 1 of 4.
+    - Then compare the answers that remain.  Choosing 1 of 2 has a better chance of success than 1 of 4.
 
   - If you are not sure, flag the question and come back to it later.
   
