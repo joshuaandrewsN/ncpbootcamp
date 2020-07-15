@@ -2,7 +2,7 @@
 .. _Cluster_Maintenance_and_Lifecycle_Operations_1:
 
 ----------------------------------------------------
-Cluster Maintenance and Lifecycle Operations
+Cluster Maintenance and Life-Cycle Operations
 ----------------------------------------------------
 
 
@@ -129,7 +129,7 @@ Cluster Expansion
 
   - To scale an Acropolis cluster, rack / stack / cable the nodes and power them on.
 
-- Once the nodes are powered up they will be discoverable by the current cluster using mDNS.
+- Once the nodes are powered up they will be discover-able by the current cluster using mDNS.
 
   - Multiple nodes can be discovered and added to the cluster concurrently.
 
@@ -146,7 +146,7 @@ Removing a node – Process Details
 
 **Repurpose Equipment**
 
-The Nutanix Operating System makes it easy to repurpose equipment as needed. You can switch a node from one hypervisor to another or take nodes offline in one datacenter where you’ve got excess capacity and move them to another where they are needed, eliminating expensive over-provisioning.
+The Nutanix Operating System makes it easy to re-purpose equipment as needed. You can switch a node from one hypervisor to another or take nodes offline in one data center where you’ve got excess capacity and move them to another where they are needed, eliminating expensive over-provisioning.
 
 **Licensing**
 
