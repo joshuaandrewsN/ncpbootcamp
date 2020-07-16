@@ -97,7 +97,7 @@ A Prism Central administrator can also perform any of theses tasks, but they are
 Questions
 ++++++++++++++++++++++
 
-This is a link to the Questions : :doc:`Questions`
+:doc:`Questions`
 
 
 -----------------------------------------------------
