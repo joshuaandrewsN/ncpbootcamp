@@ -159,11 +159,12 @@ XCCDF (Extensible Configuration Checklist Description Format) is a specification
 
 Nutanix includes five custom STIG components installed with AOS:
 
-- AHV
-- AOS
-- Prism Web Server
-- Prism Reverse Proxy
-- JRE
+  - AHV
+  - AOS
+  - Prism Web Server
+  - Prism Reverse Proxy
+  - JRE
+
 - Provided in machine-readable XCCDF format
 - Implemented via nCLI commands
 

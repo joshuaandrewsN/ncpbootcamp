@@ -45,6 +45,7 @@ Objectives
 
 ECA refresh 
 Practice questions
+
 - Test knowledge
 - Question layout and standards
 - Get into the exam mindset

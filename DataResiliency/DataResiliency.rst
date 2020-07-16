@@ -315,7 +315,7 @@ CVM Resiliency
 Questions
 ++++++++++++++++++++++
 
-This is a link to the Questions : :doc:`Questions`
+:doc:`Questions`
 
 
 

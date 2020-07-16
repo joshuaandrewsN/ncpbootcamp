@@ -72,9 +72,12 @@ A large number of AOS services are running inside the CVM.
 
 - Apache **Zookeeper** implements Zeus, which is the Nutanix library that all other components use to access the cluster configuration.
 - **Medusa** is a Nutanix abstraction layer that sits in front of the database that holds metadata. 
+
   - A modified form of Apache **Cassandra** distributes the metadata database across all nodes in the cluster.
+
 - From the perspective of the hypervisor, **Stargate** is the main point of contact for the Nutanix cluster. 
 - In the Nutanix cluster, each node runs a **Curator** process that watches over the entire process.
+
   - Curator is responsible for managing and distributing tasks throughout the cluster, including disk balancing, proactive scrubbing, and many more
 
   
@@ -100,7 +103,7 @@ Replication Factor (RF)
 
 Either RF2 or RF3
 
-.. figure:: images/RedundancyFactor.png
+.. figure:: images/ReplicationFactor.png
 
 
 Why no data is lost upon node failure:
