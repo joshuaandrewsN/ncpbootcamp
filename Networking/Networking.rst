@@ -21,13 +21,16 @@ Prism Network Dashboard
 
 
 - Two different ways to provide VM connectivity: managed and unmanaged networks
+
   - With *unmanaged networks*, VMs get direct connection to their VLAN of choice
   - With *managed networks*, AHV (Acropolis master) can perform IP address management (IPAM) for VMs, handing out IP addresses via configurable DHCP pools
   
 **While a physical server connects to a physical network, a VM connects to a virtual network.**
 
 - In the case of AHV, it supports unmanaged and managed virtual networks.
+
   - An unmanaged network is simply a VLAN.
+  
 - A managed network is a VLAN plus IPAM.
 
   - IPAM stands for IP address management.

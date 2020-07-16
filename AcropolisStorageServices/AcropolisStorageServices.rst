@@ -36,7 +36,7 @@ Nutanix Volumes Intro
 - Data Services IP:
 
   - Data Services IP acts as a central discovery/login portal for iSCSI login requests.
-    - It can be configured using Prism by clicking on Gear icon  Cluster Details.
+    - It can be configured using Prism by clicking on Gear icon > Cluster Details.
 	
 - Data Services IP can also be configured using NCLI or API.
 
