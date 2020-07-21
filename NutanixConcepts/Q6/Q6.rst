@@ -9,7 +9,6 @@ Question 6
 
 .. figure:: images/q6.png
 
-1
 
 
 Answer: :ref:`NC_answer_6`
