@@ -3,7 +3,7 @@
 .. _Prism_Central_questions:
 
 --------------------------
-Data Protection Questions
+Prism Central Questions
 --------------------------
 
 
