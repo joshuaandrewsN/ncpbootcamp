@@ -9,6 +9,10 @@ Answer 1
 
 .. figure:: images/a1.png
 
+https://portal.nutanix.com/page/documents/details/?targetId=Prism-Element-Data-Protection-Guide-v5_15:wc-protection-domain-failover-c.html
+Restores all VM and volume group files from the last fully-replicated snapshot.
+The process first detaches the volume groups that are included in the Protection Domain or attached to the VMs in the Protection Domain.
+
 
 Back to the Question: :ref:`DP_question_1`
 

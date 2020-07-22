@@ -96,28 +96,23 @@ Synchronous Replication
 
 - Metro Availability is a policy applied to a datastore that effectively spans across two (2) sites.
 
-  - Nutanix provides native “stretch clustering” capabilities which allow for a compute and storage cluster to span multiple physical sites. 
+  - Nutanix provides native “stretch cluster” like capabilities which allow for a mission critical vm to remain in sync across multiple physical sites. 
 
-    - In these deployments, the compute cluster spans two locations and has access to a shared pool of storage.
+- In these deployments, when a Metro protected vm makes a write, the write happens locally (RF2) and remotely (RF2 on the remote side too). Therefore, container (datastore) names must be the same on both clusters (unlike async where container names need to be different).
+- This expands the VM with a near zero RTO and a RPO.
 
-  - Therefore, container (datastore) names must be the same on both clusters (unlike async where container names need to be different).
+  - In this deployment, each site has its own Nutanix cluster, however the protected VMs writes happen synchronously, replication happens at the Remote Site before writes are acknowledged.
 
-- This expands the VM HA domain from one site to two sites providing a near zero RTO and a RPO of zero.
+- In the event of a site failure, an fail-over event will occur where the VMs can be started on the other site.
 
-  - In this deployment, each site has its own Nutanix cluster, however the containers are “stretched” by synchronously replicating to the Remote Site before acknowledging writes.
+  - The fail-over process is typically a manual process.
 
-- In the event of a site failure, an HA event will occur where the VMs can be restarted on the other site.
-
-  - The failover process is typically a manual process.
-
-- With the AOS 5.1 release a Metro Witness can be configured which can automate the failover.
+- With the AOS 5.1 release a Metro Witness can be configured which can automate the fail-over.
 
   - The witness can be downloaded via the Portal and is configured via Prism.
-  - Note that once a Metro Witness has been configured, it can fail (hence no need to have two witnesses) with the synchronous operation continuing without disruption.
 
-- In the event where there is a link failure between the two sites, each cluster will operate independently.  Once the link comes back up, the sites will be re-synchronized (deltas-only) and synchronous replication will start occurring.
-
-
+- Note that once a Metro Witness has been configured, it can fail (hence no need to have two witnesses) with the synchronous operation continuing without disruption.
+- In the event where there is a link failure between the two sites, each cluster will operate independently. Once the link comes back up, the sites will be re-synchronized (deltas-only) and synchronous replication will start occurring.
 
 -----------------------------------------------------
 
@@ -134,28 +129,27 @@ Asynchronous Data Replication
 **Protection Domain (PD)** 
 
 - Nutanix Backup and DR construct.
-- Key Role: Macro group of VMs and/or files to protect.
+- Key Role: Macro group of VMs and/or Volume Groups to protect.
 
   - A group of VMs and/or files to be replicated together on a desired schedule.  
-  - A PD can protect a full container or you can select individual VMs and/or files.
+  - A **PD** can protect a volume group or you can select individual VMs.
 
-- You can create multiple PDs for various services tiers driven by a desired RPO/RTO.
+- You can create multiple PDs for various SLA tiers driven by a desired RPO/RTO.
 
-  - For file distribution (for example, golden images, ISOs, and so on) you can create a PD with the files to replicate.
 
 **Consistency Group (CG)**
 
 - Sub-set of Protection Domain.
-- Key Role: Subset of VMs/files in PD to be crash-consistent.
-- VMs and/or files which are part of a Protection Domain which need to be snapshotted in a crash-consistent manner.
+- Key Role: Subset of VMs in PD to be crash-consistent.  Can be application consistent.
+- VMs and/or VGs which are part of a Protection Domain which need to be snapshot-ed in a crash-consistent or application consistent manner.
 
-  - This ensures that when VMs/files are recovered, they come up in a consistent state.
+  - This ensures that when VMs/VGs are recovered, they come up in a consistent state.
 
-- A Protection Domain can have multiple consistency groups.
+- A Protection Domain can have **multiple consistency groups**.
 
-  - Group dependent application or service VMs should be in a consistency group to ensure they are recovered in a consistent state (such as App and DB).
+  - Multi-tier application vms or service VMs should be in a consistency group to ensure they are recovered in a consistent state (such as App and DB).
 
-- When both clusters are replicating to each other, simply add a mapping line that shows the containers involved. 
+- When both clusters are replicating to each other, simply **add a mapping line** that shows the containers involved. 
 - If more than 2 clusters are involved, establish Async replication from example Cluster B to C as follows:
 
   1. Create a Remote Site on B that points to C.
